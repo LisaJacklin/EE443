@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <CustomProjectExtensionsPath Condition="Exists('$(LocalAppData)\CustomProjectSystems\vhdl4vs\vhdl4vsProjectType.props')">$(LocalAppData)\CustomProjectSystems\vhdl4vs\</CustomProjectExtensionsPath>
+    <CustomProjectExtensionsPath Condition="'$(CustomProjectExtensionsPath)' == ''">$(MSBuildExtensionsPath)\CustomProjectSystems\vhdl4vs\</CustomProjectExtensionsPath>
+    <ProjectGuid>7e2b8c1f-bb30-4701-a7fc-b9dbb9dd7d32</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(CustomProjectExtensionsPath)vhdl4vsProjectType.props" />
+  <ItemGroup>
+    <VHDLSource Include="DCD3x8.vhd" />
+    <VHDLSource Include="module.vhd" />
+    <VHDLSource Include="top.vhd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <LibraryPaths>IEEE=$(XilinxLibraryPath)\ieee;STD=$(XilinxLibraryPath)\std;UNISIM=$(XilinxLibraryPath)\unisims</LibraryPaths>
+  </PropertyGroup>
+  <Import Project="$(CustomProjectExtensionsPath)vhdl4vsProjectType.targets" />
+</Project>

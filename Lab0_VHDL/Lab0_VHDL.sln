@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{1617981A-8EA0-45C1-BBB9-A360BB4976CD}") = "Lab0_VHDL", "Lab0_VHDL.vhdproj", "{7E2B8C1F-BB30-4701-A7FC-B9DBB9DD7D32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E2B8C1F-BB30-4701-A7FC-B9DBB9DD7D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2B8C1F-BB30-4701-A7FC-B9DBB9DD7D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2B8C1F-BB30-4701-A7FC-B9DBB9DD7D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2B8C1F-BB30-4701-A7FC-B9DBB9DD7D32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17401E66-0085-41BC-9FE2-B3F4317E2982}
+	EndGlobalSection
+EndGlobal
