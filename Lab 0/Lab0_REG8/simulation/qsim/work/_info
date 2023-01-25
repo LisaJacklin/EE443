@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/simulation/qsim
+Ehard_block
+Z1 w1674606325
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 U]E`hi0:`oKa5cWiFZ>hl3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 7:=`d=[QUY_aUcbj<lC000
+R0
+Z8 8REG8_REG16.vho
+Z9 FREG8_REG16.vho
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1674606325
+!i10b 1
+Z12 !s108 1674606325.000000
+Z13 !s90 -work|work|REG8_REG16.vho|
+Z14 !s107 REG8_REG16.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ereg16
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R0
+R8
+R9
+l0
+L79
+VOFUlz]oh6HIjQ?5;j2djF2
+!s100 QT=YVI8<_VW_<2ZzJ<Pm30
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 5 reg16 0 22 OFUlz]oh6HIjQ?5;j2djF2
+l197
+L125
+VRL]NOZZHCSmeoc=BYGoab1
+!s100 9zL5C5inRfd^:I87M[hWj3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ereg16_vhd_vec_tst
+Z19 w1674606324
+R5
+R6
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+V6?lDEGgdJPB6ll2^G[P0N3
+!s100 2A_?898>k`I`M]CEdI9kC1
+R10
+32
+R11
+!i10b 1
+R12
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Areg16_arch
+R5
+R6
+Z24 DEx4 work 17 reg16_vhd_vec_tst 0 22 6?lDEGgdJPB6ll2^G[P0N3
+l48
+L33
+Z25 V9BcIReXa:nEfb<Rea]J<[1
+Z26 !s100 ^Lh>K_^UT3Q;_JP0:09hD1
+R10
+32
+!s110 1674606326
+!i10b 1
+R12
+R22
+R23
+!i113 1
+R15
+R16
