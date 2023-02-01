@@ -1,14 +1,37 @@
 # Compute first twelve Fibonacci numbers and put in array, then print
-      .data
-fibs: .word  0:12        	# "array" of 12 words to contain fib values
-size: .word  12             # size of "array" 
+# Edited fibonacci sequency based on step 12
+
+# size: .word                # size of "array" 	 
+
+ 	      .data	
+ #this is the range that we have for the length of the sequence, 2<=x<=19.
+fibs: .word      2:19 	   # "array" of 12 words to contain fib values		
 space:.asciiz  " "          # space to insert between numbers
 head: .asciiz  "The Fibonacci numbers are:\n"
+     
+######## Start of edited code	
+	.text	    
+      li $v0, 4		    # call code for printing an string
+      la $a0, prompt	    # prompts the user for input
+      syscall		    # Displays a prompt to the user
+    
+      li $v0, 5		    # call code to read the integer result in $v0
+      syscall		    # prints the value of user input
+      la $t5, ($v0)	    # loads the input value to size
 
-      .text
+    .data
+ prompt: .asciiz "Please insert a value between 2 and 19. \n "
+
+######## End of edited code
+   
+#these lines are taken out since we do not need size as a reference line anymore
+# and we do not need to take in $t5 to find the first value. 
+
+     # la   $t5, size        # load address of size variable
+     # lw   $t5, 0($t5)      # load array size
+     
+     	.text
       la   $t0, fibs        # load address of array
-      la   $t5, size        # load address of size variable
-      lw   $t5, 0($t5)      # load array size
       li   $t2, 1           # 1 is first and second Fib. number
       add.d $f0, $f2, $f4
       sw   $t2, 0($t0)      # F[0] = 1
@@ -26,7 +49,7 @@ loop: lw   $t3, 0($t0)      # Get value from array F[n]
       jal  print            # call print routine. 
       li   $v0, 10          # system call for exit
       syscall               # we are out of here.
-		
+
 #########  routine to print the numbers on one line. 
 
       .text
