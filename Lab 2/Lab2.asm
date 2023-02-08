@@ -95,6 +95,6 @@ Average:
 	#NEED A BRANCH HERE OR SOMETHING TO COMPARE THE VALUE OF THE MINUS TO THE AVERAGE VALUE
 	
 	## Display the average
-	#syscall		#this should diplay the average value 
 	
+	#syscall		#this should diplay the average value 
 	#ja $ra			#this should return back to the main section of code
