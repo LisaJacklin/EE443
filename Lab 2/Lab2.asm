@@ -92,7 +92,7 @@ Average:
 	add $t7, $t7, 1
 	sub $t8, $t4,$t3	#stored in t8, the sum minus the counter total
 	
-	#NEED A BRANCH HERE OR SOMETHING TO COMPARE THE VALUE OF THE MINUS TO THE AVERAGE VALUE
+	bne $t5, %t0, Average	# this should branch to continue to calculate the average.
 	
 	## Display the average
 	
