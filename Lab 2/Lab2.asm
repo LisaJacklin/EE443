@@ -92,18 +92,23 @@ Invert:
 	bne $t0,$t5,Invert 	#should go through the loop to invert the array
 	
 	###Integer average of all elements in the array
-	add $t4, $t4, 0		#starting at zero for the sum
+	
+	#predeterminates
+	li $t4, 0		#starting at zero for the sum
 	la $s5,array 		#reload the base address of the array
+	
 	add $t9, $t9, -1	#have to subtract a single value from the array
-	sll $s6,$t9, 2 		#this should mutliply he array size by 4 for an address
+	sll $s6,$t9, 2 		#this should mutliply the array size by 4 for an address
 	
 Total:
 	la $s3, ($s6)		#value at specified address to be added to sum
 	add $t4, $t4, $s3	#adding the sum to the value in memory
 	
 	add $s3, $s3, 4		#increment through the memory space
+	add $t4, $t4, 1		#increment my counter value by 1
 	bne $t0, $s6, Total 	#if array size is not equl to the counter value
 	
+	#average loop predeterminate
 	add $t7, $t7, 0		#counter for average
 Average:
 	add $t7, $t7, 1
