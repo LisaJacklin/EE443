@@ -9,33 +9,21 @@
 
 	.data 0x10010400	#specifies the starting address
 	array:      	.space 400
+	
 	ArrayPrompt: 	.asciiz "Please insert the array size. \n"
 	Elements:   	.asciiz "Please insert an element. \n"	
-	AverageArray: 	.asciiz "The Average value of the array is: \n"
-	NewArray:  	.asciiz "This is the new array: \n"
+	AverageArray: 	.asciiz "The Average value of the array is: "
+	NewArray:  	.asciiz "\nThis is the new array: "
 
 ####Start of 'Main' code
 	
 	jal Procedure1
-	
-	###Printing the New Array
-	li $v0, 4		#call code for printing a string
-	la $a0, NewArray	#prompts the user for input
-	
-	addi $t1, $0, $0	#$t1 will be the counter for elements being displayed
-InvertedArray:	
 
-	sw $v0, 0($t0)		#this will store the value given into the address for FilledArray
-	syscall			#this should display the array values
-	
-	addi $t0, $t0, 4	#increment the address by 4 bits
-		
-	addi $t1, $t1, 1	#$t1 will be the counter to be compared
-   	bne $t5, $t1, InvertedArray  #if the size of the array is not equal to the elements given, loop
-   	
 	####Exit Program
 	li   $v0, 10          # system call for exit
     	syscall               # we are out of here.
+	
+####End of 'Main' code	
 	
 #### Procedure 1	
 	.text
@@ -92,43 +80,58 @@ Invert:
 	bne $t0,$t5,Invert 	#should go through the loop to invert the array
 	
 	###Integer average of all elements in the array
-	
+	#add $t9, $t9, -1	#have to subtract a single value from the array
+	#sll $s6,$t9, 2 		#this should mutliply the array size by 4 for an address
+
 	#predeterminates
-	li $t4, 0		#starting at zero for the sum
 	la $s5,array 		#reload the base address of the array
 	
-	add $t9, $t9, -1	#have to subtract a single value from the array
-	sll $s6,$t9, 2 		#this should mutliply the array size by 4 for an address
-	
+	li $t4, 0		#counter
+	li $s4, 0		#initialize the count for the sum
 Total:
-	la $s3, ($s6)		#value at specified address to be added to sum
-	add $t4, $t4, $s3	#adding the sum to the value in memory
+	la $s3, ($s5)		#value at specified address to be added to sum
+	add $s4, $s4, $s3	#adding the sum to the value in memory
 	
-	add $s3, $s3, 4		#increment through the memory space
 	add $t4, $t4, 1		#increment my counter value by 1
-	bne $t0, $s6, Total 	#if array size is not equl to the counter value
+	add $s5, $s5, 4		#increment through the memory space
+	
+	bne $s5, $t5, Total 	#if array size is not equl to the counter value
+	#check the t5 here; should be the size of the array
 	
 	#average loop predeterminate
-	add $t7, $t7, 0		#counter for average
+	li $t8, 0		#counter for average
 Average:
-	add $t7, $t7, 1
-	sub $t8, $t4,$t3	#stored in t8, the sum minus the counter total
-	
+	sub $s4, $s4,$t5	#stored in t8, the sum minus the counter total
+	addi $t8, $t8, 1	#incrementing the counter
 
-	bne $t5, %t0, Average	# this should branch to continue to calculate the average.
+	bge $s4, $t5, Average	# this should branch to continue to calculate the average.
 	
-	## Display the average
-
-	bne $t8, $t4, Average	#if they are not equal, branch again
-	
-	## Display the average
+## Display the average
 	li $v0, 4		#calls to print a string
 	la $a0, AverageArray	#prompts the user to input integers for array elements
+	syscall			#displaying the Average array prompt
 	
-	li $v0, 11		#call code to read an integer contains in $a0
-	la $a0, ($t8)		#$a0 now has the contents of $t8
+	add $a0, $t1, $0	#pushes the average value to $a0
+	
+	li $v0, 1		#call code to print an integer contains in $a0
 	syscall			#this should diplay the average value 
 
+## Display the Inverted Array
+	la $a0, NewArray	#loads the inverted array prompt
+	li $v0, 4		#call code to print the prompt in $a0
+	syscall
 	
-	#syscall		#this should diplay the average value 
-	#ja $ra			#this should return back to the main section of code
+	la $a3, array		#takes in the base array address
+	li $t1, 0		#reinitializes the counter to zero
+
+InvertedArray:	
+	lw $t9, 0($a3)		#this will store the value given into the address for newarray
+	add $a0, $t9, $0	#gives the array value to $a0
+	
+	li $v0, 1		#print the integers
+	syscall			#this should display the array values
+		
+	addi $t1, $t1, 1	#$t1 will be the counter to be compared
+	addi $a3, $a3, 4	#increment the address by 4 bits
+		
+   	blt $t9, $v0, InvertedArray  #if the size of the array is not equal to the elements given, loop
