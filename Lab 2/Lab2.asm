@@ -134,4 +134,4 @@ InvertedArray:
 	addi $t1, $t1, 1	#$t1 will be the counter to be compared
 	addi $a3, $a3, 4	#increment the address by 4 bits
 		
-   	blt $t9, $v0, InvertedArray  #if the size of the array is not equal to the elements given, loop
+   	blt $v0, $t9, InvertedArray  #if the size of the array is not equal to the elements given, loop
