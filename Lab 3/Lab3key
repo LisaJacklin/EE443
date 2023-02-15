@@ -1,0 +1,72 @@
+##############
+# Lisa Jacklin
+# EE 443 
+# Lab 3 Code
+# 2/14/2023
+#############
+
+#### Seting up the prompts to user
+	.data
+	convertmm: .double 25.4
+	Pi: .double 3.1415926535897932384626433832795
+	RadiusPrompt: .asciiz " Please insert a radius of the Circle: "
+	AreaResult:   .asciiz "\n The resulting area is :  "
+
+#### Start of 'Main' of the program #####
+###Peripheral ready loop
+
+	jal TakingRadius
+#### End of 'Main' of the program ####
+
+#### Area of a Circle
+	.text
+TakingRadius:
+	li $v0, 4		#call code for printing a string
+	la $a0, RadiusPrompt	#prompts the user for input
+	syscall			# displays the prompt to the user for input
+	
+	jal UserInputKeys
+	#li $v0, 5		# call code to read the integer result in $v0 given by the user
+	#syscall			#prints the value of user input
+	
+CalcArea:
+	#the value we hve for the radius is storied in $t5
+	l.d $f2, convertmm	#this should lod the double for mm conversion into f2
+	
+
+
+
+		#### Exit Program if the input is zero
+		li   $v0, 10    # system call for exit
+    		syscall         # we are out of here.
+
+#### User Input W/ Peripherals
+UserInputKeys:
+ 	li $t2, 0x0a		#loads the 'enter' key ascii value into #a0
+ 	add $t5, $t5, $zero	#set register $t5 to zero
+ 	li $t7, 10
+ 
+ 	Check:
+ 		li $a2, 0xffff0000	#receiver data address
+ 		lw $s0, 0($a2)		#load the value given by the user
+ 		beq $s0, $0, Check	#branch if the reciever is not 
+ 	
+	 recieve:
+		li $a2, 0xffff0004	#receiver data address
+ 		lw $s2, 0($a2)		#load the value given by the user
+ 		addi $t6, $s2, -48	#this should adjust the Ascii value
+ 		
+		add $t5, $t5, $t6	#adds value to t5
+		mul $t5, $t5, $t7	#multiplies by 10
+		
+ 		bne $t2, $s2, Check	#branches the value to check if it's the enter key
+ 		
+ 		add $t5, $t5, 380	#need to subtract 100 to get to the correct value
+ 		div $t5, $t5, $t7		#divide by 10 to get back to origin
+ 		div $t5, $t5, $t7
+ 		
+	
+ 	jal CalcArea			#this will be the end of the user input and should take the value
+ 	#and display the value to the user, and then use it for 
+ 	
+ 	

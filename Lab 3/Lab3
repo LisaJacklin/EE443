@@ -1,4 +1,43 @@
+##############
 # Lisa Jacklin
 # EE 443 
 # Lab 3 Code
 # 2/14/2023
+#############
+
+#### Setting up the prompts to user
+	.data
+	Pi: .double 3.1415926535897932384626433832795
+	RadiusPrompt: .asciiz " Please insert a radius of the Circle: "
+	AreaResult:   .asciiz "\n The resulting area is :  "
+#### Start of 'Main' of the program #####
+	jal TakingRadius
+#### End of 'Main' of the program ####
+
+#### Area of a Circle
+	.text
+TakingRadius:
+	li $v0, 4		#call code for printing a string
+	la $a0, RadiusPrompt	#prompts the user for input
+	syscall			# displays the prompt to the user for input
+	
+	li $v0, 5		# call code to read the integer result in $v0 given by the user
+	syscall			#prints the value of user input
+	
+	mtc1 $v0, $f8		#should load the value input from user to register t1	
+### begin converting and calculating the area	
+	add.d $f4, $f8, $f8	#determines diameter 
+	l.d $f14, Pi		#loads a double from Pi, to register f1
+
+	mul.d $f12, $f4, $f14	#multiplies radius squared by Pi, giving result to f3
+	
+	li $v0, 4		#call code for printing a string
+	la $a0, AreaResult	#prompts the user for input
+	syscall			# displays the prompt to the user for input
+	
+	li $v0, 3		#print the integers
+	syscall			#this should display the array values
+	
+		#### Exit Program if the input is zero
+		li   $v0, 10    # system call for exit
+    		syscall         # we are out of here.
