@@ -27,15 +27,26 @@ TakingRadius:
 	
 	jal UserInputKeys
 	#li $v0, 5		# call code to read the integer result in $v0 given by the user
-	#syscall			#prints the value of user input
+	#syscall		#prints the value of user input
 	
 CalcArea:
 	#the value we hve for the radius is storied in $t5
 	l.d $f2, convertmm	#this should lod the double for mm conversion into f2
 	
+	ldc1 $f8, ($t5)
+### begin converting and calculating the area	
+	add.d $f4, $f8, $f8	#determines diameter 
+	l.d $f14, Pi		#loads a double from Pi, to register f1
 
-
-
+	mul.d $f12, $f4, $f14	#multiplies radius squared by Pi, giving result to f3
+	
+	li $v0, 4		#call code for printing a string
+	la $a0, AreaResult	#prompts the user for input
+	syscall			# displays the prompt to the user for input
+	
+	li $v0, 3		#print the integers
+	syscall			#this should display the array values
+	
 		#### Exit Program if the input is zero
 		li   $v0, 10    # system call for exit
     		syscall         # we are out of here.
@@ -62,7 +73,7 @@ UserInputKeys:
  		bne $t2, $s2, Check	#branches the value to check if it's the enter key
  		
  		add $t5, $t5, 380	#need to subtract 100 to get to the correct value
- 		div $t5, $t5, $t7		#divide by 10 to get back to origin
+ 		div $t5, $t5, $t7	#divide by 10 to get back to origin
  		div $t5, $t5, $t7
  		
 	
