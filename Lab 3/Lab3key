@@ -7,7 +7,7 @@
 
 #### Seting up the prompts to user
 	.data
-	convertmm: .double 25.4
+	convertmm: .double 25.4	#this should change the input to mm from inches
 	Pi: .double 3.1415926535897932384626433832795
 	RadiusPrompt: .asciiz " Please insert a radius of the Circle: "
 	AreaResult:   .asciiz "\n The resulting area is :  "
@@ -26,6 +26,8 @@ TakingRadius:
 	syscall			# displays the prompt to the user for input
 	
 	jal UserInputKeys
+	
+	#note that the two commented out lines are not needed due to keyboard controller
 	#li $v0, 5		# call code to read the integer result in $v0 given by the user
 	#syscall		#prints the value of user input
 	
@@ -33,7 +35,7 @@ CalcArea:
 	#the value we hve for the radius is storied in $t5
 	l.d $f2, convertmm	#this should lod the double for mm conversion into f2
 	
-	ldc1 $f8, ($t5)
+	mtc1 $t5,$f8		#move to coprocessor1 (handles float registers)
 ### begin converting and calculating the area	
 	add.d $f4, $f8, $f8	#determines diameter 
 	l.d $f14, Pi		#loads a double from Pi, to register f1
@@ -74,10 +76,10 @@ UserInputKeys:
  		
  		add $t5, $t5, 380	#need to subtract 100 to get to the correct value
  		div $t5, $t5, $t7	#divide by 10 to get back to origin
- 		div $t5, $t5, $t7
+ 		div $t5, $t5, $t7	#divide by 10 again to get back to the origin point
  		
 	
  	jal CalcArea			#this will be the end of the user input and should take the value
- 	#and display the value to the user, and then use it for 
+ 					#and display the value to the user, and then use it for 
  	
  	
