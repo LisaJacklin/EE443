@@ -9,6 +9,7 @@
 	.data
 	convertmm: .double 25.4	#this should change the input to mm from inches
 	Pi: .double 3.1415926535897932384626433832795
+	PiPrompt: .asciiz "Please insert a value for 'pi'"
 	RadiusPrompt: .asciiz " Please insert a radius of the Circle: "
 	AreaResult:   .asciiz "\n The resulting area is :  "
 
@@ -32,14 +33,18 @@ TakingRadius:
 	#syscall		#prints the value of user input
 	
 CalcArea:
+
 	#the value we hve for the radius is storied in $t5
 	l.d $f2, convertmm	#this should lod the double for mm conversion into f2
 	
 	mtc1 $t5,$f8		#move to coprocessor1 (handles float registers)
+	cvt.d.w $f8, $f8
 ### begin converting and calculating the area	
-	add.d $f4, $f8, $f8	#determines diameter 
+	#add.d $f4, $f8, $f8	#determines diameter 
+	div.d $f16,$f8, $f2
+	
 	l.d $f14, Pi		#loads a double from Pi, to register f1
-
+	mul.d $f4, $f16, $f16
 	mul.d $f12, $f4, $f14	#multiplies radius squared by Pi, giving result to f3
 	
 	li $v0, 4		#call code for printing a string
