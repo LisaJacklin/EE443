@@ -22,10 +22,19 @@
 #### Area of a Circle
 	.text
 TakingRadius:
-	li $v0, 4		#call code for printing a string
+	li $v0, 4			#call code for printing a string
 	la $a0, RadiusPrompt	#prompts the user for input
 	syscall			# displays the prompt to the user for input
 	
+	li $v0, 4			#call code for printing a spring
+	la $a0, PiPrompt		#prompts a value for 'pi'
+
+	li $v0, 5			#call code to read integer from user
+	syscall			#print the user value
+
+	mtc1 $v0, $f14		#converts the user input to float point
+	cvt.d.w $f14, $f14	#convert word to double persission
+
 	jal UserInputKeys
 	
 	#note that the two commented out lines are not needed due to keyboard controller
@@ -38,12 +47,12 @@ CalcArea:
 	l.d $f2, convertmm	#this should lod the double for mm conversion into f2
 	
 	mtc1 $t5,$f8		#move to coprocessor1 (handles float registers)
-	cvt.d.w $f8, $f8
+	cvt.d.w $f8, $f8		#converts from word to double persission
 ### begin converting and calculating the area	
-	#add.d $f4, $f8, $f8	#determines diameter 
 	div.d $f16,$f8, $f2
 	
-	l.d $f14, Pi		#loads a double from Pi, to register f1
+	#l.d $f14, Pi		#loads a double from Pi, to register f1
+
 	mul.d $f4, $f16, $f16
 	mul.d $f12, $f4, $f14	#multiplies radius squared by Pi, giving result to f3
 	
