@@ -1,4 +1,403 @@
-|MUX8x16
+|REG8x16
+ADD_R1[0] => mux8X16:MUX1.SGNL[0]
+ADD_R1[1] => mux8X16:MUX1.SGNL[1]
+ADD_R1[2] => mux8X16:MUX1.SGNL[2]
+ADD_R2[0] => mux8X16:MUX2.SGNL[0]
+ADD_R2[1] => mux8X16:MUX2.SGNL[1]
+ADD_R2[2] => mux8X16:MUX2.SGNL[2]
+ADD_W[0] => DCD3x8:DECO.S[0]
+ADD_W[1] => DCD3x8:DECO.S[1]
+ADD_W[2] => DCD3x8:DECO.S[2]
+DIN[0] << DIN[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[1] << DIN[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[2] << DIN[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[3] << DIN[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[4] << DIN[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[5] << DIN[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[6] << DIN[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[7] << DIN[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DIN[8] << <GND>
+DIN[9] << <GND>
+DIN[10] << <GND>
+DIN[11] << <GND>
+DIN[12] << <GND>
+DIN[13] << <GND>
+DIN[14] << <GND>
+DIN[15] << <GND>
+EN => REG8:REGI1.WE
+EN => DIN[0]~reg0.CLK
+EN => DIN[1]~reg0.CLK
+EN => DIN[2]~reg0.CLK
+EN => DIN[3]~reg0.CLK
+EN => DIN[4]~reg0.CLK
+EN => DIN[5]~reg0.CLK
+EN => DIN[6]~reg0.CLK
+EN => DIN[7]~reg0.CLK
+EN => REG8:REGI2.WE
+EN => REG8:REGI3.WE
+EN => REG8:REGI4.WE
+EN => REG8:REGI5.WE
+EN => REG8:REGI6.WE
+EN => REG8:REGI7.WE
+EN => REG8:REGI8.WE
+CLK => REG8:REGI1.CLK
+CLK => REG8:REGI2.CLK
+CLK => REG8:REGI3.CLK
+CLK => REG8:REGI4.CLK
+CLK => REG8:REGI5.CLK
+CLK => REG8:REGI6.CLK
+CLK => REG8:REGI7.CLK
+CLK => REG8:REGI8.CLK
+DOUT1[0] <= mux8X16:MUX1.Z[0]
+DOUT1[1] <= mux8X16:MUX1.Z[1]
+DOUT1[2] <= mux8X16:MUX1.Z[2]
+DOUT1[3] <= mux8X16:MUX1.Z[3]
+DOUT1[4] <= mux8X16:MUX1.Z[4]
+DOUT1[5] <= mux8X16:MUX1.Z[5]
+DOUT1[6] <= mux8X16:MUX1.Z[6]
+DOUT1[7] <= mux8X16:MUX1.Z[7]
+DOUT1[8] <= mux8X16:MUX1.Z[8]
+DOUT1[9] <= mux8X16:MUX1.Z[9]
+DOUT1[10] <= mux8X16:MUX1.Z[10]
+DOUT1[11] <= mux8X16:MUX1.Z[11]
+DOUT1[12] <= mux8X16:MUX1.Z[12]
+DOUT1[13] <= mux8X16:MUX1.Z[13]
+DOUT1[14] <= mux8X16:MUX1.Z[14]
+DOUT1[15] <= mux8X16:MUX1.Z[15]
+DOUT2[0] <= mux8X16:MUX2.Z[0]
+DOUT2[1] <= mux8X16:MUX2.Z[1]
+DOUT2[2] <= mux8X16:MUX2.Z[2]
+DOUT2[3] <= mux8X16:MUX2.Z[3]
+DOUT2[4] <= mux8X16:MUX2.Z[4]
+DOUT2[5] <= mux8X16:MUX2.Z[5]
+DOUT2[6] <= mux8X16:MUX2.Z[6]
+DOUT2[7] <= mux8X16:MUX2.Z[7]
+DOUT2[8] <= mux8X16:MUX2.Z[8]
+DOUT2[9] <= mux8X16:MUX2.Z[9]
+DOUT2[10] <= mux8X16:MUX2.Z[10]
+DOUT2[11] <= mux8X16:MUX2.Z[11]
+DOUT2[12] <= mux8X16:MUX2.Z[12]
+DOUT2[13] <= mux8X16:MUX2.Z[13]
+DOUT2[14] <= mux8X16:MUX2.Z[14]
+DOUT2[15] <= mux8X16:MUX2.Z[15]
+
+
+|REG8x16|REG8:REGI1
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI2
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI3
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI4
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI5
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI6
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI7
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|REG8:REGI8
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+WE => Q[0]~reg0.ENA
+WE => Q[1]~reg0.ENA
+WE => Q[2]~reg0.ENA
+WE => Q[3]~reg0.ENA
+WE => Q[4]~reg0.ENA
+WE => Q[5]~reg0.ENA
+WE => Q[6]~reg0.ENA
+WE => Q[7]~reg0.ENA
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|DCD3x8:DECO
+S[0] => Equal0.IN2
+S[0] => Equal1.IN0
+S[0] => Equal2.IN2
+S[0] => Equal3.IN1
+S[0] => Equal4.IN2
+S[0] => Equal5.IN1
+S[0] => Equal6.IN2
+S[0] => Equal7.IN2
+S[1] => Equal0.IN1
+S[1] => Equal1.IN2
+S[1] => Equal2.IN0
+S[1] => Equal3.IN0
+S[1] => Equal4.IN1
+S[1] => Equal5.IN2
+S[1] => Equal6.IN1
+S[1] => Equal7.IN1
+S[2] => Equal0.IN0
+S[2] => Equal1.IN1
+S[2] => Equal2.IN1
+S[2] => Equal3.IN2
+S[2] => Equal4.IN0
+S[2] => Equal5.IN0
+S[2] => Equal6.IN0
+S[2] => Equal7.IN0
+Q[0] <= Q[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= <GND>
+Q[5] <= <GND>
+Q[6] <= <GND>
+Q[7] <= <GND>
+
+
+|REG8x16|MUX8x16:MUX1
 I1[0] => MUX4x4:G1.x1[0]
 I1[1] => MUX4x4:G1.x1[1]
 I1[2] => MUX4x4:G1.x1[2]
@@ -169,7 +568,7 @@ Z[14] <= MUX4x4:G12.Y[2]
 Z[15] <= MUX4x4:G12.Y[3]
 
 
-|MUX8x16|MUX4x4:G1
+|REG8x16|MUX8x16:MUX1|MUX4x4:G1
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -200,7 +599,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G2
+|REG8x16|MUX8x16:MUX1|MUX4x4:G2
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -231,7 +630,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G3
+|REG8x16|MUX8x16:MUX1|MUX4x4:G3
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -262,7 +661,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G4
+|REG8x16|MUX8x16:MUX1|MUX4x4:G4
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -293,7 +692,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G5
+|REG8x16|MUX8x16:MUX1|MUX4x4:G5
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -324,7 +723,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G6
+|REG8x16|MUX8x16:MUX1|MUX4x4:G6
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -355,7 +754,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G7
+|REG8x16|MUX8x16:MUX1|MUX4x4:G7
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -386,7 +785,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G8
+|REG8x16|MUX8x16:MUX1|MUX4x4:G8
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -417,7 +816,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G9
+|REG8x16|MUX8x16:MUX1|MUX4x4:G9
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -448,7 +847,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G10
+|REG8x16|MUX8x16:MUX1|MUX4x4:G10
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -479,7 +878,7 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G11
+|REG8x16|MUX8x16:MUX1|MUX4x4:G11
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA
@@ -510,7 +909,550 @@ Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MUX8x16|MUX4x4:G12
+|REG8x16|MUX8x16:MUX1|MUX4x4:G12
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2
+I1[0] => MUX4x4:G1.x1[0]
+I1[1] => MUX4x4:G1.x1[1]
+I1[2] => MUX4x4:G1.x1[2]
+I1[3] => MUX4x4:G1.x1[3]
+I1[4] => MUX4x4:G2.x1[0]
+I1[5] => MUX4x4:G2.x1[1]
+I1[6] => MUX4x4:G2.x1[2]
+I1[7] => MUX4x4:G2.x1[3]
+I1[8] => MUX4x4:G3.x1[0]
+I1[9] => MUX4x4:G3.x1[1]
+I1[10] => MUX4x4:G3.x1[2]
+I1[11] => MUX4x4:G3.x1[3]
+I1[12] => MUX4x4:G4.x1[0]
+I1[13] => MUX4x4:G4.x1[1]
+I1[14] => MUX4x4:G4.x1[2]
+I1[15] => MUX4x4:G4.x1[3]
+I2[0] => MUX4x4:G1.x2[0]
+I2[1] => MUX4x4:G1.x2[1]
+I2[2] => MUX4x4:G1.x2[2]
+I2[3] => MUX4x4:G1.x2[3]
+I2[4] => MUX4x4:G2.x2[0]
+I2[5] => MUX4x4:G2.x2[1]
+I2[6] => MUX4x4:G2.x2[2]
+I2[7] => MUX4x4:G2.x2[3]
+I2[8] => MUX4x4:G3.x2[0]
+I2[9] => MUX4x4:G3.x2[1]
+I2[10] => MUX4x4:G3.x2[2]
+I2[11] => MUX4x4:G3.x2[3]
+I2[12] => MUX4x4:G4.x2[0]
+I2[13] => MUX4x4:G4.x2[1]
+I2[14] => MUX4x4:G4.x2[2]
+I2[15] => MUX4x4:G4.x2[3]
+I3[0] => MUX4x4:G1.x3[0]
+I3[1] => MUX4x4:G1.x3[1]
+I3[2] => MUX4x4:G1.x3[2]
+I3[3] => MUX4x4:G1.x3[3]
+I3[4] => MUX4x4:G2.x3[0]
+I3[5] => MUX4x4:G2.x3[1]
+I3[6] => MUX4x4:G2.x3[2]
+I3[7] => MUX4x4:G2.x3[3]
+I3[8] => MUX4x4:G3.x3[0]
+I3[9] => MUX4x4:G3.x3[1]
+I3[10] => MUX4x4:G3.x3[2]
+I3[11] => MUX4x4:G3.x3[3]
+I3[12] => MUX4x4:G4.x3[0]
+I3[13] => MUX4x4:G4.x3[1]
+I3[14] => MUX4x4:G4.x3[2]
+I3[15] => MUX4x4:G4.x3[3]
+I4[0] => MUX4x4:G1.x4[0]
+I4[1] => MUX4x4:G1.x4[1]
+I4[2] => MUX4x4:G1.x4[2]
+I4[3] => MUX4x4:G1.x4[3]
+I4[4] => MUX4x4:G2.x4[0]
+I4[5] => MUX4x4:G2.x4[1]
+I4[6] => MUX4x4:G2.x4[2]
+I4[7] => MUX4x4:G2.x4[3]
+I4[8] => MUX4x4:G3.x4[0]
+I4[9] => MUX4x4:G3.x4[1]
+I4[10] => MUX4x4:G3.x4[2]
+I4[11] => MUX4x4:G3.x4[3]
+I4[12] => MUX4x4:G4.x4[0]
+I4[13] => MUX4x4:G4.x4[1]
+I4[14] => MUX4x4:G4.x4[2]
+I4[15] => MUX4x4:G4.x4[3]
+I5[0] => MUX4x4:G5.x1[0]
+I5[1] => MUX4x4:G5.x1[1]
+I5[2] => MUX4x4:G5.x1[2]
+I5[3] => MUX4x4:G5.x1[3]
+I5[4] => MUX4x4:G6.x1[0]
+I5[5] => MUX4x4:G6.x1[1]
+I5[6] => MUX4x4:G6.x1[2]
+I5[7] => MUX4x4:G6.x1[3]
+I5[8] => MUX4x4:G7.x1[0]
+I5[9] => MUX4x4:G7.x1[1]
+I5[10] => MUX4x4:G7.x1[2]
+I5[11] => MUX4x4:G7.x1[3]
+I5[12] => MUX4x4:G8.x1[0]
+I5[13] => MUX4x4:G8.x1[1]
+I5[14] => MUX4x4:G8.x1[2]
+I5[15] => MUX4x4:G8.x1[3]
+I6[0] => MUX4x4:G5.x2[0]
+I6[1] => MUX4x4:G5.x2[1]
+I6[2] => MUX4x4:G5.x2[2]
+I6[3] => MUX4x4:G5.x2[3]
+I6[4] => MUX4x4:G6.x2[0]
+I6[5] => MUX4x4:G6.x2[1]
+I6[6] => MUX4x4:G6.x2[2]
+I6[7] => MUX4x4:G6.x2[3]
+I6[8] => MUX4x4:G7.x2[0]
+I6[9] => MUX4x4:G7.x2[1]
+I6[10] => MUX4x4:G7.x2[2]
+I6[11] => MUX4x4:G7.x2[3]
+I6[12] => MUX4x4:G8.x2[0]
+I6[13] => MUX4x4:G8.x2[1]
+I6[14] => MUX4x4:G8.x2[2]
+I6[15] => MUX4x4:G8.x2[3]
+I7[0] => MUX4x4:G5.x3[0]
+I7[1] => MUX4x4:G5.x3[1]
+I7[2] => MUX4x4:G5.x3[2]
+I7[3] => MUX4x4:G5.x3[3]
+I7[4] => MUX4x4:G6.x3[0]
+I7[5] => MUX4x4:G6.x3[1]
+I7[6] => MUX4x4:G6.x3[2]
+I7[7] => MUX4x4:G6.x3[3]
+I7[8] => MUX4x4:G7.x3[0]
+I7[9] => MUX4x4:G7.x3[1]
+I7[10] => MUX4x4:G7.x3[2]
+I7[11] => MUX4x4:G7.x3[3]
+I7[12] => MUX4x4:G8.x3[0]
+I7[13] => MUX4x4:G8.x3[1]
+I7[14] => MUX4x4:G8.x3[2]
+I7[15] => MUX4x4:G8.x3[3]
+I8[0] => MUX4x4:G5.x4[0]
+I8[1] => MUX4x4:G5.x4[1]
+I8[2] => MUX4x4:G5.x4[2]
+I8[3] => MUX4x4:G5.x4[3]
+I8[4] => MUX4x4:G6.x4[0]
+I8[5] => MUX4x4:G6.x4[1]
+I8[6] => MUX4x4:G6.x4[2]
+I8[7] => MUX4x4:G6.x4[3]
+I8[8] => MUX4x4:G7.x4[0]
+I8[9] => MUX4x4:G7.x4[1]
+I8[10] => MUX4x4:G7.x4[2]
+I8[11] => MUX4x4:G7.x4[3]
+I8[12] => MUX4x4:G8.x4[0]
+I8[13] => MUX4x4:G8.x4[1]
+I8[14] => MUX4x4:G8.x4[2]
+I8[15] => MUX4x4:G8.x4[3]
+SGNL[0] => MUX4x4:G1.SGN[0]
+SGNL[0] => MUX4x4:G2.SGN[0]
+SGNL[0] => MUX4x4:G3.SGN[0]
+SGNL[0] => MUX4x4:G4.SGN[0]
+SGNL[0] => MUX4x4:G5.SGN[0]
+SGNL[0] => MUX4x4:G6.SGN[0]
+SGNL[0] => MUX4x4:G7.SGN[0]
+SGNL[0] => MUX4x4:G8.SGN[0]
+SGNL[1] => MUX4x4:G1.SGN[1]
+SGNL[1] => MUX4x4:G2.SGN[1]
+SGNL[1] => MUX4x4:G3.SGN[1]
+SGNL[1] => MUX4x4:G4.SGN[1]
+SGNL[1] => MUX4x4:G5.SGN[1]
+SGNL[1] => MUX4x4:G6.SGN[1]
+SGNL[1] => MUX4x4:G7.SGN[1]
+SGNL[1] => MUX4x4:G8.SGN[1]
+SGNL[1] => MUX4x4:G9.SGN[0]
+SGNL[1] => MUX4x4:G10.SGN[0]
+SGNL[1] => MUX4x4:G11.SGN[0]
+SGNL[1] => MUX4x4:G12.SGN[0]
+SGNL[2] => MUX4x4:G9.SGN[1]
+SGNL[2] => MUX4x4:G10.SGN[1]
+SGNL[2] => MUX4x4:G11.SGN[1]
+SGNL[2] => MUX4x4:G12.SGN[1]
+Z[0] <= MUX4x4:G9.Y[0]
+Z[1] <= MUX4x4:G9.Y[1]
+Z[2] <= MUX4x4:G9.Y[2]
+Z[3] <= MUX4x4:G9.Y[3]
+Z[4] <= MUX4x4:G10.Y[0]
+Z[5] <= MUX4x4:G10.Y[1]
+Z[6] <= MUX4x4:G10.Y[2]
+Z[7] <= MUX4x4:G10.Y[3]
+Z[8] <= MUX4x4:G11.Y[0]
+Z[9] <= MUX4x4:G11.Y[1]
+Z[10] <= MUX4x4:G11.Y[2]
+Z[11] <= MUX4x4:G11.Y[3]
+Z[12] <= MUX4x4:G12.Y[0]
+Z[13] <= MUX4x4:G12.Y[1]
+Z[14] <= MUX4x4:G12.Y[2]
+Z[15] <= MUX4x4:G12.Y[3]
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G1
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G2
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G3
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G4
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G5
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G6
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G7
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G8
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G9
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G10
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G11
+x1[0] => Y[0].DATAA
+x1[1] => Y[1].DATAA
+x1[2] => Y[2].DATAA
+x1[3] => Y[3].DATAA
+x2[0] => Y[0].DATAB
+x2[1] => Y[1].DATAB
+x2[2] => Y[2].DATAB
+x2[3] => Y[3].DATAB
+x3[0] => Y[0].DATAB
+x3[1] => Y[1].DATAB
+x3[2] => Y[2].DATAB
+x3[3] => Y[3].DATAB
+x4[0] => Y[0].DATAB
+x4[1] => Y[1].DATAB
+x4[2] => Y[2].DATAB
+x4[3] => Y[3].DATAB
+SGN[0] => Equal0.IN1
+SGN[0] => Equal1.IN0
+SGN[0] => Equal2.IN1
+SGN[0] => Equal3.IN1
+SGN[1] => Equal0.IN0
+SGN[1] => Equal1.IN1
+SGN[1] => Equal2.IN0
+SGN[1] => Equal3.IN0
+Y[0] <= Y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|REG8x16|MUX8x16:MUX2|MUX4x4:G12
 x1[0] => Y[0].DATAA
 x1[1] => Y[1].DATAA
 x1[2] => Y[2].DATAA

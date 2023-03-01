@@ -1,0 +1,18 @@
+--Lisa Jacklin
+--EE 443 Lab 5
+-- 2/28/2023
+--PINV4
+-----------------------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_VECTOR_1164.ALL;
+
+ENTITY PINV4 IS 
+	PORT
+	
+END PINV4;
+
+ARCHITECTURE PINV4_BEHAVIORAL OF PINV4 IS
+	BEGIN
+	
+END PINV4_BEHAVIORAL;

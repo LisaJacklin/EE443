@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Feb 21 17:45:18 2023
+Analysis & Synthesis Status : Successful - Tue Feb 28 17:08:28 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : Lab4
-Top-level Entity Name : MUX8x16
+Top-level Entity Name : REG8x16
 Family : Cyclone IV E
-Total logic elements : 48
-    Total combinational functions : 48
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 147
+Total logic elements : 16
+    Total combinational functions : 12
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 59
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

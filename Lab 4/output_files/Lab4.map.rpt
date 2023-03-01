@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Tue Feb 21 17:45:18 2023
+Tue Feb 28 17:08:28 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -13,15 +13,18 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "MUX4x4:G12"
- 11. Port Connectivity Checks: "MUX4x4:G11"
- 12. Port Connectivity Checks: "MUX4x4:G10"
- 13. Port Connectivity Checks: "MUX4x4:G9"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "MUX8x16:MUX2"
+ 12. Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G12"
+ 13. Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G11"
+ 14. Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G10"
+ 15. Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G9"
+ 16. Port Connectivity Checks: "MUX8x16:MUX1"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -47,16 +50,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 21 17:45:18 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 28 17:08:28 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab4                                            ;
-; Top-level Entity Name              ; MUX8x16                                         ;
+; Top-level Entity Name              ; REG8x16                                         ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 48                                              ;
-;     Total combinational functions  ; 48                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 147                                             ;
+; Total logic elements               ; 16                                              ;
+;     Total combinational functions  ; 12                                              ;
+;     Dedicated logic registers      ; 8                                               ;
+; Total registers                    ; 8                                               ;
+; Total pins                         ; 59                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -70,7 +73,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; MUX8x16            ; Lab4               ;
+; Top-level entity name                                            ; REG8x16            ; Lab4               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -159,67 +162,138 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
-; Mux4x4.vhd                       ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd  ;         ;
-; MUX8x16.vhd                      ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; ../Lab 0/Lab0_DCD3x8/DCD3x8.vhd  ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd ;         ;
+; ../Lab 0/Lab0_REG8/REG8.vhd      ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/REG8.vhd     ;         ;
+; Mux4x4.vhd                       ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd             ;         ;
+; MUX8x16.vhd                      ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd            ;         ;
+; REG8x16.vhd                      ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd            ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 48            ;
-;                                             ;               ;
-; Total combinational functions               ; 48            ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 32            ;
-;     -- 3 input functions                    ; 0             ;
-;     -- <=2 input functions                  ; 16            ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 48            ;
-;     -- arithmetic mode                      ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 0             ;
-;     -- Dedicated logic registers            ; 0             ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 147           ;
-;                                             ;               ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; SGNL[1]~input ;
-; Maximum fan-out                             ; 24            ;
-; Total fan-out                               ; 323           ;
-; Average fan-out                             ; 0.94          ;
-+---------------------------------------------+---------------+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 16       ;
+;                                             ;          ;
+; Total combinational functions               ; 12       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 0        ;
+;     -- 3 input functions                    ; 3        ;
+;     -- <=2 input functions                  ; 9        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 12       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 8        ;
+;     -- Dedicated logic registers            ; 8        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 59       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; EN~input ;
+; Maximum fan-out                             ; 8        ;
+; Total fan-out                               ; 118      ;
+; Average fan-out                             ; 0.86     ;
++---------------------------------------------+----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |MUX8x16                   ; 48 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 147  ; 0            ; |MUX8x16            ; MUX8x16     ; work         ;
-;    |MUX4x4:G10|            ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MUX8x16|MUX4x4:G10 ; MUX4x4      ; work         ;
-;    |MUX4x4:G11|            ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MUX8x16|MUX4x4:G11 ; MUX4x4      ; work         ;
-;    |MUX4x4:G12|            ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MUX8x16|MUX4x4:G12 ; MUX4x4      ; work         ;
-;    |MUX4x4:G9|             ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MUX8x16|MUX4x4:G9  ; MUX4x4      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
+; |REG8x16                   ; 12 (0)              ; 8 (4)                     ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |REG8x16                        ; REG8x16     ; work         ;
+;    |DCD3x8:DECO|           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8x16|DCD3x8:DECO            ; DCD3x8      ; work         ;
+;    |MUX8x16:MUX1|          ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8x16|MUX8x16:MUX1           ; MUX8x16     ; work         ;
+;       |MUX4x4:G9|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8x16|MUX8x16:MUX1|MUX4x4:G9 ; MUX4x4      ; work         ;
+;    |MUX8x16:MUX2|          ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8x16|MUX8x16:MUX2           ; MUX8x16     ; work         ;
+;       |MUX4x4:G9|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8x16|MUX8x16:MUX2|MUX4x4:G9 ; MUX4x4      ; work         ;
+;    |REG8:REGI1|            ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REG8x16|REG8:REGI1             ; REG8        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; DIN[4]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; DIN[5]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; DIN[6]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; DIN[7]~reg0                            ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI8|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI7|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI6|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI5|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI4|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI3|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI2|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI1|Q[4..7]                     ; Stuck at GND due to stuck port data_in ;
+; REG8:REGI2|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI3|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI4|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI5|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI6|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI7|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI8|Q[0]                        ; Merged with REG8:REGI1|Q[0]            ;
+; REG8:REGI2|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI3|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI4|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI5|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI6|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI7|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI8|Q[1]                        ; Merged with REG8:REGI1|Q[1]            ;
+; REG8:REGI2|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI3|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI4|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI5|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI6|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI7|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI8|Q[2]                        ; Merged with REG8:REGI1|Q[2]            ;
+; REG8:REGI2|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; REG8:REGI3|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; REG8:REGI4|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; REG8:REGI5|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; REG8:REGI6|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; REG8:REGI7|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; REG8:REGI8|Q[3]                        ; Merged with REG8:REGI1|Q[3]            ;
+; Total Number of Removed Registers = 64 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                      ;
++---------------+---------------------------+--------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                               ;
++---------------+---------------------------+--------------------------------------------------------------------------------------+
+; DIN[4]~reg0   ; Stuck at GND              ; REG8:REGI8|Q[4], REG8:REGI7|Q[4], REG8:REGI6|Q[4], REG8:REGI5|Q[4], REG8:REGI4|Q[4], ;
+;               ; due to stuck port data_in ; REG8:REGI3|Q[4], REG8:REGI2|Q[4], REG8:REGI1|Q[4]                                    ;
+; DIN[5]~reg0   ; Stuck at GND              ; REG8:REGI8|Q[5], REG8:REGI7|Q[5], REG8:REGI6|Q[5], REG8:REGI5|Q[5], REG8:REGI4|Q[5], ;
+;               ; due to stuck port data_in ; REG8:REGI3|Q[5], REG8:REGI2|Q[5], REG8:REGI1|Q[5]                                    ;
+; DIN[6]~reg0   ; Stuck at GND              ; REG8:REGI8|Q[6], REG8:REGI7|Q[6], REG8:REGI6|Q[6], REG8:REGI5|Q[6], REG8:REGI4|Q[6], ;
+;               ; due to stuck port data_in ; REG8:REGI3|Q[6], REG8:REGI2|Q[6], REG8:REGI1|Q[6]                                    ;
+; DIN[7]~reg0   ; Stuck at GND              ; REG8:REGI8|Q[7], REG8:REGI7|Q[7], REG8:REGI6|Q[7], REG8:REGI5|Q[7], REG8:REGI4|Q[7], ;
+;               ; due to stuck port data_in ; REG8:REGI3|Q[7], REG8:REGI2|Q[7], REG8:REGI1|Q[7]                                    ;
++---------------+---------------------------+--------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -227,64 +301,86 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |MUX8x16|MUX4x4:G9|Y[0]    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MUX8x16|MUX4x4:G1|Y[0]    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++---------------------------------------------+
+; Port Connectivity Checks: "MUX8x16:MUX2"    ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; i1[15..8] ; Input ; Info     ; Stuck at GND ;
+; i2[15..8] ; Input ; Info     ; Stuck at GND ;
+; i3[15..8] ; Input ; Info     ; Stuck at GND ;
+; i4[15..8] ; Input ; Info     ; Stuck at GND ;
+; i5[15..8] ; Input ; Info     ; Stuck at GND ;
+; i6[15..8] ; Input ; Info     ; Stuck at GND ;
+; i7[15..8] ; Input ; Info     ; Stuck at GND ;
+; i8[15..8] ; Input ; Info     ; Stuck at GND ;
++-----------+-------+----------+--------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "MUX4x4:G12" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; x3   ; Input ; Info     ; Stuck at GND ;
-; x4   ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++-----------------------------------------------------+
+; Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G12" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; x3   ; Input ; Info     ; Stuck at GND              ;
+; x4   ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "MUX4x4:G11" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; x3   ; Input ; Info     ; Stuck at GND ;
-; x4   ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++-----------------------------------------------------+
+; Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G11" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; x3   ; Input ; Info     ; Stuck at GND              ;
+; x4   ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "MUX4x4:G10" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; x3   ; Input ; Info     ; Stuck at GND ;
-; x4   ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++-----------------------------------------------------+
+; Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G10" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; x3   ; Input ; Info     ; Stuck at GND              ;
+; x4   ; Input ; Info     ; Stuck at GND              ;
++------+-------+----------+---------------------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "MUX4x4:G9"  ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; x3   ; Input ; Info     ; Stuck at GND ;
-; x4   ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
++----------------------------------------------------+
+; Port Connectivity Checks: "MUX8x16:MUX1|MUX4x4:G9" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; x3   ; Input ; Info     ; Stuck at GND             ;
+; x4   ; Input ; Info     ; Stuck at GND             ;
++------+-------+----------+--------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "MUX8x16:MUX1"    ;
++-----------+-------+----------+--------------+
+; Port      ; Type  ; Severity ; Details      ;
++-----------+-------+----------+--------------+
+; i1[15..8] ; Input ; Info     ; Stuck at GND ;
+; i2[15..8] ; Input ; Info     ; Stuck at GND ;
+; i3[15..8] ; Input ; Info     ; Stuck at GND ;
+; i4[15..8] ; Input ; Info     ; Stuck at GND ;
+; i5[15..8] ; Input ; Info     ; Stuck at GND ;
+; i6[15..8] ; Input ; Info     ; Stuck at GND ;
+; i7[15..8] ; Input ; Info     ; Stuck at GND ;
+; i8[15..8] ; Input ; Info     ; Stuck at GND ;
++-----------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -292,14 +388,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 147                         ;
-; cycloneiii_lcell_comb ; 48                          ;
-;     normal            ; 48                          ;
-;         2 data inputs ; 16                          ;
-;         4 data inputs ; 32                          ;
+; boundary_port         ; 59                          ;
+; cycloneiii_ff         ; 8                           ;
+;     ENA               ; 4                           ;
+;     plain             ; 4                           ;
+; cycloneiii_lcell_comb ; 13                          ;
+;     normal            ; 13                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 3                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.70                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.75                        ;
 +-----------------------+-----------------------------+
 
 
@@ -318,7 +418,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Feb 21 17:45:08 2023
+    Info: Processing started: Tue Feb 28 17:08:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -338,10 +438,31 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux8x16
     Info (12022): Found design unit 1: MUX8x16-MUX8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 16
     Info (12023): Found entity 1: MUX8x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg8x16.vhd
-    Info (12022): Found design unit 1: REG8x16-REG8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 16
+    Info (12022): Found design unit 1: REG8x16-REG8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 17
     Info (12023): Found entity 1: REG8x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 10
-Info (12127): Elaborating entity "MUX8x16" for the top level hierarchy
-Info (12128): Elaborating entity "MUX4x4" for hierarchy "MUX4x4:G1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 29
+Info (12127): Elaborating entity "REG8x16" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "R1[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R2[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R3[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R4[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R5[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R6[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R7[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10873): Using initial value X (don't care) for net "R8[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 38
+Warning (10034): Output port "DIN[15..8]" at REG8x16.vhd(12) has no driver File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+Info (12128): Elaborating entity "REG8" for hierarchy "REG8:REGI1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at REG8.vhd(25): signal "WE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/REG8.vhd Line: 25
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "DCD3x8:DECO" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 55
+Info (10041): Inferred latch for "Q[0]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[1]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[2]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[3]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[4]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[5]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[6]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[7]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (12128): Elaborating entity "MUX8x16" for hierarchy "MUX8x16:MUX1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 66
+Info (12128): Elaborating entity "MUX4x4" for hierarchy "MUX8x16:MUX1|MUX4x4:G1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 29
 Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(23): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 23
 Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(24): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(25): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 25
@@ -351,129 +472,82 @@ Info (10041): Inferred latch for "Y[0]" at Mux4x4.vhd(20) File: D:/Users/lmjackl
 Info (10041): Inferred latch for "Y[1]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
 Info (10041): Inferred latch for "Y[2]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
 Info (10041): Inferred latch for "Y[3]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G10|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G10|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G10|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G11|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G11|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G11|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G11|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G12|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G12|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G12|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G12|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G2|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G6|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G2|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G6|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G2|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G6|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G3|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G7|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G3|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G7|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G3|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G7|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G3|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G7|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G4|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G8|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G4|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G8|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G4|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G8|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G4|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "MUX4x4:G8|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX1|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "MUX8x16:MUX2|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 20
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DIN[4]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 60
+    Warning (13410): Pin "DIN[5]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 60
+    Warning (13410): Pin "DIN[6]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 60
+    Warning (13410): Pin "DIN[7]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 60
+    Warning (13410): Pin "DIN[8]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[9]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[10]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[11]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[12]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[13]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[14]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DIN[15]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 12
+    Warning (13410): Pin "DOUT1[4]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[5]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[6]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[7]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[8]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[9]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[10]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[11]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[12]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[13]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[14]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT1[15]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[4]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[5]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[6]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[7]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[8]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[9]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[10]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[11]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[12]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[13]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[14]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
+    Warning (13410): Pin "DOUT2[15]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 64 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "I3[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I3[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I4[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I5[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "I6[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/MUX8x16.vhd Line: 11
-Info (21057): Implemented 195 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 131 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 48 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 119 warnings
-    Info: Peak virtual memory: 4792 megabytes
-    Info: Processing ended: Tue Feb 21 17:45:18 2023
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADD_R1[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "ADD_R2[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "ADD_R1[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "ADD_R2[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/REG8x16.vhd Line: 11
+Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 48 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Tue Feb 28 17:08:28 2023
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 

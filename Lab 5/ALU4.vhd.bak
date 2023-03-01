@@ -1,0 +1,19 @@
+--Lisa Jacklin
+-- EE 443 Lab 5
+-- 2/28/2023
+--ALU4 CODE
+------------------------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY ALU4 IS
+	PORT
+	
+	END ALU4;
+	
+ARCHITECTURE ALU4_BEHAVIOR OF ALU4 IS
+
+	BEGIN
+	
+	END ALU4_BEHAVIOR;

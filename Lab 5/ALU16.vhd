@@ -1,0 +1,19 @@
+--Lisa Jacklin
+-- EE 443 Lab 5
+-- 2/28/2023
+--ALU16 CODE
+------------------------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY ALU16 IS
+	PORT
+	
+	END ALU16;
+	
+ARCHITECTURE ALU16_BEHAVIOR OF ALU16 IS
+
+	BEGIN
+	
+	END ALU16_BEHAVIOR;
