@@ -2,44 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "INVT[0]",
-					"strict" : false
-				},
-				{
-					"name" : "INVT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "INVT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "INVT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "INP[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SGNL",
-					"strict" : false
-				},
-				{
-					"name" : "INP[1]",
-					"strict" : false
-				},
-				{
-					"name" : "INP[2]",
-					"strict" : false
-				},
-				{
-					"name" : "INP[3]",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }

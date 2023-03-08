@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab5
-Tue Feb 28 15:54:41 2023
+Tue Mar 07 17:16:10 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -14,9 +14,13 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "ALU4:ALU3"
+ 10. Port Connectivity Checks: "ALU4:ALU2"
+ 11. Port Connectivity Checks: "ALU4:ALU1"
+ 12. Port Connectivity Checks: "ALU4:ALU0"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +46,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 28 15:54:41 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 07 17:16:10 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab5                                            ;
-; Top-level Entity Name              ; PINV4                                           ;
+; Top-level Entity Name              ; ALU16                                           ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4                                               ;
-;     Total combinational functions  ; 4                                               ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 9                                               ;
+; Total pins                         ; 54                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +69,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; PINV4              ; Lab5               ;
+; Top-level entity name                                            ; ALU16              ; Lab5               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,45 +165,49 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
-; PINV4.vhd                        ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; ALU16.vhd                        ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd  ;         ;
+; ADD4.vhd                         ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ADD4.vhd   ;         ;
+; BWAND4.vhd                       ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/BWAND4.vhd ;         ;
+; BWOR4.vhd                        ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/BWOR4.vhd  ;         ;
+; PINV4.vhd                        ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd  ;         ;
+; ALU4.vhd                         ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd   ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimated Total logic elements              ; 4          ;
-;                                             ;            ;
-; Total combinational functions               ; 4          ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 4          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 4          ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 9          ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; SGNL~input ;
-; Maximum fan-out                             ; 4          ;
-; Total fan-out                               ; 21         ;
-; Average fan-out                             ; 0.95       ;
-+---------------------------------------------+------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 54    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; A[0]  ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 54    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +215,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |PINV4                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |PINV4              ; PINV4       ; work         ;
+; |ALU16                     ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |ALU16              ; ALU16       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -227,18 +235,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU4:ALU3"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU4:ALU2"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU4:ALU1"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU4:ALU0"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 9                           ;
-; cycloneiii_lcell_comb ; 4                           ;
-;     normal            ; 4                           ;
-;         2 data inputs ; 4                           ;
+; boundary_port         ; 54                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,10 +317,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Feb 28 15:54:32 2023
+    Info: Processing started: Tue Mar 07 17:16:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file alu16.vhd
+    Info (12022): Found design unit 1: ALU16-ALU16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 18
+    Info (12023): Found entity 1: ALU16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lmjacklin/documents/github/ee443/lab 4/mux4x4.vhd
     Info (12022): Found design unit 1: MUX4x4-MUX4x4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 16
     Info (12023): Found entity 1: MUX4x4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 4/Mux4x4.vhd Line: 10
@@ -276,19 +339,113 @@ Info (12021): Found 2 design units, including 1 entities, in source file bwor4.v
 Info (12021): Found 2 design units, including 1 entities, in source file pinv4.vhd
     Info (12022): Found design unit 1: PINV4-PINV4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd Line: 17
     Info (12023): Found entity 1: PINV4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd Line: 10
-Info (12127): Elaborating entity "PINV4" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file alu4.vhd
+    Info (12022): Found design unit 1: ALU4-ALU4_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 19
+    Info (12023): Found entity 1: ALU4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 10
+Info (12127): Elaborating entity "ALU16" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(13): used implicit default value for signal "F" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(28): used implicit default value for signal "LESS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(28): used implicit default value for signal "CIN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 28
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
+Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
+Info (12128): Elaborating entity "ALU4" for hierarchy "ALU4:ALU0" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 34
+Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 14
+Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "SET" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 14
+Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 14
+Warning (10492): VHDL Process Statement warning at ALU4.vhd(90): signal "CADD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at ALU4.vhd(90): signal "CADD2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 90
+Info (12128): Elaborating entity "BWOR4" for hierarchy "ALU4:ALU0|BWOR4:OR4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 56
+Info (12128): Elaborating entity "BWAND4" for hierarchy "ALU4:ALU0|BWAND4:AND4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 57
+Info (12128): Elaborating entity "ADD4" for hierarchy "ALU4:ALU0|ADD4:AD" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 58
+Warning (10036): Verilog HDL or VHDL warning at ADD4.vhd(20): object "N4" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ADD4.vhd Line: 20
+Info (12128): Elaborating entity "PINV4" for hierarchy "ALU4:ALU0|PINV4:INVA" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 59
 Warning (10492): VHDL Process Statement warning at PINV4.vhd(24): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at PINV4.vhd(26): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd Line: 26
-Info (286030): Timing-Driven Synthesis is running
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "F[0]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[1]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[2]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[3]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[4]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[5]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[6]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[7]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[8]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[9]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[10]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[11]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[12]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[13]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[14]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "F[15]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
+    Warning (13410): Pin "ZERO" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
+    Warning (13410): Pin "OVERFLOW" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
+    Warning (13410): Pin "COUT" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Tue Feb 28 15:54:41 2023
+Warning (21074): Design contains 35 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "A[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "A[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "B[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+    Warning (15610): No output dependent on input pin "SEL[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 12
+    Warning (15610): No output dependent on input pin "SEL[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 12
+    Warning (15610): No output dependent on input pin "SEL[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 12
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 35 input pins
+    Info (21059): Implemented 19 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Tue Mar 07 17:16:10 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:20
 
