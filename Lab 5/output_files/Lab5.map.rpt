@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab5
-Tue Mar 07 17:16:10 2023
+Tue Mar 21 13:28:28 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 07 17:16:10 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 21 13:28:28 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab5                                            ;
 ; Top-level Entity Name              ; ALU16                                           ;
@@ -203,10 +203,10 @@ refer to the applicable agreement for further details.
 ;                                             ;       ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ;                                             ;       ;
-; Maximum fan-out node                        ; A[0]  ;
+; Maximum fan-out node                        ; B[0]  ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 54    ;
-; Average fan-out                             ; 0.50  ;
+; Total fan-out                               ; 70    ;
+; Average fan-out                             ; 0.65  ;
 +---------------------------------------------+-------+
 
 
@@ -317,7 +317,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Mar 07 17:16:01 2023
+    Info: Processing started: Tue Mar 21 13:28:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -343,7 +343,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file alu4.vh
     Info (12022): Found design unit 1: ALU4-ALU4_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 19
     Info (12023): Found entity 1: ALU4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 10
 Info (12127): Elaborating entity "ALU16" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(13): used implicit default value for signal "F" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
 Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
@@ -369,7 +368,14 @@ Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F0" assig
 Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
 Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
 Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 30
-Info (12128): Elaborating entity "ALU4" for hierarchy "ALU4:ALU0" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 34
+Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(31): used implicit default value for signal "FFINAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at ALU16.vhd(45): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at ALU16.vhd(46): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at ALU16.vhd(47): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at ALU16.vhd(48): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at ALU16.vhd(50): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at ALU16.vhd(51): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 51
+Info (12128): Elaborating entity "ALU4" for hierarchy "ALU4:ALU0" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 35
 Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "SET" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU4.vhd Line: 14
@@ -383,44 +389,12 @@ Info (12128): Elaborating entity "PINV4" for hierarchy "ALU4:ALU0|PINV4:INVA" Fi
 Warning (10492): VHDL Process Statement warning at PINV4.vhd(24): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at PINV4.vhd(26): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/PINV4.vhd Line: 26
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "F[0]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[1]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[2]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[3]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[4]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[5]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[6]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[7]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[8]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[9]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[10]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[11]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[12]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[13]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[14]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
-    Warning (13410): Pin "F[15]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 13
     Warning (13410): Pin "ZERO" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
     Warning (13410): Pin "OVERFLOW" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
     Warning (13410): Pin "COUT" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 14
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 35 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "A[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[3]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[4]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[5]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[6]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[7]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[8]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[9]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[10]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[11]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[12]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[13]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[14]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
-    Warning (15610): No output dependent on input pin "A[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
+Warning (21074): Design contains 19 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "B[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
     Warning (15610): No output dependent on input pin "B[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
     Warning (15610): No output dependent on input pin "B[2]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ALU16.vhd Line: 11
@@ -443,10 +417,10 @@ Warning (21074): Design contains 35 input pin(s) that do not drive logic
 Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 19 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
-    Info: Peak virtual memory: 4791 megabytes
-    Info: Processing ended: Tue Mar 07 17:16:10 2023
-    Info: Elapsed time: 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 4792 megabytes
+    Info: Processing ended: Tue Mar 21 13:28:28 2023
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
 
