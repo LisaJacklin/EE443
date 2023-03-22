@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "INCOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "INCOUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[9]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[12]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[11]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[13]",
+					"strict" : false
+				},
+				{
+					"name" : "INCIN[14]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

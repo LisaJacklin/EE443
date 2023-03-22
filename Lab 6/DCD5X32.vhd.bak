@@ -1,0 +1,17 @@
+--Lisa Jacklin
+-- EE 443 Lab 6
+--DCD5x32.vhd
+----------------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY DCD5x32 IS 
+	PORT ()
+	
+END DCD5X32;
+
+ARCHITECTURE DCD5X32_BEHAVIOR OF DCD5X32 IS
+	BEGIN
+	
+END DCD5X32_BEHAVIOR;
