@@ -1,0 +1,47 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity ALU16 is
+    Port ( A : in  STD_LOGIC_VECTOR (15 downto 0);
+           B : in  STD_LOGIC_VECTOR (15 downto 0);
+           OP : in  STD_LOGIC_VECTOR (1 downto 0);
+           CLK : in  STD_LOGIC;
+           OUT : out  STD_LOGIC_VECTOR (15 downto 0));
+end ALU16;
+
+architecture Behavioral of ALU16 is
+
+    component ALU4 is
+        Port ( A : in  STD_LOGIC_VECTOR (3 downto 0);
+               B : in  STD_LOGIC_VECTOR (3 downto 0);
+               OP : in  STD_LOGIC_VECTOR (1 downto 0);
+               CLK : in  STD_LOGIC;
+               OUT : out  STD_LOGIC_VECTOR (3 downto 0));
+    end component;
+
+    signal A1, A2, B1, B2, S1, S2, C1, C2, NOT_A, NOT_B : STD_LOGIC_VECTOR(3 downto 0);
+    signal ADD_OUT, AND_OUT, OR_OUT, NOT_OUT : STD_LOGIC_VECTOR(3 downto 0);
+
+begin
+
+    U1: ALU4 port map (A => A(3 downto 0), B => B(3 downto 0), OP => OP, CLK => CLK, OUT => S1);
+    U2: ALU4 port map (A => A(7 downto 4), B => B(7 downto 4), OP => OP, CLK => CLK, OUT => S2);
+    U3: ALU4 port map (A => A1, B => B1, OP => "00", CLK => CLK, OUT => ADD_OUT);
+    U4: ALU4 port map (A => A2, B => B2, OP => "11", CLK => CLK, OUT => AND_OUT);
+    U5: ALU4 port map (A => A2, B => B2, OP => "10", CLK => CLK, OUT => OR_OUT);
+    U6: ALU4 port map (A => NOT_A, B => "0000", OP => "10", CLK => CLK, OUT => NOT_OUT);
+
+    A1 <= A(11 downto 8); -- extract upper 4 bits of A
+    A2 <= A(15 downto 12); -- extract lower 4 bits of A
+    B1 <= B(11 downto 8); -- extract upper 4 bits of B
+    B2 <= B(15 downto 12); -- extract lower 4 bits of B
+    NOT_A <= not A(3 downto 0); -- invert A
+    NOT_B <= not B(3 downto 0); -- invert B
+
+    -- Multiplexor to select the correct output based on the OP code
+    with OP select
+        OUT <= ADD_OUT & AND_OUT when "00",
+               OR_OUT & NOT_OUT when "01",
+               (others => '0') when others;
+
+end Behavioral;
