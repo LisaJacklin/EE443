@@ -4,107 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "INCOUT[3]",
+					"name" : "OUT16[0]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[4]",
+					"name" : "OUT16[1]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[5]",
+					"name" : "OUT16[2]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[6]",
+					"name" : "OUT16[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[7]",
+					"name" : "OUT16[8]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[8]",
+					"name" : "OUT16[9]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[9]",
+					"name" : "OUT16[10]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[10]",
+					"name" : "OUT16[11]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[11]",
+					"name" : "IN4[1]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[12]",
+					"name" : "IN4[0]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[13]",
+					"name" : "IN4[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[14]",
-					"strict" : false
-				},
-				{
-					"name" : "INCOUT[15]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[3]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[4]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[5]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[14]",
+					"name" : "IN4[2]",
 					"strict" : false
 				}
 			]

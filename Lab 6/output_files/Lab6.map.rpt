@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Tue Mar 21 17:15:42 2023
+Tue Mar 28 17:12:53 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "ADD16:A1"
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -43,16 +43,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 21 17:15:42 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 28 17:12:53 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab6                                            ;
-; Top-level Entity Name              ; INCTWO                                          ;
+; Top-level Entity Name              ; DCD4X16                                         ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 15                                              ;
-;     Total combinational functions  ; 15                                              ;
+; Total logic elements               ; 8                                               ;
+;     Total combinational functions  ; 8                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 32                                              ;
+; Total pins                         ; 21                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F23C7      ;                    ;
-; Top-level entity name                                            ; INCTWO             ; Lab6               ;
+; Top-level entity name                                            ; DCD4x16            ; Lab6               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,60 +162,57 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
-; ../Lab 5/ADD4.vhd                ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ADD4.vhd   ;         ;
-; INCTWO.vhd                       ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd ;         ;
-; ADD16.vhd                        ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/ADD16.vhd  ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; ../Lab 0/Lab0_DCD3x8/DCD3x8.vhd  ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd ;         ;
+; DCD4x16.vhd                      ; yes             ; User VHDL File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd            ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                         ;
-+---------------------------------------------+-----------------------+
-; Resource                                    ; Usage                 ;
-+---------------------------------------------+-----------------------+
-; Estimated Total logic elements              ; 15                    ;
-;                                             ;                       ;
-; Total combinational functions               ; 15                    ;
-; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 7                     ;
-;     -- 3 input functions                    ; 6                     ;
-;     -- <=2 input functions                  ; 2                     ;
-;                                             ;                       ;
-; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 15                    ;
-;     -- arithmetic mode                      ; 0                     ;
-;                                             ;                       ;
-; Total registers                             ; 0                     ;
-;     -- Dedicated logic registers            ; 0                     ;
-;     -- I/O registers                        ; 0                     ;
-;                                             ;                       ;
-; I/O pins                                    ; 32                    ;
-;                                             ;                       ;
-; Embedded Multiplier 9-bit elements          ; 0                     ;
-;                                             ;                       ;
-; Maximum fan-out node                        ; ADD16:A1|ADD4:A2|C3~0 ;
-; Maximum fan-out                             ; 5                     ;
-; Total fan-out                               ; 95                    ;
-; Average fan-out                             ; 1.20                  ;
-+---------------------------------------------+-----------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 8            ;
+;                                             ;              ;
+; Total combinational functions               ; 8            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 6            ;
+;     -- <=2 input functions                  ; 2            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 8            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 21           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; IN4[1]~input ;
+; Maximum fan-out                             ; 8            ;
+; Total fan-out                               ; 51           ;
+; Average fan-out                             ; 1.02         ;
++---------------------------------------------+--------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
-; |INCTWO                    ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |INCTWO                  ; INCTWO      ; work         ;
-;    |ADD16:A1|              ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INCTWO|ADD16:A1         ; ADD16       ; work         ;
-;       |ADD4:A2|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INCTWO|ADD16:A1|ADD4:A2 ; ADD4        ; work         ;
-;       |ADD4:A3|            ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INCTWO|ADD16:A1|ADD4:A3 ; ADD4        ; work         ;
-;       |ADD4:A4|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |INCTWO|ADD16:A1|ADD4:A4 ; ADD4        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |DCD4X16                   ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |DCD4X16            ; DCD4X16     ; work         ;
+;    |DCD3x8:D1|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DCD4X16|DCD3x8:D1  ; DCD3x8      ; work         ;
+;    |DCD3x8:D2|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DCD4X16|DCD3x8:D2  ; DCD3x8      ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,16 +231,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADD16:A1"                                                                                 ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; inb[15..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; inb[1]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; inb[0]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; caout      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DCD4X16|DCD3x8:D2|Q[1]    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DCD4X16|DCD3x8:D2|Q[2]    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -251,17 +246,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 32                          ;
-; cycloneiii_lcell_comb ; 21                          ;
-;     normal            ; 21                          ;
-;         0 data inputs ; 2                           ;
+; boundary_port         ; 21                          ;
+; cycloneiii_lcell_comb ; 13                          ;
+;     normal            ; 13                          ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 6                           ;
-;         4 data inputs ; 7                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.15                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,10 +274,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Mar 21 17:15:32 2023
+    Info: Processing started: Tue Mar 28 17:12:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/lmjacklin/documents/github/ee443/lab 0/lab0_reg8/reg8.vhd
+    Info (12022): Found design unit 1: REG8-REG8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/REG8.vhd Line: 20
+    Info (12023): Found entity 1: REG8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/REG8.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lmjacklin/documents/github/ee443/lab 0/lab0_dcd3x8/dcd3x8.vhd
     Info (12022): Found design unit 1: DCD3x8-DCD3x8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 16
     Info (12023): Found entity 1: DCD3x8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 10
@@ -302,34 +299,47 @@ Info (12021): Found 2 design units, including 1 entities, in source file add16.v
 Info (12021): Found 2 design units, including 1 entities, in source file dcd5x32.vhd
     Info (12022): Found design unit 1: DCD5X32-DCD5X32_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD5X32.vhd Line: 14
     Info (12023): Found entity 1: DCD5x32 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD5X32.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file ins_mem.vhd
-    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INS_MEM.vhd Line: 15
-    Info (12023): Found entity 1: INS_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INS_MEM.vhd Line: 9
-Info (12127): Elaborating entity "INCTWO" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(21): object "CAO" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 21
-Warning (10541): VHDL Signal Declaration warning at INCTWO.vhd(21): used implicit default value for signal "CIN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 21
-Info (12128): Elaborating entity "ADD16" for hierarchy "ADD16:A1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 25
-Info (12128): Elaborating entity "ADD4" for hierarchy "ADD16:A1|ADD4:A1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/ADD16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ADD4.vhd(20): object "N4" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 5/ADD4.vhd Line: 20
+Info (12021): Found 2 design units, including 1 entities, in source file sgnext6x16.vhd
+    Info (12022): Found design unit 1: SGNEXT6x16-SGN_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/SGNEXT6X16.vhd Line: 16
+    Info (12023): Found entity 1: SGNEXT6x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/SGNEXT6X16.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file dcd4x16.vhd
+    Info (12022): Found design unit 1: DCD4X16-DCD_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 16
+    Info (12023): Found entity 1: DCD4X16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file data_mem.vhd
+    Info (12022): Found design unit 1: DATA_MEM-DATA_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 16
+    Info (12023): Found entity 1: DATA_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 10
+Info (12127): Elaborating entity "DCD4x16" for the top level hierarchy
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "DCD3x8:D1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 27
+Info (10041): Inferred latch for "Q[0]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[1]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[2]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[3]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[4]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[5]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[6]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
+Info (10041): Inferred latch for "Q[7]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_DCD3x8/DCD3x8.vhd Line: 19
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "INCOUT[0]" is stuck at VCC File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 10
-    Warning (13410): Pin "INCOUT[1]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 10
-    Warning (13410): Pin "INCOUT[2]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 10
+    Warning (13410): Pin "OUT16[4]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[5]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[6]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[7]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[12]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[13]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[14]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
+    Warning (13410): Pin "OUT16[15]" is stuck at GND File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "INCIN[1]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 9
-    Warning (15610): No output dependent on input pin "INCIN[15]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 9
-    Warning (15610): No output dependent on input pin "INCIN[0]" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INCTWO.vhd Line: 9
-Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLK" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 11
+Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
     Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 15 logic cells
+    Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Tue Mar 21 17:15:42 2023
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Tue Mar 28 17:12:53 2023
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:20
 
 

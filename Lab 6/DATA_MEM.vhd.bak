@@ -1,0 +1,18 @@
+--Lisa Jacklin
+-- EE 443 LAb 6 
+-- 3/28/2023
+-- Data_mem.vhd
+---------------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY DATA_MEM IS
+	PORT();
+	
+END DATA_MEM;
+
+ARCHITECTURE DATA_BEHAVIOR OF DATA_MEM IS
+	BEGIN
+	
+END DATA_BEHAVIOR;
