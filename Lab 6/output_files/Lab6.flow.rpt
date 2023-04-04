@@ -1,5 +1,5 @@
 Flow report for Lab6
-Mon Apr 03 09:46:55 2023
+Tue Apr 04 13:52:44 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Apr 03 09:46:55 2023          ;
+; Flow Status                        ; Flow Failed - Tue Apr 04 13:52:44 2023          ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab6                                            ;
-; Top-level Entity Name              ; INS_MEM                                         ;
+; Top-level Entity Name              ; DATA_MEM                                        ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F23C7                                   ;
 ; Timing Models                      ; Final                                           ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/03/2023 09:46:44 ;
+; Start date & time ; 04/04/2023 13:52:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab6                ;
 +-------------------+---------------------+
@@ -75,17 +75,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 88623634762105.168054400407024         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88623634762105.168064515009212         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; INS_MEM     ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; INS_MEM     ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; INS_MEM     ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DATA_MEM    ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DATA_MEM    ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DATA_MEM    ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; INS_MEM                                ; Lab6          ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; DATA_MEM                               ; Lab6          ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -94,8 +94,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4779 MB             ; 00:00:27                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4779 MB             ; 00:00:21                           ;
+; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

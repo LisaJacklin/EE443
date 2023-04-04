@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Mon Apr 03 09:46:55 2023
+Analysis & Synthesis Status : Failed - Tue Apr 04 13:52:44 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : Lab6
-Top-level Entity Name : INS_MEM
+Top-level Entity Name : DATA_MEM
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

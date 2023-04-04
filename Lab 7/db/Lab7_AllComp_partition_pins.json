@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PCOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[9]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOLD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOLD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOLD[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab6
-Mon Apr 03 09:46:55 2023
+Tue Apr 04 13:52:44 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -36,10 +36,10 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Apr 03 09:46:55 2023               ;
+; Analysis & Synthesis Status        ; Failed - Tue Apr 04 13:52:44 2023               ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab6                                            ;
-; Top-level Entity Name              ; INS_MEM                                         ;
+; Top-level Entity Name              ; DATA_MEM                                        ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Total logic elements               ; N/A until Partition Merge                       ;
 ;     Total combinational functions  ; N/A until Partition Merge                       ;
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F23C7      ;                    ;
-; Top-level entity name                                            ; INS_MEM            ; Lab6               ;
+; Top-level entity name                                            ; DATA_MEM           ; Lab6               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,13 +161,10 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Apr 03 09:46:44 2023
+    Info: Processing started: Tue Apr 04 13:52:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab6 -c Lab6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file ins_mem.vhd
-    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INS_MEM.vhd Line: 17
-    Info (12023): Found entity 1: INS_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INS_MEM.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file /users/lmjacklin/documents/github/ee443/lab 0/lab0_reg8/reg8.vhd
     Info (12022): Found design unit 1: REG8-REG8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/REG8.vhd Line: 20
     Info (12023): Found entity 1: REG8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 0/Lab0_REG8/REG8.vhd Line: 10
@@ -196,13 +193,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file dcd4x16
     Info (12022): Found design unit 1: DCD4X16-DCD_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 16
     Info (12023): Found entity 1: DCD4X16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DCD4x16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file data_mem.vhd
-    Info (12022): Found design unit 1: DATA_MEM-DATA_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 16
-    Info (12023): Found entity 1: DATA_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 10
-Error (10515): VHDL type mismatch error at INS_MEM.vhd(44): std_logic type does not match string literal File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/INS_MEM.vhd Line: 44
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Info (12022): Found design unit 1: DATA_MEM-DATA_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 15
+    Info (12023): Found entity 1: DATA_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 9
+Info (12127): Elaborating entity "DATA_MEM" for the top level hierarchy
+Error (10324): VHDL Expression error at DATA_MEM.vhd(53): expression ""0000000"" has 7 elements ; expected 4 elements. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 6/DATA_MEM.vhd Line: 53
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
     Error: Peak virtual memory: 4779 megabytes
-    Error: Processing ended: Mon Apr 03 09:46:55 2023
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:27
+    Error: Processing ended: Tue Apr 04 13:52:44 2023
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:21
 
 

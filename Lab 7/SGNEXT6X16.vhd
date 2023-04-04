@@ -1,0 +1,23 @@
+--Lisa Jacklin
+-- EE 443 Lab 6 continued...
+-- 3/28/2023
+--SGNEXT 6x16.vhd
+---------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SGNEXT6x16 IS
+	PORT (SIGNIN :IN STD_LOGIC_VECTOR ( 6 DOWNTO 0);
+			SIGNOUT:OUT STD_LOGIC_VECTOR (15 DOWNTO 0));
+	
+	END SGNEXT6x16;
+	
+ARCHITECTURE SGN_BEHAVIOR OF SGNEXT6x16 IS
+	BEGIN
+	--CONCATINATE THE ADDON OF FORWARDING ZEROS TO THE ORIGINAL 6 INPUT VALS
+	SIGNOUT <= "000000000" & SIGNIN;
+	
+	
+	
+END SGN_BEHAVIOR;

@@ -1,0 +1,228 @@
+$comment
+	File created using the following command:
+		vcd file Lab7_AllComp.msim.vcd -direction
+$end
+$date
+	Tue Apr 04 15:35:58 2023
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module pcjmp_vhd_vec_tst $end
+$var wire 1 ! INS [11] $end
+$var wire 1 " INS [10] $end
+$var wire 1 # INS [9] $end
+$var wire 1 $ INS [8] $end
+$var wire 1 % INS [7] $end
+$var wire 1 & INS [6] $end
+$var wire 1 ' INS [5] $end
+$var wire 1 ( INS [4] $end
+$var wire 1 ) INS [3] $end
+$var wire 1 * INS [2] $end
+$var wire 1 + INS [1] $end
+$var wire 1 , INS [0] $end
+$var wire 1 - PCOLD [2] $end
+$var wire 1 . PCOLD [1] $end
+$var wire 1 / PCOLD [0] $end
+$var wire 1 0 PCOUT [15] $end
+$var wire 1 1 PCOUT [14] $end
+$var wire 1 2 PCOUT [13] $end
+$var wire 1 3 PCOUT [12] $end
+$var wire 1 4 PCOUT [11] $end
+$var wire 1 5 PCOUT [10] $end
+$var wire 1 6 PCOUT [9] $end
+$var wire 1 7 PCOUT [8] $end
+$var wire 1 8 PCOUT [7] $end
+$var wire 1 9 PCOUT [6] $end
+$var wire 1 : PCOUT [5] $end
+$var wire 1 ; PCOUT [4] $end
+$var wire 1 < PCOUT [3] $end
+$var wire 1 = PCOUT [2] $end
+$var wire 1 > PCOUT [1] $end
+$var wire 1 ? PCOUT [0] $end
+
+$scope module i1 $end
+$var wire 1 @ gnd $end
+$var wire 1 A vcc $end
+$var wire 1 B unknown $end
+$var wire 1 C devoe $end
+$var wire 1 D devclrn $end
+$var wire 1 E devpor $end
+$var wire 1 F ww_devoe $end
+$var wire 1 G ww_devclrn $end
+$var wire 1 H ww_devpor $end
+$var wire 1 I ww_PCOLD [2] $end
+$var wire 1 J ww_PCOLD [1] $end
+$var wire 1 K ww_PCOLD [0] $end
+$var wire 1 L ww_INS [11] $end
+$var wire 1 M ww_INS [10] $end
+$var wire 1 N ww_INS [9] $end
+$var wire 1 O ww_INS [8] $end
+$var wire 1 P ww_INS [7] $end
+$var wire 1 Q ww_INS [6] $end
+$var wire 1 R ww_INS [5] $end
+$var wire 1 S ww_INS [4] $end
+$var wire 1 T ww_INS [3] $end
+$var wire 1 U ww_INS [2] $end
+$var wire 1 V ww_INS [1] $end
+$var wire 1 W ww_INS [0] $end
+$var wire 1 X ww_PCOUT [15] $end
+$var wire 1 Y ww_PCOUT [14] $end
+$var wire 1 Z ww_PCOUT [13] $end
+$var wire 1 [ ww_PCOUT [12] $end
+$var wire 1 \ ww_PCOUT [11] $end
+$var wire 1 ] ww_PCOUT [10] $end
+$var wire 1 ^ ww_PCOUT [9] $end
+$var wire 1 _ ww_PCOUT [8] $end
+$var wire 1 ` ww_PCOUT [7] $end
+$var wire 1 a ww_PCOUT [6] $end
+$var wire 1 b ww_PCOUT [5] $end
+$var wire 1 c ww_PCOUT [4] $end
+$var wire 1 d ww_PCOUT [3] $end
+$var wire 1 e ww_PCOUT [2] $end
+$var wire 1 f ww_PCOUT [1] $end
+$var wire 1 g ww_PCOUT [0] $end
+$var wire 1 h \PCOUT[0]~output_o\ $end
+$var wire 1 i \PCOUT[1]~output_o\ $end
+$var wire 1 j \PCOUT[2]~output_o\ $end
+$var wire 1 k \PCOUT[3]~output_o\ $end
+$var wire 1 l \PCOUT[4]~output_o\ $end
+$var wire 1 m \PCOUT[5]~output_o\ $end
+$var wire 1 n \PCOUT[6]~output_o\ $end
+$var wire 1 o \PCOUT[7]~output_o\ $end
+$var wire 1 p \PCOUT[8]~output_o\ $end
+$var wire 1 q \PCOUT[9]~output_o\ $end
+$var wire 1 r \PCOUT[10]~output_o\ $end
+$var wire 1 s \PCOUT[11]~output_o\ $end
+$var wire 1 t \PCOUT[12]~output_o\ $end
+$var wire 1 u \PCOUT[13]~output_o\ $end
+$var wire 1 v \PCOUT[14]~output_o\ $end
+$var wire 1 w \PCOUT[15]~output_o\ $end
+$var wire 1 x \INS[0]~input_o\ $end
+$var wire 1 y \INS[1]~input_o\ $end
+$var wire 1 z \INS[2]~input_o\ $end
+$var wire 1 { \INS[3]~input_o\ $end
+$var wire 1 | \INS[4]~input_o\ $end
+$var wire 1 } \INS[5]~input_o\ $end
+$var wire 1 ~ \INS[6]~input_o\ $end
+$var wire 1 !! \INS[7]~input_o\ $end
+$var wire 1 "! \INS[8]~input_o\ $end
+$var wire 1 #! \INS[9]~input_o\ $end
+$var wire 1 $! \INS[10]~input_o\ $end
+$var wire 1 %! \INS[11]~input_o\ $end
+$var wire 1 &! \PCOLD[0]~input_o\ $end
+$var wire 1 '! \PCOLD[1]~input_o\ $end
+$var wire 1 (! \PCOLD[2]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0@
+1A
+xB
+1C
+1D
+1E
+1F
+1G
+1H
+0h
+1i
+1j
+1k
+1l
+1m
+1n
+1o
+1p
+1q
+1r
+1s
+1t
+1u
+1v
+1w
+1x
+1y
+1z
+1{
+1|
+1}
+1~
+1!!
+1"!
+1#!
+1$!
+1%!
+1&!
+1'!
+1(!
+1!
+1"
+1#
+1$
+1%
+1&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+1.
+1/
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+1:
+1;
+1<
+1=
+1>
+0?
+1I
+1J
+1K
+1L
+1M
+1N
+1O
+1P
+1Q
+1R
+1S
+1T
+1U
+1V
+1W
+1X
+1Y
+1Z
+1[
+1\
+1]
+1^
+1_
+1`
+1a
+1b
+1c
+1d
+1e
+1f
+0g
+$end
+#1000000
