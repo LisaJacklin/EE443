@@ -39,7 +39,7 @@ BEGIN
 	--NOTE THAT ONLY EVEN MEMORY ADDRESSES ARE USED.
 	PROCESS (ADDR)
 		BEGIN
-			IF (ADDR(15 DOWNTO 6) <= '0' THEN 
+			IF (ADDR(15 DOWNTO 6) <= '0') THEN 
 					RE <= "1";
 		   ELSE RE <= "0";
 		   END IF;
@@ -49,13 +49,13 @@ BEGIN
 	D1: DCD5X32 PORT MAP (ADDR(5 DOWNTO 1), IMEM(0 TO 31));
 
 	----ASSIGNING MEMORY-------------------------------------
-	PROCESS(RE, IMEM)
+	PROCESS(IMEM)
 		BEGIN
-			IF RE = '0' THEN
+			IF (RE = '0') THEN
 				DOUT <= (OTHERS => 'Z');
 			END IF;
 			
-			IF RE = '1' THEN
+			IF (RE = '1') THEN
 				IMEM(0) <= "0000000000000000";
 				IMEM(1) <= "0001000000000000";
 				IMEM(2) <= "0010000000000000";
