@@ -50,7 +50,7 @@ ARCHITECTURE DATA_BEHAVIOR OF DATA_MEM IS
 	
 	--NOW, TO WORK ON THE MULTIPLEXER to choose the correct output
 	WITH ADDR4 SELECT
-		INT_BUS <= REGOUT1 WHEN "0000000",
+		INT_BUS <= REGOUT1 WHEN "0000",
 					REGOUT2 WHEN OTHERS;
 	
 	--using the output from the mux, 

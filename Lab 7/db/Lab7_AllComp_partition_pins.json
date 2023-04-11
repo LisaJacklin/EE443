@@ -4,123 +4,107 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "PCOUT[1]",
+					"name" : "INCOUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[2]",
+					"name" : "INCOUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[3]",
+					"name" : "INCOUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[4]",
+					"name" : "INCOUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[5]",
+					"name" : "INCOUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[6]",
+					"name" : "INCOUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[7]",
+					"name" : "INCOUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[8]",
+					"name" : "INCOUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[9]",
+					"name" : "INCOUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[10]",
+					"name" : "INCOUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[11]",
+					"name" : "INCOUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[12]",
+					"name" : "INCOUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[13]",
+					"name" : "INCOUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[14]",
+					"name" : "INCIN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PCOUT[15]",
+					"name" : "INCIN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[0]",
+					"name" : "INCIN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[1]",
+					"name" : "INCIN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[2]",
+					"name" : "INCIN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[3]",
+					"name" : "INCIN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[4]",
+					"name" : "INCIN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[5]",
+					"name" : "INCIN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[6]",
+					"name" : "INCIN[10]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[7]",
+					"name" : "INCIN[12]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[8]",
+					"name" : "INCIN[11]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[9]",
+					"name" : "INCIN[13]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[10]",
-					"strict" : false
-				},
-				{
-					"name" : "INS[11]",
-					"strict" : false
-				},
-				{
-					"name" : "PCOLD[0]",
-					"strict" : false
-				},
-				{
-					"name" : "PCOLD[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PCOLD[2]",
+					"name" : "INCIN[14]",
 					"strict" : false
 				}
 			]
