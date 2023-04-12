@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab7_AllComp
-Mon Apr 10 12:41:44 2023
+Tue Apr 11 14:13:05 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Apr 10 12:41:44 2023               ;
+; Analysis & Synthesis Status        ; Failed - Tue Apr 11 14:13:05 2023               ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab7_AllComp                                    ;
 ; Top-level Entity Name              ; DATA_MEM                                        ;
@@ -161,7 +161,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Apr 10 12:41:36 2023
+    Info: Processing started: Tue Apr 11 14:12:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab7_AllComp -c Lab7_AllComp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -235,13 +235,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file pcjmp.v
     Info (12022): Found design unit 1: PCJMP-PCJMP_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 7/PCJMP.vhd Line: 15
     Info (12023): Found entity 1: PCJMP File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 7/PCJMP.vhd Line: 9
 Info (12127): Elaborating entity "DATA_MEM" for the top level hierarchy
-Error (10344): VHDL expression error at DATA_MEM.vhd(53): expression has 8 elements, but must have 16 elements File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 7/DATA_MEM.vhd Line: 53
-Error (10344): VHDL expression error at DATA_MEM.vhd(54): expression has 8 elements, but must have 16 elements File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 7/DATA_MEM.vhd Line: 54
+Error (10344): VHDL expression error at DATA_MEM.vhd(50): expression has 8 elements, but must have 16 elements File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 7/DATA_MEM.vhd Line: 50
+Error (10344): VHDL expression error at DATA_MEM.vhd(51): expression has 8 elements, but must have 16 elements File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 7/DATA_MEM.vhd Line: 51
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 4783 megabytes
-    Error: Processing ended: Mon Apr 10 12:41:44 2023
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:18
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+    Error: Peak virtual memory: 4782 megabytes
+    Error: Processing ended: Tue Apr 11 14:13:05 2023
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:21
 
 

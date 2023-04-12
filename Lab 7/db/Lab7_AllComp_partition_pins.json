@@ -4,107 +4,75 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "INCOUT[3]",
+					"name" : "Q[0]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[4]",
+					"name" : "Q[1]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[5]",
+					"name" : "Q[2]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[6]",
+					"name" : "Q[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[7]",
+					"name" : "Q[4]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[8]",
+					"name" : "Q[5]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[9]",
+					"name" : "Q[6]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[10]",
+					"name" : "Q[7]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[11]",
+					"name" : "D[0]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[12]",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[13]",
+					"name" : "WE",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[14]",
+					"name" : "D[1]",
 					"strict" : false
 				},
 				{
-					"name" : "INCOUT[15]",
+					"name" : "D[2]",
 					"strict" : false
 				},
 				{
-					"name" : "INCIN[2]",
+					"name" : "D[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INCIN[3]",
+					"name" : "D[4]",
 					"strict" : false
 				},
 				{
-					"name" : "INCIN[4]",
+					"name" : "D[5]",
 					"strict" : false
 				},
 				{
-					"name" : "INCIN[5]",
+					"name" : "D[6]",
 					"strict" : false
 				},
 				{
-					"name" : "INCIN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[7]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[8]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[9]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[12]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[11]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[13]",
-					"strict" : false
-				},
-				{
-					"name" : "INCIN[14]",
+					"name" : "D[7]",
 					"strict" : false
 				}
 			]

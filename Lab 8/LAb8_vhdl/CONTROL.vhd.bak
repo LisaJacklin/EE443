@@ -1,0 +1,16 @@
+--Lisa Jacklin
+-- EE 443 Lab 8
+--CONTROL.vhd
+-------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY CONTROL IS
+	PORT();
+END CONTROL;
+
+ARCHITECTURE CONTROL_BE OF CONTROL IS
+	BEGIN
+	
+	END CONTROL_BE;

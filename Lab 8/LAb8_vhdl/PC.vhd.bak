@@ -1,0 +1,16 @@
+--Lisa Jackliln
+-- EE 443 LAb 8
+--PC.vhdl
+-------------------------------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY PC IS
+	PORT ();
+END PC;
+
+ARCHITECTURE PC_BEHAVIOR OF PC IS
+	BEGIN
+	
+END PC_BEHAVIOR;
