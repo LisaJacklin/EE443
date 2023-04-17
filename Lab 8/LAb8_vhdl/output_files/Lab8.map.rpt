@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab8
-Sun Apr 16 19:31:46 2023
+Sun Apr 16 20:34:54 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -37,10 +37,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Apr 16 19:31:46 2023              ;
+; Analysis & Synthesis Status        ; Failed - Sun Apr 16 20:34:54 2023              ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; Lab8                                           ;
-; Top-level Entity Name              ; INS_MEM                                        ;
+; Top-level Entity Name              ; CONTROL                                        ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Total logic elements               ; N/A until Partition Merge                      ;
 ;     Total combinational functions  ; N/A until Partition Merge                      ;
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; INS_MEM            ; Lab8               ;
+; Top-level entity name                                            ; CONTROL            ; Lab8               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Apr 16 19:31:38 2023
+    Info: Processing started: Sun Apr 16 20:34:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -250,8 +250,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file level3.
 Error (10479): VHDL error at INS_MEM.vhd(72): indexed name type is used but not declared File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 72
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
     Error: Peak virtual memory: 4793 megabytes
-    Error: Processing ended: Sun Apr 16 19:31:46 2023
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:15
+    Error: Processing ended: Sun Apr 16 20:34:55 2023
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:27
 
 

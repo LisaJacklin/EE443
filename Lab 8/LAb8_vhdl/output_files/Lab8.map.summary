@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Sun Apr 16 19:31:46 2023
+Analysis & Synthesis Status : Failed - Sun Apr 16 20:34:54 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : Lab8
-Top-level Entity Name : INS_MEM
+Top-level Entity Name : CONTROL
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge
