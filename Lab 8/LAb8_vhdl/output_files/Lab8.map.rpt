@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab8
-Wed Apr 12 12:55:08 2023
+Sun Apr 16 19:31:46 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Apr 12 12:55:08 2023              ;
+; Analysis & Synthesis Status        ; Failed - Sun Apr 16 19:31:46 2023              ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; Lab8                                           ;
 ; Top-level Entity Name              ; INS_MEM                                        ;
@@ -162,13 +162,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Wed Apr 12 12:54:49 2023
+    Info: Processing started: Sun Apr 16 19:31:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ins_mem.vhd
-    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 17
-    Info (12023): Found entity 1: INS_MEM File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 10
+    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 14
+    Info (12023): Found entity 1: INS_MEM File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file shlone.vhd
     Info (12022): Found design unit 1: SHLONE-SHLONE_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 15
     Info (12023): Found entity 1: SHLONE File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 9
@@ -217,8 +217,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file dcd4x16
 Info (12021): Found 2 design units, including 1 entities, in source file dcd3x8.vhd
     Info (12022): Found design unit 1: DCD3x8-DCD3x8_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 16
     Info (12023): Found entity 1: DCD3x8 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 10
-Error (10500): VHDL syntax error at DATA_MEM.vhd(55) near text "'";  expecting "(", or an identifier, or  unary operator File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 55
-Info (12021): Found 0 design units, including 0 entities, in source file data_mem.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file bwor4.vhd
     Info (12022): Found design unit 1: BWOR4-BWOR4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 16
     Info (12023): Found entity 1: BWOR4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 10
@@ -249,10 +247,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file level2.
     Info (12023): Found entity 1: Level2
 Info (12021): Found 1 design units, including 1 entities, in source file level3.bdf
     Info (12023): Found entity 1: Level3
+Error (10479): VHDL error at INS_MEM.vhd(72): indexed name type is used but not declared File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 72
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
     Error: Peak virtual memory: 4793 megabytes
-    Error: Processing ended: Wed Apr 12 12:55:08 2023
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:42
+    Error: Processing ended: Sun Apr 16 19:31:46 2023
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:15
 
 
