@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab8
-Mon Apr 17 22:28:26 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Tue Apr 18 09:37:35 2023
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
 ---------------------
@@ -10,22 +10,16 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -35,29 +29,28 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                        ;
-+------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 17 22:28:26 2023          ;
-; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
-; Revision Name                      ; Lab8                                           ;
-; Top-level Entity Name              ; CONTROL                                        ;
-; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 0                                              ;
-;     Total combinational functions  ; 0                                              ;
-;     Dedicated logic registers      ; 0                                              ;
-; Total registers                    ; 0                                              ;
-; Total pins                         ; 27                                             ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0                                              ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
-+------------------------------------+------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue Apr 18 09:37:35 2023               ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                      ; Lab8                                            ;
+; Top-level Entity Name              ; DATA_MEM                                        ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -66,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; CONTROL            ; Lab8               ;
+; Top-level entity name                                            ; DATA_MEM           ; Lab8               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,8 +144,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,225 +155,103 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-; CONTROL.vhd                      ; yes             ; User VHDL File  ; C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-;                                             ;            ;
-; Total combinational functions               ; 0          ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 0          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 0          ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 27         ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; ZERO~input ;
-; Maximum fan-out                             ; 3          ;
-; Total fan-out                               ; 30         ;
-; Average fan-out                             ; 0.56       ;
-+---------------------------------------------+------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |CONTROL                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |CONTROL            ; CONTROL     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 27                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Mon Apr 17 22:28:06 2023
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Tue Apr 18 09:37:26 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file data_mem.vhd
-    Info (12022): Found design unit 1: DATA_MEM-DATA_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 15
-    Info (12023): Found entity 1: DATA_MEM File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 9
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Error (10500): VHDL syntax error at DATA_MEM.vhd(99) near text "WHEN";  expecting ";" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 99
+Info (12021): Found 0 design units, including 0 entities, in source file data_mem.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file ins_mem.vhd
-    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 12
-    Info (12023): Found entity 1: INS_MEM File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 5
+    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 12
+    Info (12023): Found entity 1: INS_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file shlone.vhd
-    Info (12022): Found design unit 1: SHLONE-SHLONE_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 15
-    Info (12023): Found entity 1: SHLONE File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 9
+    Info (12022): Found design unit 1: SHLONE-SHLONE_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 15
+    Info (12023): Found entity 1: SHLONE File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file sgnext6x16.vhd
-    Info (12022): Found design unit 1: SGNEXT6x16-SGN_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 16
-    Info (12023): Found entity 1: SGNEXT6x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 10
+    Info (12022): Found design unit 1: SGNEXT6x16-SGN_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 16
+    Info (12023): Found entity 1: SGNEXT6x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg16.vhd
-    Info (12022): Found design unit 1: REG16-REG16_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 17
-    Info (12023): Found entity 1: REG16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 10
+    Info (12022): Found design unit 1: REG16-REG16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 17
+    Info (12023): Found entity 1: REG16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg8x16.vhd
-    Info (12022): Found design unit 1: REG8x16-REG8x16_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 17
-    Info (12023): Found entity 1: REG8x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 10
+    Info (12022): Found design unit 1: REG8x16-REG8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 17
+    Info (12023): Found entity 1: REG8x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg8.vhd
-    Info (12022): Found design unit 1: REG8-REG8_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 20
-    Info (12023): Found entity 1: REG8 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 10
+    Info (12022): Found design unit 1: REG8-REG8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 20
+    Info (12023): Found entity 1: REG8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pinv4.vhd
-    Info (12022): Found design unit 1: PINV4-PINV4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 17
-    Info (12023): Found entity 1: PINV4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 10
+    Info (12022): Found design unit 1: PINV4-PINV4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 17
+    Info (12023): Found entity 1: PINV4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pcjmp.vhd
-    Info (12022): Found design unit 1: PCJMP-PCJMP_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 15
-    Info (12023): Found entity 1: PCJMP File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 9
+    Info (12022): Found design unit 1: PCJMP-PCJMP_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 15
+    Info (12023): Found entity 1: PCJMP File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux8x16.vhd
-    Info (12022): Found design unit 1: MUX8x16-MUX8x16_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 16
-    Info (12023): Found entity 1: MUX8x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 10
+    Info (12022): Found design unit 1: MUX8x16-MUX8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 16
+    Info (12023): Found entity 1: MUX8x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x4.vhd
-    Info (12022): Found design unit 1: MUX4x4-MUX4x4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 16
-    Info (12023): Found entity 1: MUX4x4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 10
+    Info (12022): Found design unit 1: MUX4x4-MUX4x4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 16
+    Info (12023): Found entity 1: MUX4x4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file mux3x16.vhd
-    Info (12022): Found design unit 1: mux3x16-behavior File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 19
-    Info (12023): Found entity 1: mux3x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 9
+    Info (12022): Found design unit 1: mux3x16-behavior File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 19
+    Info (12023): Found entity 1: mux3x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x16.vhd
-    Info (12022): Found design unit 1: MUX2X16-MUX2X16_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 15
-    Info (12023): Found entity 1: MUX2X16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 9
+    Info (12022): Found design unit 1: MUX2X16-MUX2X16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 15
+    Info (12023): Found entity 1: MUX2X16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x3.vhd
-    Info (12022): Found design unit 1: MUX2X3-MUX2X3_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 15
-    Info (12023): Found entity 1: MUX2X3 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 9
+    Info (12022): Found design unit 1: MUX2X3-MUX2X3_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 15
+    Info (12023): Found entity 1: MUX2X3 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file inctwo.vhd
-    Info (12022): Found design unit 1: INCTWO-INCTWO_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 13
-    Info (12023): Found entity 1: INCTWO File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 8
+    Info (12022): Found design unit 1: INCTWO-INCTWO_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 13
+    Info (12023): Found entity 1: INCTWO File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file dcd5x32.vhd
-    Info (12022): Found design unit 1: DCD5X32-DCD5X32_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 14
-    Info (12023): Found entity 1: DCD5x32 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 9
+    Info (12022): Found design unit 1: DCD5X32-DCD5X32_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 14
+    Info (12023): Found entity 1: DCD5x32 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dcd4x16.vhd
-    Info (12022): Found design unit 1: DCD4X16-DCD_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 16
-    Info (12023): Found entity 1: DCD4X16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 9
+    Info (12022): Found design unit 1: DCD4X16-DCD_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 16
+    Info (12023): Found entity 1: DCD4X16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dcd3x8.vhd
-    Info (12022): Found design unit 1: DCD3x8-DCD3x8_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 16
-    Info (12023): Found entity 1: DCD3x8 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 10
+    Info (12022): Found design unit 1: DCD3x8-DCD3x8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 16
+    Info (12023): Found entity 1: DCD3x8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file bwor4.vhd
-    Info (12022): Found design unit 1: BWOR4-BWOR4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 16
-    Info (12023): Found entity 1: BWOR4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 10
+    Info (12022): Found design unit 1: BWOR4-BWOR4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 16
+    Info (12023): Found entity 1: BWOR4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file bwand4.vhd
-    Info (12022): Found design unit 1: BWAND4-BWAND4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 17
-    Info (12023): Found entity 1: BWAND4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 11
+    Info (12022): Found design unit 1: BWAND4-BWAND4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 17
+    Info (12023): Found entity 1: BWAND4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file alu16.vhd
-    Info (12022): Found design unit 1: ALU16-ALU16_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 18
-    Info (12023): Found entity 1: ALU16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 10
+    Info (12022): Found design unit 1: ALU16-ALU16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 18
+    Info (12023): Found entity 1: ALU16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file alu4.vhd
-    Info (12022): Found design unit 1: ALU4-ALU4_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 19
-    Info (12023): Found entity 1: ALU4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 10
+    Info (12022): Found design unit 1: ALU4-ALU4_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 19
+    Info (12023): Found entity 1: ALU4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file add16.vhd
-    Info (12022): Found design unit 1: ADD16-ADD16_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 15
-    Info (12023): Found entity 1: ADD16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 8
+    Info (12022): Found design unit 1: ADD16-ADD16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 15
+    Info (12023): Found entity 1: ADD16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file add4.vhd
-    Info (12022): Found design unit 1: ADD4-ADD4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 17
-    Info (12023): Found entity 1: ADD4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 10
+    Info (12022): Found design unit 1: ADD4-ADD4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 17
+    Info (12023): Found entity 1: ADD4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-PC_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 15
-    Info (12023): Found entity 1: PC File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 9
+    Info (12022): Found design unit 1: PC-PC_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 15
+    Info (12023): Found entity 1: PC File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
-    Info (12022): Found design unit 1: CONTROL-CONTROL_BE File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 17
-    Info (12023): Found entity 1: CONTROL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 9
+    Info (12022): Found design unit 1: CONTROL-CONTROL_BE File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 17
+    Info (12023): Found entity 1: CONTROL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file toplev.bdf
     Info (12023): Found entity 1: topLev
 Info (12021): Found 1 design units, including 1 entities, in source file level2.bdf
     Info (12023): Found entity 1: Level2
 Info (12021): Found 1 design units, including 1 entities, in source file level3.bdf
     Info (12023): Found entity 1: Level3
-Info (12127): Elaborating entity "CONTROL" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at CONTROL.vhd(111): signal "ZERO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 111
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ALUMUXSEL" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 12
-    Warning (13410): Pin "PCSEL1" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 12
-    Warning (13410): Pin "PCSEL2" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 12
-    Warning (13410): Pin "RFMUXSEL" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 13
-    Warning (13410): Pin "MEMW" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 13
-    Warning (13410): Pin "REGWE" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 13
-    Warning (13410): Pin "MEMR" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 13
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 16 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "INSTRUCT[0]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[1]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[2]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[3]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[4]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[5]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[6]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[7]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[8]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[9]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[10]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[11]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[12]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[13]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[14]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-    Warning (15610): No output dependent on input pin "INSTRUCT[15]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 10
-Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 10 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Mon Apr 17 22:28:26 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:42
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4778 megabytes
+    Error: Processing ended: Tue Apr 18 09:37:35 2023
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:20
 
 
