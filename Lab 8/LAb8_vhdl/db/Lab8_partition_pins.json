@@ -2,7 +2,24 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "ALU_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ZERO",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

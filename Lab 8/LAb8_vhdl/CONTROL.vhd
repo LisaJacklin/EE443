@@ -117,7 +117,7 @@ ARCHITECTURE CONTROL_BE OF CONTROL IS
 					MEMW <= '0'; 
 					REGWE<= '0';
 					MEMR <= '0';
-					ALU_SEL <= "000";
+					ALU_SEL <= "111";
 				WHEN OTHERS =>
 				ALUMUXSEL <= '0';
 					PCSEL1 <= '0'; 
