@@ -1,0 +1,328 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga/18.0/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab8 -c Lab8 --vector_source="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform2.vwf" --testbench_file="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Waveform2.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Tue Apr 18 17:20:33 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab8 -c Lab8 --vector_source="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform2.vwf" --testbench_file="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Waveform2.vwf.vht"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+" in vector source file when writing test bench files
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/" Lab8 -c Lab8
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Tue Apr 18 17:20:33 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/" Lab8 -c Lab8
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file Lab8.vho in folder "D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Tue Apr 18 17:20:34 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Lab8.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga/18.0/modelsim_ase/win32aloem//vsim -c -do Lab8.do
+
+Reading C:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do Lab8.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:20:35 on Apr 18,2023
+# vcom -work work Lab8.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Level3
+# -- Compiling architecture structure of Level3
+# End time: 17:20:35 on Apr 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:20:35 on Apr 18,2023
+# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Level3_vhd_vec_tst
+# -- Compiling architecture Level3_arch of Level3_vhd_vec_tst
+# End time: 17:20:35 on Apr 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.DATA_MEM_vhd_vec_tst 
+# Start time: 17:20:35 on Apr 18,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.data_mem_vhd_vec_tst(data_mem_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.data_mem(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# after#35
+
+# End time: 17:20:35 on Apr 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform2.vwf...
+
+Reading D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Lab8.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: ALU_RES[15] - signal not found in VCD.
+
+Warning: ALU_RES[14] - signal not found in VCD.
+
+Warning: ALU_RES[13] - signal not found in VCD.
+
+Warning: ALU_RES[12] - signal not found in VCD.
+
+Warning: ALU_RES[11] - signal not found in VCD.
+
+Warning: ALU_RES[10] - signal not found in VCD.
+
+Warning: ALU_RES[9] - signal not found in VCD.
+
+Warning: ALU_RES[8] - signal not found in VCD.
+
+Warning: ALU_RES[7] - signal not found in VCD.
+
+Warning: ALU_RES[6] - signal not found in VCD.
+
+Warning: ALU_RES[5] - signal not found in VCD.
+
+Warning: ALU_RES[4] - signal not found in VCD.
+
+Warning: ALU_RES[3] - signal not found in VCD.
+
+Warning: ALU_RES[2] - signal not found in VCD.
+
+Warning: ALU_RES[1] - signal not found in VCD.
+
+Warning: ALU_RES[0] - signal not found in VCD.
+
+Warning: ALU_SEL[2] - signal not found in VCD.
+
+Warning: ALU_SEL[1] - signal not found in VCD.
+
+Warning: ALU_SEL[0] - signal not found in VCD.
+
+Warning: ALUMUX_SEL - signal not found in VCD.
+
+Warning: CLK - signal not found in VCD.
+
+Warning: IMM_EXT[15] - signal not found in VCD.
+
+Warning: IMM_EXT[14] - signal not found in VCD.
+
+Warning: IMM_EXT[13] - signal not found in VCD.
+
+Warning: IMM_EXT[12] - signal not found in VCD.
+
+Warning: IMM_EXT[11] - signal not found in VCD.
+
+Warning: IMM_EXT[10] - signal not found in VCD.
+
+Warning: IMM_EXT[9] - signal not found in VCD.
+
+Warning: IMM_EXT[8] - signal not found in VCD.
+
+Warning: IMM_EXT[7] - signal not found in VCD.
+
+Warning: IMM_EXT[6] - signal not found in VCD.
+
+Warning: IMM_EXT[5] - signal not found in VCD.
+
+Warning: IMM_EXT[4] - signal not found in VCD.
+
+Warning: IMM_EXT[3] - signal not found in VCD.
+
+Warning: IMM_EXT[2] - signal not found in VCD.
+
+Warning: IMM_EXT[1] - signal not found in VCD.
+
+Warning: IMM_EXT[0] - signal not found in VCD.
+
+Warning: INS[15] - signal not found in VCD.
+
+Warning: INS[14] - signal not found in VCD.
+
+Warning: INS[13] - signal not found in VCD.
+
+Warning: INS[12] - signal not found in VCD.
+
+Warning: INS[11] - signal not found in VCD.
+
+Warning: INS[10] - signal not found in VCD.
+
+Warning: INS[9] - signal not found in VCD.
+
+Warning: INS[8] - signal not found in VCD.
+
+Warning: INS[7] - signal not found in VCD.
+
+Warning: INS[6] - signal not found in VCD.
+
+Warning: INS[5] - signal not found in VCD.
+
+Warning: INS[4] - signal not found in VCD.
+
+Warning: INS[3] - signal not found in VCD.
+
+Warning: INS[2] - signal not found in VCD.
+
+Warning: INS[1] - signal not found in VCD.
+
+Warning: INS[0] - signal not found in VCD.
+
+Warning: RDDAT[15] - signal not found in VCD.
+
+Warning: RDDAT[14] - signal not found in VCD.
+
+Warning: RDDAT[13] - signal not found in VCD.
+
+Warning: RDDAT[12] - signal not found in VCD.
+
+Warning: RDDAT[11] - signal not found in VCD.
+
+Warning: RDDAT[10] - signal not found in VCD.
+
+Warning: RDDAT[9] - signal not found in VCD.
+
+Warning: RDDAT[8] - signal not found in VCD.
+
+Warning: RDDAT[7] - signal not found in VCD.
+
+Warning: RDDAT[6] - signal not found in VCD.
+
+Warning: RDDAT[5] - signal not found in VCD.
+
+Warning: RDDAT[4] - signal not found in VCD.
+
+Warning: RDDAT[3] - signal not found in VCD.
+
+Warning: RDDAT[2] - signal not found in VCD.
+
+Warning: RDDAT[1] - signal not found in VCD.
+
+Warning: RDDAT[0] - signal not found in VCD.
+
+Warning: REG_WE - signal not found in VCD.
+
+Warning: RFMUX_SEL - signal not found in VCD.
+
+Warning: RTDAT[15] - signal not found in VCD.
+
+Warning: RTDAT[14] - signal not found in VCD.
+
+Warning: RTDAT[13] - signal not found in VCD.
+
+Warning: RTDAT[12] - signal not found in VCD.
+
+Warning: RTDAT[11] - signal not found in VCD.
+
+Warning: RTDAT[10] - signal not found in VCD.
+
+Warning: RTDAT[9] - signal not found in VCD.
+
+Warning: RTDAT[8] - signal not found in VCD.
+
+Warning: RTDAT[7] - signal not found in VCD.
+
+Warning: RTDAT[6] - signal not found in VCD.
+
+Warning: RTDAT[5] - signal not found in VCD.
+
+Warning: RTDAT[4] - signal not found in VCD.
+
+Warning: RTDAT[3] - signal not found in VCD.
+
+Warning: RTDAT[2] - signal not found in VCD.
+
+Warning: RTDAT[1] - signal not found in VCD.
+
+Warning: RTDAT[0] - signal not found in VCD.
+
+Warning: ZERO - signal not found in VCD.
+
+Writing the resulting VWF to D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Lab8_20230418172036.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

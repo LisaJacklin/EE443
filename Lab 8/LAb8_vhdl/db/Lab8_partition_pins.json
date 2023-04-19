@@ -2,7 +2,136 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "RTDAT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_RES[0]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[9]",
+					"strict" : false
+				},
+				{
+					"name" : "INS[11]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "REG_WE",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RDDAT[0]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

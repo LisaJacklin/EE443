@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab8
-Tue Apr 18 15:28:53 2023
+Tue Apr 18 17:15:48 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -13,54 +13,23 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:15:b1"
- 10. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:15:b0"
- 11. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:14:b1"
- 12. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:14:b0"
- 13. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:13:b1"
- 14. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:13:b0"
- 15. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:12:b1"
- 16. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:12:b0"
- 17. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:11:b1"
- 18. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:11:b0"
- 19. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:10:b1"
- 20. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:10:b0"
- 21. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:9:b1"
- 22. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:9:b0"
- 23. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:8:b1"
- 24. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:8:b0"
- 25. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:7:b1"
- 26. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:7:b0"
- 27. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:6:b1"
- 28. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:6:b0"
- 29. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:5:b1"
- 30. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:5:b0"
- 31. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:4:b1"
- 32. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:4:b0"
- 33. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:3:b1"
- 34. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:3:b0"
- 35. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:2:b1"
- 36. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:2:b0"
- 37. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:1:b1"
- 38. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:1:b0"
- 39. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:0:b1"
- 40. Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:0:b0"
- 41. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1"
- 42. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2"
- 43. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12"
- 44. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11"
- 45. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10"
- 46. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9"
- 47. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1"
- 48. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|DCD3x8:DECO"
- 49. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU3"
- 50. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU2"
- 51. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU1"
- 52. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0"
- 53. Post-Synthesis Netlist Statistics for Top Partition
- 54. Elapsed Time Per Partition
- 55. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX2"
+ 12. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12"
+ 13. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11"
+ 14. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10"
+ 15. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9"
+ 16. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1"
+ 17. Port Connectivity Checks: "REG8x16:inst1|DCD3x8:DECO"
+ 18. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU3"
+ 19. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU2"
+ 20. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU1"
+ 21. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU0"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
 
 
 
@@ -86,16 +55,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 18 15:28:53 2023           ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 18 17:15:48 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab8                                            ;
-; Top-level Entity Name              ; topLev                                          ;
+; Top-level Entity Name              ; Level3                                          ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 19                                              ;
+; Total logic elements               ; 24                                              ;
+;     Total combinational functions  ; 16                                              ;
+;     Dedicated logic registers      ; 8                                               ;
+; Total registers                    ; 8                                               ;
+; Total pins                         ; 88                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -109,7 +78,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; topLev             ; Lab8               ;
+; Top-level entity name                                            ; Level3             ; Lab8               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -205,78 +174,133 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; DATA_MEM.vhd                     ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd   ;         ;
-; INS_MEM.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd    ;         ;
-; SHLONE.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd     ;         ;
-; SGNEXT6X16.vhd                   ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd ;         ;
-; REG8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd    ;         ;
-; REG8.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd       ;         ;
-; PINV4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd      ;         ;
-; PCJMP.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd      ;         ;
-; MUX8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd    ;         ;
-; Mux4x4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd     ;         ;
-; MUX2X16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd    ;         ;
-; MUX2X3.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd     ;         ;
-; INCTWO.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd     ;         ;
-; DCD3x8.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd     ;         ;
-; BWOR4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd      ;         ;
-; BWAND4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd     ;         ;
-; ALU16.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd      ;         ;
-; ALU4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd       ;         ;
-; ADD16.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD16.vhd      ;         ;
-; ADD4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd       ;         ;
-; PC.vhd                           ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd         ;         ;
-; CONTROL.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd    ;         ;
-; topLev.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/topLev.bdf     ;         ;
-; Level2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Level2.bdf     ;         ;
-; Level3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Level3.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; REG8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd ;         ;
+; REG8.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd    ;         ;
+; PINV4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd   ;         ;
+; MUX8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd ;         ;
+; Mux4x4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd  ;         ;
+; MUX2X16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd ;         ;
+; MUX2X3.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd  ;         ;
+; DCD3x8.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd  ;         ;
+; BWOR4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd   ;         ;
+; BWAND4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd  ;         ;
+; ALU16.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd   ;         ;
+; ALU4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd    ;         ;
+; ADD4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd    ;         ;
+; Level3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Level3.bdf  ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-;                                             ;                   ;
-; Total combinational functions               ; 0                 ;
-; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 0                 ;
-;     -- 3 input functions                    ; 0                 ;
-;     -- <=2 input functions                  ; 0                 ;
-;                                             ;                   ;
-; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 0                 ;
-;     -- arithmetic mode                      ; 0                 ;
-;                                             ;                   ;
-; Total registers                             ; 0                 ;
-;     -- Dedicated logic registers            ; 0                 ;
-;     -- I/O registers                        ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 19                ;
-;                                             ;                   ;
-; Embedded Multiplier 9-bit elements          ; 0                 ;
-;                                             ;                   ;
-; Maximum fan-out node                        ; MEMOUT[15]~output ;
-; Maximum fan-out                             ; 1                 ;
-; Total fan-out                               ; 19                ;
-; Average fan-out                             ; 0.50              ;
-+---------------------------------------------+-------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 24           ;
+;                                             ;              ;
+; Total combinational functions               ; 16           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 16           ;
+;     -- 3 input functions                    ; 0            ;
+;     -- <=2 input functions                  ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 16           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 8            ;
+;     -- Dedicated logic registers            ; 8            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 88           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; INS[7]~input ;
+; Maximum fan-out                             ; 8            ;
+; Total fan-out                               ; 192          ;
+; Average fan-out                             ; 0.96         ;
++---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |topLev                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |topLev             ; topLev      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-------------+--------------+
+; |Level3                    ; 16 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |Level3                                       ; Level3      ; work         ;
+;    |REG8x16:inst1|         ; 16 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1                         ; REG8x16     ; work         ;
+;       |MUX8x16:MUX1|       ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX1            ; MUX8x16     ; work         ;
+;          |MUX4x4:G10|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10 ; MUX4x4      ; work         ;
+;          |MUX4x4:G9|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9  ; MUX4x4      ; work         ;
+;       |MUX8x16:MUX2|       ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX2            ; MUX8x16     ; work         ;
+;          |MUX4x4:G10|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10 ; MUX4x4      ; work         ;
+;          |MUX4x4:G9|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9  ; MUX4x4      ; work         ;
+;       |REG8:REGI2|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|REG8:REGI2              ; REG8        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++----------------------------------------+-------------------------------------------+
+; Register name                          ; Reason for Removal                        ;
++----------------------------------------+-------------------------------------------+
+; REG8x16:inst1|REG8:REGI3|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
+; REG8x16:inst1|REG8:REGI4|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
+; REG8x16:inst1|REG8:REGI5|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
+; REG8x16:inst1|REG8:REGI6|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
+; REG8x16:inst1|REG8:REGI7|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
+; REG8x16:inst1|REG8:REGI8|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
+; REG8x16:inst1|REG8:REGI3|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
+; REG8x16:inst1|REG8:REGI4|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
+; REG8x16:inst1|REG8:REGI5|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
+; REG8x16:inst1|REG8:REGI6|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
+; REG8x16:inst1|REG8:REGI7|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
+; REG8x16:inst1|REG8:REGI8|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
+; REG8x16:inst1|REG8:REGI3|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
+; REG8x16:inst1|REG8:REGI4|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
+; REG8x16:inst1|REG8:REGI5|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
+; REG8x16:inst1|REG8:REGI6|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
+; REG8x16:inst1|REG8:REGI7|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
+; REG8x16:inst1|REG8:REGI8|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
+; REG8x16:inst1|REG8:REGI3|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
+; REG8x16:inst1|REG8:REGI4|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
+; REG8x16:inst1|REG8:REGI5|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
+; REG8x16:inst1|REG8:REGI6|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
+; REG8x16:inst1|REG8:REGI7|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
+; REG8x16:inst1|REG8:REGI8|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
+; REG8x16:inst1|REG8:REGI3|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
+; REG8x16:inst1|REG8:REGI4|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
+; REG8x16:inst1|REG8:REGI5|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
+; REG8x16:inst1|REG8:REGI6|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
+; REG8x16:inst1|REG8:REGI7|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
+; REG8x16:inst1|REG8:REGI8|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
+; REG8x16:inst1|REG8:REGI3|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
+; REG8x16:inst1|REG8:REGI4|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
+; REG8x16:inst1|REG8:REGI5|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
+; REG8x16:inst1|REG8:REGI6|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
+; REG8x16:inst1|REG8:REGI7|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
+; REG8x16:inst1|REG8:REGI8|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
+; REG8x16:inst1|REG8:REGI3|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
+; REG8x16:inst1|REG8:REGI4|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
+; REG8x16:inst1|REG8:REGI5|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
+; REG8x16:inst1|REG8:REGI6|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
+; REG8x16:inst1|REG8:REGI7|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
+; REG8x16:inst1|REG8:REGI8|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
+; REG8x16:inst1|REG8:REGI3|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
+; REG8x16:inst1|REG8:REGI4|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
+; REG8x16:inst1|REG8:REGI5|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
+; REG8x16:inst1|REG8:REGI6|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
+; REG8x16:inst1|REG8:REGI7|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
+; REG8x16:inst1|REG8:REGI8|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
+; Total Number of Removed Registers = 48 ;                                           ;
++----------------------------------------+-------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -284,390 +308,100 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:15:b1"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Level3|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[3] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Level3|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[3] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX2" ;
++-----------+-------+----------+-------------------------+
+; Port      ; Type  ; Severity ; Details                 ;
++-----------+-------+----------+-------------------------+
+; i1        ; Input ; Info     ; Stuck at GND            ;
+; i2[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i3[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i4[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i5[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i6[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i7[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i8[15..8] ; Input ; Info     ; Stuck at GND            ;
++-----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                            ;
+; x4   ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                            ;
+; x4   ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                            ;
+; x4   ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9" ;
++------+-------+----------+----------------------------------------+
+; Port ; Type  ; Severity ; Details                                ;
++------+-------+----------+----------------------------------------+
+; x3   ; Input ; Info     ; Stuck at GND                           ;
+; x4   ; Input ; Info     ; Stuck at GND                           ;
++------+-------+----------+----------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1" ;
++-----------+-------+----------+-------------------------+
+; Port      ; Type  ; Severity ; Details                 ;
++-----------+-------+----------+-------------------------+
+; i1        ; Input ; Info     ; Stuck at GND            ;
+; i2[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i3[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i4[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i5[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i6[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i7[15..8] ; Input ; Info     ; Stuck at GND            ;
+; i8[15..8] ; Input ; Info     ; Stuck at GND            ;
++-----------+-------+----------+-------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:15:b0"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:14:b1"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:14:b0"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:13:b1"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:13:b0"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:12:b1"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:12:b0"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:11:b1"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:11:b0"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:10:b1"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:10:b0"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:9:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:9:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:8:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:8:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:7:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:7:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:6:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:6:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:5:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:5:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:4:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:4:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:3:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:3:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:2:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:2:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:1:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:1:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:0:b1"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATA_MEM:inst1|REG8:\REGI:0:b0"                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1"                                                       ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; inb[15..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; inb[1]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; inb[0]     ; Input  ; Info     ; Stuck at GND                                                                        ;
-; caout      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2" ;
-+-----------+-------+----------+--------------------------------------+
-; Port      ; Type  ; Severity ; Details                              ;
-+-----------+-------+----------+--------------------------------------+
-; i1        ; Input ; Info     ; Stuck at GND                         ;
-; i2[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i3[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i4[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i5[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i6[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i7[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i8[15..8] ; Input ; Info     ; Stuck at GND                         ;
-+-----------+-------+----------+--------------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12" ;
-+------+-------+----------+------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                              ;
-+------+-------+----------+------------------------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                                         ;
-; x4   ; Input ; Info     ; Stuck at GND                                         ;
-+------+-------+----------+------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11" ;
-+------+-------+----------+------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                              ;
-+------+-------+----------+------------------------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                                         ;
-; x4   ; Input ; Info     ; Stuck at GND                                         ;
-+------+-------+----------+------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10" ;
-+------+-------+----------+------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                              ;
-+------+-------+----------+------------------------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                                         ;
-; x4   ; Input ; Info     ; Stuck at GND                                         ;
-+------+-------+----------+------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9" ;
-+------+-------+----------+-----------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                             ;
-+------+-------+----------+-----------------------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                                        ;
-; x4   ; Input ; Info     ; Stuck at GND                                        ;
-+------+-------+----------+-----------------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1" ;
-+-----------+-------+----------+--------------------------------------+
-; Port      ; Type  ; Severity ; Details                              ;
-+-----------+-------+----------+--------------------------------------+
-; i1        ; Input ; Info     ; Stuck at GND                         ;
-; i2[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i3[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i4[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i5[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i6[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i7[15..8] ; Input ; Info     ; Stuck at GND                         ;
-; i8[15..8] ; Input ; Info     ; Stuck at GND                         ;
-+-----------+-------+----------+--------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|DCD3x8:DECO"                                             ;
+; Port Connectivity Checks: "REG8x16:inst1|DCD3x8:DECO"                                                          ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -676,7 +410,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU3"                                                     ;
+; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU3"                                                                  ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -689,7 +423,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU2"                                                     ;
+; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU2"                                                                  ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -702,7 +436,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU1"                                                     ;
+; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU1"                                                                  ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -715,7 +449,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0"                                                     ;
+; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU0"                                                                  ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                             ;
 +----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -732,14 +466,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
-; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; boundary_port         ; 88                          ;
+; cycloneiii_ff         ; 8                           ;
+;     ENA               ; 8                           ;
+; cycloneiii_lcell_comb ; 17                          ;
+;     normal            ; 17                          ;
 ;         0 data inputs ; 1                           ;
+;         4 data inputs ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.73                        ;
 +-----------------------+-----------------------------+
 
 
@@ -758,7 +494,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Apr 18 15:28:44 2023
+    Info: Processing started: Tue Apr 18 17:15:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -846,9 +582,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file level2.
     Info (12023): Found entity 1: Level2
 Info (12021): Found 1 design units, including 1 entities, in source file level3.bdf
     Info (12023): Found entity 1: Level3
-Info (12127): Elaborating entity "topLev" for the top level hierarchy
-Info (12128): Elaborating entity "Level3" for hierarchy "Level3:inst4"
-Info (12128): Elaborating entity "ALU16" for hierarchy "Level3:inst4|ALU16:inst3"
+Info (12127): Elaborating entity "Level3" for the top level hierarchy
+Info (12128): Elaborating entity "ALU16" for hierarchy "ALU16:inst3"
 Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 14
@@ -881,20 +616,20 @@ Warning (10492): VHDL Process Statement warning at ALU16.vhd(47): signal "FFINAL
 Warning (10492): VHDL Process Statement warning at ALU16.vhd(48): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 48
 Warning (10492): VHDL Process Statement warning at ALU16.vhd(50): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 50
 Warning (10492): VHDL Process Statement warning at ALU16.vhd(51): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 51
-Info (12128): Elaborating entity "ALU4" for hierarchy "Level3:inst4|ALU16:inst3|ALU4:ALU0" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 35
+Info (12128): Elaborating entity "ALU4" for hierarchy "ALU16:inst3|ALU4:ALU0" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 35
 Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "SET" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 14
 Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 14
 Warning (10492): VHDL Process Statement warning at ALU4.vhd(90): signal "CADD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 90
 Warning (10492): VHDL Process Statement warning at ALU4.vhd(90): signal "CADD2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 90
-Info (12128): Elaborating entity "BWOR4" for hierarchy "Level3:inst4|ALU16:inst3|ALU4:ALU0|BWOR4:OR4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 56
-Info (12128): Elaborating entity "BWAND4" for hierarchy "Level3:inst4|ALU16:inst3|ALU4:ALU0|BWAND4:AND4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 57
-Info (12128): Elaborating entity "ADD4" for hierarchy "Level3:inst4|ALU16:inst3|ALU4:ALU0|ADD4:AD" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 58
+Info (12128): Elaborating entity "BWOR4" for hierarchy "ALU16:inst3|ALU4:ALU0|BWOR4:OR4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 56
+Info (12128): Elaborating entity "BWAND4" for hierarchy "ALU16:inst3|ALU4:ALU0|BWAND4:AND4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 57
+Info (12128): Elaborating entity "ADD4" for hierarchy "ALU16:inst3|ALU4:ALU0|ADD4:AD" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 58
 Warning (10036): Verilog HDL or VHDL warning at ADD4.vhd(20): object "N4" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 20
-Info (12128): Elaborating entity "PINV4" for hierarchy "Level3:inst4|ALU16:inst3|ALU4:ALU0|PINV4:INVA" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 59
+Info (12128): Elaborating entity "PINV4" for hierarchy "ALU16:inst3|ALU4:ALU0|PINV4:INVA" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 59
 Warning (10492): VHDL Process Statement warning at PINV4.vhd(24): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at PINV4.vhd(26): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 26
-Info (12128): Elaborating entity "REG8x16" for hierarchy "Level3:inst4|REG8x16:inst1"
+Info (12128): Elaborating entity "REG8x16" for hierarchy "REG8x16:inst1"
 Warning (10036): Verilog HDL or VHDL warning at REG8x16.vhd(39): object "DECOUT" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 39
 Warning (10873): Using initial value X (don't care) for net "R1[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
 Warning (10873): Using initial value X (don't care) for net "R2[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
@@ -904,8 +639,8 @@ Warning (10873): Using initial value X (don't care) for net "R5[15..8]" at REG8x
 Warning (10873): Using initial value X (don't care) for net "R6[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
 Warning (10873): Using initial value X (don't care) for net "R7[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
 Warning (10873): Using initial value X (don't care) for net "R8[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Info (12128): Elaborating entity "REG8" for hierarchy "Level3:inst4|REG8x16:inst1|REG8:REGI2" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 44
-Info (12128): Elaborating entity "DCD3x8" for hierarchy "Level3:inst4|REG8x16:inst1|DCD3x8:DECO" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 57
+Info (12128): Elaborating entity "REG8" for hierarchy "REG8x16:inst1|REG8:REGI2" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 44
+Info (12128): Elaborating entity "DCD3x8" for hierarchy "REG8x16:inst1|DCD3x8:DECO" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 57
 Info (10041): Inferred latch for "Q[0]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
 Info (10041): Inferred latch for "Q[1]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
 Info (10041): Inferred latch for "Q[2]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
@@ -914,8 +649,8 @@ Info (10041): Inferred latch for "Q[4]" at DCD3x8.vhd(19) File: D:/Users/lmjackl
 Info (10041): Inferred latch for "Q[5]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
 Info (10041): Inferred latch for "Q[6]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
 Info (10041): Inferred latch for "Q[7]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (12128): Elaborating entity "MUX8x16" for hierarchy "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 68
-Info (12128): Elaborating entity "MUX4x4" for hierarchy "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 29
+Info (12128): Elaborating entity "MUX8x16" for hierarchy "REG8x16:inst1|MUX8x16:MUX1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 68
+Info (12128): Elaborating entity "MUX4x4" for hierarchy "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 29
 Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(23): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 23
 Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(24): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(25): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 25
@@ -925,12 +660,12 @@ Info (10041): Inferred latch for "Y[0]" at Mux4x4.vhd(20) File: D:/Users/lmjackl
 Info (10041): Inferred latch for "Y[1]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
 Info (10041): Inferred latch for "Y[2]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
 Info (10041): Inferred latch for "Y[3]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Info (12128): Elaborating entity "MUX2X3" for hierarchy "Level3:inst4|MUX2X3:inst"
+Info (12128): Elaborating entity "MUX2X3" for hierarchy "MUX2X3:inst"
 Warning (10631): VHDL Process Statement warning at MUX2X3.vhd(18): inferring latch(es) for signal or variable "OUTPU2X3", which holds its previous value in one or more paths through the process File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
 Info (10041): Inferred latch for "OUTPU2X3[0]" at MUX2X3.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
 Info (10041): Inferred latch for "OUTPU2X3[1]" at MUX2X3.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
 Info (10041): Inferred latch for "OUTPU2X3[2]" at MUX2X3.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
-Info (12128): Elaborating entity "MUX2X16" for hierarchy "Level3:inst4|MUX2X16:inst2"
+Info (12128): Elaborating entity "MUX2X16" for hierarchy "MUX2X16:inst2"
 Warning (10631): VHDL Process Statement warning at MUX2X16.vhd(18): inferring latch(es) for signal or variable "OUTMUX", which holds its previous value in one or more paths through the process File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
 Info (10041): Inferred latch for "OUTMUX[0]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
 Info (10041): Inferred latch for "OUTMUX[1]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
@@ -948,40 +683,123 @@ Info (10041): Inferred latch for "OUTMUX[12]" at MUX2X16.vhd(18) File: D:/Users/
 Info (10041): Inferred latch for "OUTMUX[13]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
 Info (10041): Inferred latch for "OUTMUX[14]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
 Info (10041): Inferred latch for "OUTMUX[15]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:inst"
-Warning (10492): VHDL Process Statement warning at CONTROL.vhd(111): signal "ZERO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 111
-Info (12128): Elaborating entity "Level2" for hierarchy "Level2:inst3"
-Info (12128): Elaborating entity "SGNEXT6x16" for hierarchy "Level2:inst3|SGNEXT6x16:inst2"
-Info (12128): Elaborating entity "INS_MEM" for hierarchy "Level2:inst3|INS_MEM:inst9"
-Info (12128): Elaborating entity "PC" for hierarchy "Level2:inst3|PC:inst"
-Warning (10492): VHDL Process Statement warning at PC.vhd(25): signal "PCNEXT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at PC.vhd(26): signal "EN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 26
-Info (12128): Elaborating entity "PCJMP" for hierarchy "Level2:inst3|PCJMP:inst5"
-Info (12128): Elaborating entity "INCTWO" for hierarchy "Level2:inst3|INCTWO:inst1"
-Warning (10036): Verilog HDL or VHDL warning at INCTWO.vhd(21): object "CAO" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 21
-Warning (10541): VHDL Signal Declaration warning at INCTWO.vhd(21): used implicit default value for signal "CIN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 21
-Info (12128): Elaborating entity "ADD16" for hierarchy "Level2:inst3|INCTWO:inst1|ADD16:A1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 25
-Info (12128): Elaborating entity "ADD16" for hierarchy "Level2:inst3|ADD16:inst4"
-Info (12128): Elaborating entity "SHLONE" for hierarchy "Level2:inst3|SHLONE:inst3"
-Info (12128): Elaborating entity "DATA_MEM" for hierarchy "DATA_MEM:inst1"
-Warning (10036): Verilog HDL or VHDL warning at DATA_MEM.vhd(37): object "REGOUT1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 37
-Warning (10036): Verilog HDL or VHDL warning at DATA_MEM.vhd(37): object "REGOUT2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 37
-Warning (10036): Verilog HDL or VHDL warning at DATA_MEM.vhd(38): object "ADDR4" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 38
-Warning (10541): VHDL Signal Declaration warning at DATA_MEM.vhd(39): used implicit default value for signal "INT_BUS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 39
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Z" is stuck at GND
+    Warning (13410): Pin "ZERO" is stuck at GND
+    Warning (13410): Pin "RTDAT[15]" is stuck at GND
+    Warning (13410): Pin "RTDAT[14]" is stuck at GND
+    Warning (13410): Pin "RTDAT[13]" is stuck at GND
+    Warning (13410): Pin "RTDAT[12]" is stuck at GND
+    Warning (13410): Pin "RTDAT[11]" is stuck at GND
+    Warning (13410): Pin "RTDAT[10]" is stuck at GND
+    Warning (13410): Pin "RTDAT[9]" is stuck at GND
+    Warning (13410): Pin "RTDAT[8]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[15]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[14]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[13]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[12]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[11]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[10]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[9]" is stuck at GND
+    Warning (13410): Pin "ALU_RES[8]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLK"
-    Warning (15610): No output dependent on input pin "RST"
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 17 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Tue Apr 18 15:28:53 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+Warning (21074): Design contains 39 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "INS[15]"
+    Warning (15610): No output dependent on input pin "INS[14]"
+    Warning (15610): No output dependent on input pin "INS[13]"
+    Warning (15610): No output dependent on input pin "INS[12]"
+    Warning (15610): No output dependent on input pin "INS[5]"
+    Warning (15610): No output dependent on input pin "INS[4]"
+    Warning (15610): No output dependent on input pin "INS[3]"
+    Warning (15610): No output dependent on input pin "INS[2]"
+    Warning (15610): No output dependent on input pin "INS[1]"
+    Warning (15610): No output dependent on input pin "INS[0]"
+    Warning (15610): No output dependent on input pin "RFMUX_SEL"
+    Warning (15610): No output dependent on input pin "RDDAT[15]"
+    Warning (15610): No output dependent on input pin "RDDAT[14]"
+    Warning (15610): No output dependent on input pin "RDDAT[13]"
+    Warning (15610): No output dependent on input pin "RDDAT[12]"
+    Warning (15610): No output dependent on input pin "RDDAT[11]"
+    Warning (15610): No output dependent on input pin "RDDAT[10]"
+    Warning (15610): No output dependent on input pin "RDDAT[9]"
+    Warning (15610): No output dependent on input pin "RDDAT[8]"
+    Warning (15610): No output dependent on input pin "ALUMUX_SEL"
+    Warning (15610): No output dependent on input pin "IMM_EXT[15]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[14]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[13]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[12]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[11]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[10]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[9]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[8]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[7]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[6]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[5]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[4]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[3]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[2]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[1]"
+    Warning (15610): No output dependent on input pin "IMM_EXT[0]"
+    Warning (15610): No output dependent on input pin "ALU_SEL[2]"
+    Warning (15610): No output dependent on input pin "ALU_SEL[1]"
+    Warning (15610): No output dependent on input pin "ALU_SEL[0]"
+Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 55 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 24 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 163 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Tue Apr 18 17:15:48 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 
