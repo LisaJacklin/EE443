@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab8
-Tue Apr 18 17:15:48 2023
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Sun Apr 23 11:09:23 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -13,32 +13,19 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX2"
- 12. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12"
- 13. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11"
- 14. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10"
- 15. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9"
- 16. Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1"
- 17. Port Connectivity Checks: "REG8x16:inst1|DCD3x8:DECO"
- 18. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU3"
- 19. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU2"
- 20. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU1"
- 21. Port Connectivity Checks: "ALU16:inst3|ALU4:ALU0"
- 22. Post-Synthesis Netlist Statistics for Top Partition
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -48,28 +35,29 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 18 17:15:48 2023           ;
-; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
-; Revision Name                      ; Lab8                                            ;
-; Top-level Entity Name              ; Level3                                          ;
-; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 24                                              ;
-;     Total combinational functions  ; 16                                              ;
-;     Dedicated logic registers      ; 8                                               ;
-; Total registers                    ; 8                                               ;
-; Total pins                         ; 88                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Apr 23 11:09:23 2023          ;
+; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                      ; Lab8                                           ;
+; Top-level Entity Name              ; INS_MEM                                        ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 14                                             ;
+;     Total combinational functions  ; 14                                             ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 32                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -78,7 +66,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Level3             ; Lab8               ;
+; Top-level entity name                                            ; INS_MEM            ; Lab8               ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -163,8 +151,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -174,133 +162,55 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
-; REG8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd ;         ;
-; REG8.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd    ;         ;
-; PINV4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd   ;         ;
-; MUX8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd ;         ;
-; Mux4x4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd  ;         ;
-; MUX2X16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd ;         ;
-; MUX2X3.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd  ;         ;
-; DCD3x8.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd  ;         ;
-; BWOR4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd   ;         ;
-; BWAND4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd  ;         ;
-; ALU16.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd   ;         ;
-; ALU4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd    ;         ;
-; ADD4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd    ;         ;
-; Level3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Level3.bdf  ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; INS_MEM.vhd                      ; yes             ; User VHDL File  ; C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 24           ;
-;                                             ;              ;
-; Total combinational functions               ; 16           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 16           ;
-;     -- 3 input functions                    ; 0            ;
-;     -- <=2 input functions                  ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 16           ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 8            ;
-;     -- Dedicated logic registers            ; 8            ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 88           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; INS[7]~input ;
-; Maximum fan-out                             ; 8            ;
-; Total fan-out                               ; 192          ;
-; Average fan-out                             ; 0.96         ;
-+---------------------------------------------+--------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 14            ;
+;                                             ;               ;
+; Total combinational functions               ; 14            ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 9             ;
+;     -- 3 input functions                    ; 1             ;
+;     -- <=2 input functions                  ; 4             ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 14            ;
+;     -- arithmetic mode                      ; 0             ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 32            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; ADDR[2]~input ;
+; Maximum fan-out                             ; 12            ;
+; Total fan-out                               ; 94            ;
+; Average fan-out                             ; 1.21          ;
++---------------------------------------------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-------------+--------------+
-; |Level3                    ; 16 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |Level3                                       ; Level3      ; work         ;
-;    |REG8x16:inst1|         ; 16 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1                         ; REG8x16     ; work         ;
-;       |MUX8x16:MUX1|       ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX1            ; MUX8x16     ; work         ;
-;          |MUX4x4:G10|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10 ; MUX4x4      ; work         ;
-;          |MUX4x4:G9|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9  ; MUX4x4      ; work         ;
-;       |MUX8x16:MUX2|       ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX2            ; MUX8x16     ; work         ;
-;          |MUX4x4:G10|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10 ; MUX4x4      ; work         ;
-;          |MUX4x4:G9|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9  ; MUX4x4      ; work         ;
-;       |REG8:REGI2|         ; 0 (0)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Level3|REG8x16:inst1|REG8:REGI2              ; REG8        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |INS_MEM                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |INS_MEM            ; INS_MEM     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                 ;
-+----------------------------------------+-------------------------------------------+
-; Register name                          ; Reason for Removal                        ;
-+----------------------------------------+-------------------------------------------+
-; REG8x16:inst1|REG8:REGI3|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
-; REG8x16:inst1|REG8:REGI4|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
-; REG8x16:inst1|REG8:REGI5|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
-; REG8x16:inst1|REG8:REGI6|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
-; REG8x16:inst1|REG8:REGI7|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
-; REG8x16:inst1|REG8:REGI8|Q[7]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[7] ;
-; REG8x16:inst1|REG8:REGI3|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
-; REG8x16:inst1|REG8:REGI4|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
-; REG8x16:inst1|REG8:REGI5|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
-; REG8x16:inst1|REG8:REGI6|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
-; REG8x16:inst1|REG8:REGI7|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
-; REG8x16:inst1|REG8:REGI8|Q[6]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[6] ;
-; REG8x16:inst1|REG8:REGI3|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
-; REG8x16:inst1|REG8:REGI4|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
-; REG8x16:inst1|REG8:REGI5|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
-; REG8x16:inst1|REG8:REGI6|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
-; REG8x16:inst1|REG8:REGI7|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
-; REG8x16:inst1|REG8:REGI8|Q[5]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[5] ;
-; REG8x16:inst1|REG8:REGI3|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
-; REG8x16:inst1|REG8:REGI4|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
-; REG8x16:inst1|REG8:REGI5|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
-; REG8x16:inst1|REG8:REGI6|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
-; REG8x16:inst1|REG8:REGI7|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
-; REG8x16:inst1|REG8:REGI8|Q[4]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[4] ;
-; REG8x16:inst1|REG8:REGI3|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
-; REG8x16:inst1|REG8:REGI4|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
-; REG8x16:inst1|REG8:REGI5|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
-; REG8x16:inst1|REG8:REGI6|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
-; REG8x16:inst1|REG8:REGI7|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
-; REG8x16:inst1|REG8:REGI8|Q[3]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[3] ;
-; REG8x16:inst1|REG8:REGI3|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
-; REG8x16:inst1|REG8:REGI4|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
-; REG8x16:inst1|REG8:REGI5|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
-; REG8x16:inst1|REG8:REGI6|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
-; REG8x16:inst1|REG8:REGI7|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
-; REG8x16:inst1|REG8:REGI8|Q[2]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[2] ;
-; REG8x16:inst1|REG8:REGI3|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
-; REG8x16:inst1|REG8:REGI4|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
-; REG8x16:inst1|REG8:REGI5|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
-; REG8x16:inst1|REG8:REGI6|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
-; REG8x16:inst1|REG8:REGI7|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
-; REG8x16:inst1|REG8:REGI8|Q[1]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[1] ;
-; REG8x16:inst1|REG8:REGI3|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
-; REG8x16:inst1|REG8:REGI4|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
-; REG8x16:inst1|REG8:REGI5|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
-; REG8x16:inst1|REG8:REGI6|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
-; REG8x16:inst1|REG8:REGI7|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
-; REG8x16:inst1|REG8:REGI8|Q[0]          ; Merged with REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Total Number of Removed Registers = 48 ;                                           ;
-+----------------------------------------+-------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -308,157 +218,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Level3|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[3] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Level3|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[3] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
-
-
-+--------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX2" ;
-+-----------+-------+----------+-------------------------+
-; Port      ; Type  ; Severity ; Details                 ;
-+-----------+-------+----------+-------------------------+
-; i1        ; Input ; Info     ; Stuck at GND            ;
-; i2[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i3[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i4[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i5[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i6[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i7[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i8[15..8] ; Input ; Info     ; Stuck at GND            ;
-+-----------+-------+----------+-------------------------+
-
-
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                            ;
-; x4   ; Input ; Info     ; Stuck at GND                            ;
-+------+-------+----------+-----------------------------------------+
-
-
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                            ;
-; x4   ; Input ; Info     ; Stuck at GND                            ;
-+------+-------+----------+-----------------------------------------+
-
-
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                            ;
-; x4   ; Input ; Info     ; Stuck at GND                            ;
-+------+-------+----------+-----------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9" ;
-+------+-------+----------+----------------------------------------+
-; Port ; Type  ; Severity ; Details                                ;
-+------+-------+----------+----------------------------------------+
-; x3   ; Input ; Info     ; Stuck at GND                           ;
-; x4   ; Input ; Info     ; Stuck at GND                           ;
-+------+-------+----------+----------------------------------------+
-
-
-+--------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|MUX8x16:MUX1" ;
-+-----------+-------+----------+-------------------------+
-; Port      ; Type  ; Severity ; Details                 ;
-+-----------+-------+----------+-------------------------+
-; i1        ; Input ; Info     ; Stuck at GND            ;
-; i2[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i3[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i4[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i5[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i6[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i7[15..8] ; Input ; Info     ; Stuck at GND            ;
-; i8[15..8] ; Input ; Info     ; Stuck at GND            ;
-+-----------+-------+----------+-------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "REG8x16:inst1|DCD3x8:DECO"                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU3"                                                                  ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU2"                                                                  ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU1"                                                                  ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU16:inst3|ALU4:ALU0"                                                                  ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; set      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; zero     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; f        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -466,16 +233,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 88                          ;
-; cycloneiii_ff         ; 8                           ;
-;     ENA               ; 8                           ;
+; boundary_port         ; 32                          ;
 ; cycloneiii_lcell_comb ; 17                          ;
 ;     normal            ; 17                          ;
 ;         0 data inputs ; 1                           ;
-;         4 data inputs ; 16                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 9                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.73                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.05                        ;
 +-----------------------+-----------------------------+
 
 
@@ -484,7 +252,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -493,313 +261,123 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Apr 18 17:15:38 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sun Apr 23 11:09:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file data_mem.vhd
-    Info (12022): Found design unit 1: DATA_MEM-DATA_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 16
-    Info (12023): Found entity 1: DATA_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 10
+    Info (12022): Found design unit 1: DATA_MEM-DATA_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 16
+    Info (12023): Found entity 1: DATA_MEM File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file ins_mem.vhd
-    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 12
-    Info (12023): Found entity 1: INS_MEM File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 5
+    Info (12022): Found design unit 1: INS_MEM-INS_MEM_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 12
+    Info (12023): Found entity 1: INS_MEM File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file shlone.vhd
-    Info (12022): Found design unit 1: SHLONE-SHLONE_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 15
-    Info (12023): Found entity 1: SHLONE File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 9
+    Info (12022): Found design unit 1: SHLONE-SHLONE_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 15
+    Info (12023): Found entity 1: SHLONE File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file sgnext6x16.vhd
-    Info (12022): Found design unit 1: SGNEXT6x16-SGN_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 16
-    Info (12023): Found entity 1: SGNEXT6x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 10
+    Info (12022): Found design unit 1: SGNEXT6x16-SGN_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 16
+    Info (12023): Found entity 1: SGNEXT6x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg16.vhd
-    Info (12022): Found design unit 1: REG16-REG16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 17
-    Info (12023): Found entity 1: REG16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 10
+    Info (12022): Found design unit 1: REG16-REG16_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 17
+    Info (12023): Found entity 1: REG16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg8x16.vhd
-    Info (12022): Found design unit 1: REG8x16-REG8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 17
-    Info (12023): Found entity 1: REG8x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 10
+    Info (12022): Found design unit 1: REG8x16-REG8x16_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 17
+    Info (12023): Found entity 1: REG8x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file reg8.vhd
-    Info (12022): Found design unit 1: REG8-REG8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 20
-    Info (12023): Found entity 1: REG8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 10
+    Info (12022): Found design unit 1: REG8-REG8_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 20
+    Info (12023): Found entity 1: REG8 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/REG8.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pinv4.vhd
-    Info (12022): Found design unit 1: PINV4-PINV4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 17
-    Info (12023): Found entity 1: PINV4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 10
+    Info (12022): Found design unit 1: PINV4-PINV4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 17
+    Info (12023): Found entity 1: PINV4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pcjmp.vhd
-    Info (12022): Found design unit 1: PCJMP-PCJMP_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 15
-    Info (12023): Found entity 1: PCJMP File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 9
+    Info (12022): Found design unit 1: PCJMP-PCJMP_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 15
+    Info (12023): Found entity 1: PCJMP File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux8x16.vhd
-    Info (12022): Found design unit 1: MUX8x16-MUX8x16_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 16
-    Info (12023): Found entity 1: MUX8x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 10
+    Info (12022): Found design unit 1: MUX8x16-MUX8x16_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 16
+    Info (12023): Found entity 1: MUX8x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file mux4x4.vhd
-    Info (12022): Found design unit 1: MUX4x4-MUX4x4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 16
-    Info (12023): Found entity 1: MUX4x4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 10
+    Info (12022): Found design unit 1: MUX4x4-MUX4x4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 16
+    Info (12023): Found entity 1: MUX4x4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file mux3x16.vhd
-    Info (12022): Found design unit 1: mux3x16-behavior File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 19
-    Info (12023): Found entity 1: mux3x16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 9
+    Info (12022): Found design unit 1: mux3x16-behavior File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 19
+    Info (12023): Found entity 1: mux3x16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX3x16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x16.vhd
-    Info (12022): Found design unit 1: MUX2X16-MUX2X16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 15
-    Info (12023): Found entity 1: MUX2X16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 9
+    Info (12022): Found design unit 1: MUX2X16-MUX2X16_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 15
+    Info (12023): Found entity 1: MUX2X16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x3.vhd
-    Info (12022): Found design unit 1: MUX2X3-MUX2X3_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 15
-    Info (12023): Found entity 1: MUX2X3 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 9
+    Info (12022): Found design unit 1: MUX2X3-MUX2X3_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 15
+    Info (12023): Found entity 1: MUX2X3 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file inctwo.vhd
-    Info (12022): Found design unit 1: INCTWO-INCTWO_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 13
-    Info (12023): Found entity 1: INCTWO File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 8
+    Info (12022): Found design unit 1: INCTWO-INCTWO_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 13
+    Info (12023): Found entity 1: INCTWO File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file dcd5x32.vhd
-    Info (12022): Found design unit 1: DCD5X32-DCD5X32_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 14
-    Info (12023): Found entity 1: DCD5x32 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 9
+    Info (12022): Found design unit 1: DCD5X32-DCD5X32_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 14
+    Info (12023): Found entity 1: DCD5x32 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD5X32.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dcd4x16.vhd
-    Info (12022): Found design unit 1: DCD4X16-DCD_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 16
-    Info (12023): Found entity 1: DCD4X16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 9
+    Info (12022): Found design unit 1: DCD4X16-DCD_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 16
+    Info (12023): Found entity 1: DCD4X16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD4x16.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dcd3x8.vhd
-    Info (12022): Found design unit 1: DCD3x8-DCD3x8_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 16
-    Info (12023): Found entity 1: DCD3x8 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 10
+    Info (12022): Found design unit 1: DCD3x8-DCD3x8_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 16
+    Info (12023): Found entity 1: DCD3x8 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file bwor4.vhd
-    Info (12022): Found design unit 1: BWOR4-BWOR4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 16
-    Info (12023): Found entity 1: BWOR4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 10
+    Info (12022): Found design unit 1: BWOR4-BWOR4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 16
+    Info (12023): Found entity 1: BWOR4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file bwand4.vhd
-    Info (12022): Found design unit 1: BWAND4-BWAND4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 17
-    Info (12023): Found entity 1: BWAND4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 11
+    Info (12022): Found design unit 1: BWAND4-BWAND4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 17
+    Info (12023): Found entity 1: BWAND4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file alu16.vhd
-    Info (12022): Found design unit 1: ALU16-ALU16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 18
-    Info (12023): Found entity 1: ALU16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 10
+    Info (12022): Found design unit 1: ALU16-ALU16_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 18
+    Info (12023): Found entity 1: ALU16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file alu4.vhd
-    Info (12022): Found design unit 1: ALU4-ALU4_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 19
-    Info (12023): Found entity 1: ALU4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 10
+    Info (12022): Found design unit 1: ALU4-ALU4_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 19
+    Info (12023): Found entity 1: ALU4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file add16.vhd
-    Info (12022): Found design unit 1: ADD16-ADD16_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 15
-    Info (12023): Found entity 1: ADD16 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 8
+    Info (12022): Found design unit 1: ADD16-ADD16_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 15
+    Info (12023): Found entity 1: ADD16 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD16.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file add4.vhd
-    Info (12022): Found design unit 1: ADD4-ADD4_BEHAVIORAL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 17
-    Info (12023): Found entity 1: ADD4 File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 10
+    Info (12022): Found design unit 1: ADD4-ADD4_BEHAVIORAL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 17
+    Info (12023): Found entity 1: ADD4 File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-PC_BEHAVIOR File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 15
-    Info (12023): Found entity 1: PC File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 9
+    Info (12022): Found design unit 1: PC-PC_BEHAVIOR File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 15
+    Info (12023): Found entity 1: PC File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/PC.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
-    Info (12022): Found design unit 1: CONTROL-CONTROL_BE File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 17
-    Info (12023): Found entity 1: CONTROL File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 9
+    Info (12022): Found design unit 1: CONTROL-CONTROL_BE File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 17
+    Info (12023): Found entity 1: CONTROL File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file toplev.bdf
     Info (12023): Found entity 1: topLev
 Info (12021): Found 1 design units, including 1 entities, in source file level2.bdf
     Info (12023): Found entity 1: Level2
 Info (12021): Found 1 design units, including 1 entities, in source file level3.bdf
     Info (12023): Found entity 1: Level3
-Info (12127): Elaborating entity "Level3" for the top level hierarchy
-Info (12128): Elaborating entity "ALU16" for hierarchy "ALU16:inst3"
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(14): used implicit default value for signal "COUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 14
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "COUT3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(28): object "OV3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(28): used implicit default value for signal "LESS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(28): used implicit default value for signal "CIN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 28
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "ZER3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(29): object "SET3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F0" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 30
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F1" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 30
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F2" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 30
-Warning (10036): Verilog HDL or VHDL warning at ALU16.vhd(30): object "F3" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 30
-Warning (10541): VHDL Signal Declaration warning at ALU16.vhd(31): used implicit default value for signal "FFINAL" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 31
-Warning (10492): VHDL Process Statement warning at ALU16.vhd(45): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at ALU16.vhd(46): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at ALU16.vhd(47): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at ALU16.vhd(48): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 48
-Warning (10492): VHDL Process Statement warning at ALU16.vhd(50): signal "FFINAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at ALU16.vhd(51): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 51
-Info (12128): Elaborating entity "ALU4" for hierarchy "ALU16:inst3|ALU4:ALU0" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 35
-Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "SET" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at ALU4.vhd(14): used implicit default value for signal "ZERO" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 14
-Warning (10492): VHDL Process Statement warning at ALU4.vhd(90): signal "CADD" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 90
-Warning (10492): VHDL Process Statement warning at ALU4.vhd(90): signal "CADD2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 90
-Info (12128): Elaborating entity "BWOR4" for hierarchy "ALU16:inst3|ALU4:ALU0|BWOR4:OR4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 56
-Info (12128): Elaborating entity "BWAND4" for hierarchy "ALU16:inst3|ALU4:ALU0|BWAND4:AND4" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 57
-Info (12128): Elaborating entity "ADD4" for hierarchy "ALU16:inst3|ALU4:ALU0|ADD4:AD" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 58
-Warning (10036): Verilog HDL or VHDL warning at ADD4.vhd(20): object "N4" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd Line: 20
-Info (12128): Elaborating entity "PINV4" for hierarchy "ALU16:inst3|ALU4:ALU0|PINV4:INVA" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at PINV4.vhd(24): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at PINV4.vhd(26): signal "INP" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd Line: 26
-Info (12128): Elaborating entity "REG8x16" for hierarchy "REG8x16:inst1"
-Warning (10036): Verilog HDL or VHDL warning at REG8x16.vhd(39): object "DECOUT" assigned a value but never read File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 39
-Warning (10873): Using initial value X (don't care) for net "R1[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R2[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R3[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R4[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R5[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R6[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R7[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Warning (10873): Using initial value X (don't care) for net "R8[15..8]" at REG8x16.vhd(38) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 38
-Info (12128): Elaborating entity "REG8" for hierarchy "REG8x16:inst1|REG8:REGI2" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 44
-Info (12128): Elaborating entity "DCD3x8" for hierarchy "REG8x16:inst1|DCD3x8:DECO" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 57
-Info (10041): Inferred latch for "Q[0]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[1]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[2]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[3]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[4]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[5]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[6]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (10041): Inferred latch for "Q[7]" at DCD3x8.vhd(19) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd Line: 19
-Info (12128): Elaborating entity "MUX8x16" for hierarchy "REG8x16:inst1|MUX8x16:MUX1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd Line: 68
-Info (12128): Elaborating entity "MUX4x4" for hierarchy "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1" File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(23): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 23
-Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(24): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(25): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at Mux4x4.vhd(26): signal "x1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 26
-Warning (10631): VHDL Process Statement warning at Mux4x4.vhd(20): inferring latch(es) for signal or variable "Y", which holds its previous value in one or more paths through the process File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Info (10041): Inferred latch for "Y[0]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Info (10041): Inferred latch for "Y[1]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Info (10041): Inferred latch for "Y[2]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Info (10041): Inferred latch for "Y[3]" at Mux4x4.vhd(20) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Info (12128): Elaborating entity "MUX2X3" for hierarchy "MUX2X3:inst"
-Warning (10631): VHDL Process Statement warning at MUX2X3.vhd(18): inferring latch(es) for signal or variable "OUTPU2X3", which holds its previous value in one or more paths through the process File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
-Info (10041): Inferred latch for "OUTPU2X3[0]" at MUX2X3.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
-Info (10041): Inferred latch for "OUTPU2X3[1]" at MUX2X3.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
-Info (10041): Inferred latch for "OUTPU2X3[2]" at MUX2X3.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd Line: 18
-Info (12128): Elaborating entity "MUX2X16" for hierarchy "MUX2X16:inst2"
-Warning (10631): VHDL Process Statement warning at MUX2X16.vhd(18): inferring latch(es) for signal or variable "OUTMUX", which holds its previous value in one or more paths through the process File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[0]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[1]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[2]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[3]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[4]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[5]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[6]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[7]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[8]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[9]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[10]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[11]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[12]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[13]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[14]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Info (10041): Inferred latch for "OUTMUX[15]" at MUX2X16.vhd(18) File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd Line: 18
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
+Info (12127): Elaborating entity "INS_MEM" for the top level hierarchy
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "IMEM" is uninferred due to inappropriate RAM size File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 29
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ZERO" is stuck at GND
-    Warning (13410): Pin "RTDAT[15]" is stuck at GND
-    Warning (13410): Pin "RTDAT[14]" is stuck at GND
-    Warning (13410): Pin "RTDAT[13]" is stuck at GND
-    Warning (13410): Pin "RTDAT[12]" is stuck at GND
-    Warning (13410): Pin "RTDAT[11]" is stuck at GND
-    Warning (13410): Pin "RTDAT[10]" is stuck at GND
-    Warning (13410): Pin "RTDAT[9]" is stuck at GND
-    Warning (13410): Pin "RTDAT[8]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[15]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[14]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[13]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[12]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[11]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[10]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[9]" is stuck at GND
-    Warning (13410): Pin "ALU_RES[8]" is stuck at GND
+    Warning (13410): Pin "DOUT[0]" is stuck at GND File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 39 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "INS[15]"
-    Warning (15610): No output dependent on input pin "INS[14]"
-    Warning (15610): No output dependent on input pin "INS[13]"
-    Warning (15610): No output dependent on input pin "INS[12]"
-    Warning (15610): No output dependent on input pin "INS[5]"
-    Warning (15610): No output dependent on input pin "INS[4]"
-    Warning (15610): No output dependent on input pin "INS[3]"
-    Warning (15610): No output dependent on input pin "INS[2]"
-    Warning (15610): No output dependent on input pin "INS[1]"
-    Warning (15610): No output dependent on input pin "INS[0]"
-    Warning (15610): No output dependent on input pin "RFMUX_SEL"
-    Warning (15610): No output dependent on input pin "RDDAT[15]"
-    Warning (15610): No output dependent on input pin "RDDAT[14]"
-    Warning (15610): No output dependent on input pin "RDDAT[13]"
-    Warning (15610): No output dependent on input pin "RDDAT[12]"
-    Warning (15610): No output dependent on input pin "RDDAT[11]"
-    Warning (15610): No output dependent on input pin "RDDAT[10]"
-    Warning (15610): No output dependent on input pin "RDDAT[9]"
-    Warning (15610): No output dependent on input pin "RDDAT[8]"
-    Warning (15610): No output dependent on input pin "ALUMUX_SEL"
-    Warning (15610): No output dependent on input pin "IMM_EXT[15]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[14]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[13]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[12]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[11]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[10]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[9]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[8]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[7]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[6]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[5]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[4]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[3]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[2]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[1]"
-    Warning (15610): No output dependent on input pin "IMM_EXT[0]"
-    Warning (15610): No output dependent on input pin "ALU_SEL[2]"
-    Warning (15610): No output dependent on input pin "ALU_SEL[1]"
-    Warning (15610): No output dependent on input pin "ALU_SEL[0]"
-Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 55 input pins
-    Info (21059): Implemented 33 output pins
-    Info (21061): Implemented 24 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 163 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Tue Apr 18 17:15:48 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ADDR[0]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[1]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[7]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[8]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[9]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[10]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[11]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[12]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[13]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[14]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+    Warning (15610): No output dependent on input pin "ADDR[15]" File: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 7
+Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 14 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Sun Apr 23 11:09:23 2023
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:42
 
 

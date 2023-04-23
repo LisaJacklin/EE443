@@ -4,131 +4,83 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "RTDAT[7]",
+					"name" : "DOUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[6]",
+					"name" : "DOUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[5]",
+					"name" : "DOUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[4]",
+					"name" : "DOUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[3]",
+					"name" : "DOUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[2]",
+					"name" : "DOUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[1]",
+					"name" : "DOUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "RTDAT[0]",
+					"name" : "DOUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[7]",
+					"name" : "DOUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[6]",
+					"name" : "DOUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[5]",
+					"name" : "DOUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[4]",
+					"name" : "DOUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[3]",
+					"name" : "DOUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[2]",
+					"name" : "DOUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[1]",
+					"name" : "DOUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "ALU_RES[0]",
+					"name" : "ADDR[2]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[7]",
+					"name" : "ADDR[3]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[6]",
+					"name" : "ADDR[4]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[8]",
+					"name" : "ADDR[5]",
 					"strict" : false
 				},
 				{
-					"name" : "INS[10]",
-					"strict" : false
-				},
-				{
-					"name" : "INS[9]",
-					"strict" : false
-				},
-				{
-					"name" : "INS[11]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[7]",
-					"strict" : false
-				},
-				{
-					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "REG_WE",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[6]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[5]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[4]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "RDDAT[0]",
+					"name" : "ADDR[6]",
 					"strict" : false
 				}
 			]

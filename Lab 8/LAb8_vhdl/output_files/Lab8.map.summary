@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Apr 18 17:15:48 2023
-Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Sun Apr 23 11:09:23 2023
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : Lab8
-Top-level Entity Name : Level3
+Top-level Entity Name : INS_MEM
 Family : Cyclone IV E
-Total logic elements : 24
-    Total combinational functions : 16
-    Dedicated logic registers : 8
-Total registers : 8
-Total pins : 88
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 32
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
