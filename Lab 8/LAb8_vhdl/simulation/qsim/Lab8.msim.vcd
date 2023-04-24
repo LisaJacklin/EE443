@@ -3,7 +3,7 @@ $comment
 		vcd file Lab8.msim.vcd -direction
 $end
 $date
-	Tue Apr 18 17:20:35 2023
+	Mon Apr 24 10:47:00 2023
 $end
 $version
 	ModelSim Version 10.5b
@@ -12,303 +12,129 @@ $timescale
 	1ps
 $end
 
-$scope module data_mem_vhd_vec_tst $end
-$var wire 1 ! ADDR [15] $end
-$var wire 1 " ADDR [14] $end
-$var wire 1 # ADDR [13] $end
-$var wire 1 $ ADDR [12] $end
-$var wire 1 % ADDR [11] $end
-$var wire 1 & ADDR [10] $end
-$var wire 1 ' ADDR [9] $end
-$var wire 1 ( ADDR [8] $end
-$var wire 1 ) ADDR [7] $end
-$var wire 1 * ADDR [6] $end
-$var wire 1 + ADDR [5] $end
-$var wire 1 , ADDR [4] $end
-$var wire 1 - ADDR [3] $end
-$var wire 1 . ADDR [2] $end
-$var wire 1 / ADDR [1] $end
-$var wire 1 0 ADDR [0] $end
-$var wire 1 1 CLK $end
-$var wire 1 2 DIN [15] $end
-$var wire 1 3 DIN [14] $end
-$var wire 1 4 DIN [13] $end
-$var wire 1 5 DIN [12] $end
-$var wire 1 6 DIN [11] $end
-$var wire 1 7 DIN [10] $end
-$var wire 1 8 DIN [9] $end
-$var wire 1 9 DIN [8] $end
-$var wire 1 : DIN [7] $end
-$var wire 1 ; DIN [6] $end
-$var wire 1 < DIN [5] $end
-$var wire 1 = DIN [4] $end
-$var wire 1 > DIN [3] $end
-$var wire 1 ? DIN [2] $end
-$var wire 1 @ DIN [1] $end
-$var wire 1 A DIN [0] $end
-$var wire 1 B DOUT [15] $end
-$var wire 1 C DOUT [14] $end
-$var wire 1 D DOUT [13] $end
-$var wire 1 E DOUT [12] $end
-$var wire 1 F DOUT [11] $end
-$var wire 1 G DOUT [10] $end
-$var wire 1 H DOUT [9] $end
-$var wire 1 I DOUT [8] $end
-$var wire 1 J DOUT [7] $end
-$var wire 1 K DOUT [6] $end
-$var wire 1 L DOUT [5] $end
-$var wire 1 M DOUT [4] $end
-$var wire 1 N DOUT [3] $end
-$var wire 1 O DOUT [2] $end
-$var wire 1 P DOUT [1] $end
-$var wire 1 Q DOUT [0] $end
-$var wire 1 R RE $end
-$var wire 1 S WE $end
+$scope module control_vhd_vec_tst $end
+$var wire 1 ! ALU_SEL [2] $end
+$var wire 1 " ALU_SEL [1] $end
+$var wire 1 # ALU_SEL [0] $end
+$var wire 1 $ ALUMUXSEL $end
+$var wire 1 % INSTRUCT [15] $end
+$var wire 1 & INSTRUCT [14] $end
+$var wire 1 ' INSTRUCT [13] $end
+$var wire 1 ( INSTRUCT [12] $end
+$var wire 1 ) INSTRUCT [11] $end
+$var wire 1 * INSTRUCT [10] $end
+$var wire 1 + INSTRUCT [9] $end
+$var wire 1 , INSTRUCT [8] $end
+$var wire 1 - INSTRUCT [7] $end
+$var wire 1 . INSTRUCT [6] $end
+$var wire 1 / INSTRUCT [5] $end
+$var wire 1 0 INSTRUCT [4] $end
+$var wire 1 1 INSTRUCT [3] $end
+$var wire 1 2 INSTRUCT [2] $end
+$var wire 1 3 INSTRUCT [1] $end
+$var wire 1 4 INSTRUCT [0] $end
+$var wire 1 5 MEMR $end
+$var wire 1 6 MEMW $end
+$var wire 1 7 PCSEL1 $end
+$var wire 1 8 PCSEL2 $end
+$var wire 1 9 REGWE $end
+$var wire 1 : RFMUXSEL $end
+$var wire 1 ; ZERO $end
 
 $scope module i1 $end
-$var wire 1 T gnd $end
-$var wire 1 U vcc $end
-$var wire 1 V unknown $end
-$var wire 1 W devoe $end
-$var wire 1 X devclrn $end
-$var wire 1 Y devpor $end
-$var wire 1 Z ww_devoe $end
-$var wire 1 [ ww_devclrn $end
-$var wire 1 \ ww_devpor $end
-$var wire 1 ] ww_ADDR [15] $end
-$var wire 1 ^ ww_ADDR [14] $end
-$var wire 1 _ ww_ADDR [13] $end
-$var wire 1 ` ww_ADDR [12] $end
-$var wire 1 a ww_ADDR [11] $end
-$var wire 1 b ww_ADDR [10] $end
-$var wire 1 c ww_ADDR [9] $end
-$var wire 1 d ww_ADDR [8] $end
-$var wire 1 e ww_ADDR [7] $end
-$var wire 1 f ww_ADDR [6] $end
-$var wire 1 g ww_ADDR [5] $end
-$var wire 1 h ww_ADDR [4] $end
-$var wire 1 i ww_ADDR [3] $end
-$var wire 1 j ww_ADDR [2] $end
-$var wire 1 k ww_ADDR [1] $end
-$var wire 1 l ww_ADDR [0] $end
-$var wire 1 m ww_DIN [15] $end
-$var wire 1 n ww_DIN [14] $end
-$var wire 1 o ww_DIN [13] $end
-$var wire 1 p ww_DIN [12] $end
-$var wire 1 q ww_DIN [11] $end
-$var wire 1 r ww_DIN [10] $end
-$var wire 1 s ww_DIN [9] $end
-$var wire 1 t ww_DIN [8] $end
-$var wire 1 u ww_DIN [7] $end
-$var wire 1 v ww_DIN [6] $end
-$var wire 1 w ww_DIN [5] $end
-$var wire 1 x ww_DIN [4] $end
-$var wire 1 y ww_DIN [3] $end
-$var wire 1 z ww_DIN [2] $end
-$var wire 1 { ww_DIN [1] $end
-$var wire 1 | ww_DIN [0] $end
-$var wire 1 } ww_WE $end
-$var wire 1 ~ ww_RE $end
-$var wire 1 !! ww_CLK $end
-$var wire 1 "! ww_DOUT [15] $end
-$var wire 1 #! ww_DOUT [14] $end
-$var wire 1 $! ww_DOUT [13] $end
-$var wire 1 %! ww_DOUT [12] $end
-$var wire 1 &! ww_DOUT [11] $end
-$var wire 1 '! ww_DOUT [10] $end
-$var wire 1 (! ww_DOUT [9] $end
-$var wire 1 )! ww_DOUT [8] $end
-$var wire 1 *! ww_DOUT [7] $end
-$var wire 1 +! ww_DOUT [6] $end
-$var wire 1 ,! ww_DOUT [5] $end
-$var wire 1 -! ww_DOUT [4] $end
-$var wire 1 .! ww_DOUT [3] $end
-$var wire 1 /! ww_DOUT [2] $end
-$var wire 1 0! ww_DOUT [1] $end
-$var wire 1 1! ww_DOUT [0] $end
-$var wire 1 2! \ADDR[5]~input_o\ $end
-$var wire 1 3! \ADDR[6]~input_o\ $end
-$var wire 1 4! \ADDR[7]~input_o\ $end
-$var wire 1 5! \ADDR[8]~input_o\ $end
-$var wire 1 6! \ADDR[9]~input_o\ $end
-$var wire 1 7! \ADDR[10]~input_o\ $end
-$var wire 1 8! \ADDR[11]~input_o\ $end
-$var wire 1 9! \ADDR[12]~input_o\ $end
-$var wire 1 :! \ADDR[13]~input_o\ $end
-$var wire 1 ;! \ADDR[14]~input_o\ $end
-$var wire 1 <! \ADDR[15]~input_o\ $end
-$var wire 1 =! \DIN[0]~input_o\ $end
-$var wire 1 >! \DIN[1]~input_o\ $end
-$var wire 1 ?! \DIN[2]~input_o\ $end
-$var wire 1 @! \DIN[3]~input_o\ $end
-$var wire 1 A! \DIN[4]~input_o\ $end
-$var wire 1 B! \DIN[5]~input_o\ $end
-$var wire 1 C! \DIN[6]~input_o\ $end
-$var wire 1 D! \DIN[7]~input_o\ $end
-$var wire 1 E! \DIN[8]~input_o\ $end
-$var wire 1 F! \DIN[9]~input_o\ $end
-$var wire 1 G! \DIN[10]~input_o\ $end
-$var wire 1 H! \DIN[11]~input_o\ $end
-$var wire 1 I! \DIN[12]~input_o\ $end
-$var wire 1 J! \DIN[13]~input_o\ $end
-$var wire 1 K! \DIN[14]~input_o\ $end
-$var wire 1 L! \DIN[15]~input_o\ $end
-$var wire 1 M! \WE~input_o\ $end
-$var wire 1 N! \RE~input_o\ $end
-$var wire 1 O! \CLK~input_o\ $end
-$var wire 1 P! \DOUT[0]~output_o\ $end
-$var wire 1 Q! \DOUT[1]~output_o\ $end
-$var wire 1 R! \DOUT[2]~output_o\ $end
-$var wire 1 S! \DOUT[3]~output_o\ $end
-$var wire 1 T! \DOUT[4]~output_o\ $end
-$var wire 1 U! \DOUT[5]~output_o\ $end
-$var wire 1 V! \DOUT[6]~output_o\ $end
-$var wire 1 W! \DOUT[7]~output_o\ $end
-$var wire 1 X! \DOUT[8]~output_o\ $end
-$var wire 1 Y! \DOUT[9]~output_o\ $end
-$var wire 1 Z! \DOUT[10]~output_o\ $end
-$var wire 1 [! \DOUT[11]~output_o\ $end
-$var wire 1 \! \DOUT[12]~output_o\ $end
-$var wire 1 ]! \DOUT[13]~output_o\ $end
-$var wire 1 ^! \DOUT[14]~output_o\ $end
-$var wire 1 _! \DOUT[15]~output_o\ $end
-$var wire 1 `! \ADDR[4]~input_o\ $end
-$var wire 1 a! \ADDR[0]~input_o\ $end
-$var wire 1 b! \ADDR[3]~input_o\ $end
-$var wire 1 c! \DMEM~512_combout\ $end
-$var wire 1 d! \ADDR[2]~input_o\ $end
-$var wire 1 e! \ADDR[1]~input_o\ $end
-$var wire 1 f! \DMEM~513_combout\ $end
-$var wire 1 g! \DMEM~514_combout\ $end
-$var wire 1 h! \DMEM~515_combout\ $end
-$var wire 1 i! \DMEM~516_combout\ $end
-$var wire 1 j! \DMEM~517_combout\ $end
-$var wire 1 k! \DMEM~518_combout\ $end
-$var wire 1 l! \DMEM~519_combout\ $end
-$var wire 1 m! \DMEM~520_combout\ $end
-$var wire 1 n! \DMEM~521_combout\ $end
-$var wire 1 o! \DMEM~522_combout\ $end
-$var wire 1 p! \ALT_INV_DMEM~520_combout\ $end
-$var wire 1 q! \ALT_INV_DMEM~516_combout\ $end
+$var wire 1 < gnd $end
+$var wire 1 = vcc $end
+$var wire 1 > unknown $end
+$var wire 1 ? devoe $end
+$var wire 1 @ devclrn $end
+$var wire 1 A devpor $end
+$var wire 1 B ww_devoe $end
+$var wire 1 C ww_devclrn $end
+$var wire 1 D ww_devpor $end
+$var wire 1 E ww_INSTRUCT [15] $end
+$var wire 1 F ww_INSTRUCT [14] $end
+$var wire 1 G ww_INSTRUCT [13] $end
+$var wire 1 H ww_INSTRUCT [12] $end
+$var wire 1 I ww_INSTRUCT [11] $end
+$var wire 1 J ww_INSTRUCT [10] $end
+$var wire 1 K ww_INSTRUCT [9] $end
+$var wire 1 L ww_INSTRUCT [8] $end
+$var wire 1 M ww_INSTRUCT [7] $end
+$var wire 1 N ww_INSTRUCT [6] $end
+$var wire 1 O ww_INSTRUCT [5] $end
+$var wire 1 P ww_INSTRUCT [4] $end
+$var wire 1 Q ww_INSTRUCT [3] $end
+$var wire 1 R ww_INSTRUCT [2] $end
+$var wire 1 S ww_INSTRUCT [1] $end
+$var wire 1 T ww_INSTRUCT [0] $end
+$var wire 1 U ww_ZERO $end
+$var wire 1 V ww_ALUMUXSEL $end
+$var wire 1 W ww_PCSEL1 $end
+$var wire 1 X ww_PCSEL2 $end
+$var wire 1 Y ww_RFMUXSEL $end
+$var wire 1 Z ww_MEMW $end
+$var wire 1 [ ww_REGWE $end
+$var wire 1 \ ww_MEMR $end
+$var wire 1 ] ww_ALU_SEL [2] $end
+$var wire 1 ^ ww_ALU_SEL [1] $end
+$var wire 1 _ ww_ALU_SEL [0] $end
+$var wire 1 ` \INSTRUCT[0]~input_o\ $end
+$var wire 1 a \INSTRUCT[1]~input_o\ $end
+$var wire 1 b \INSTRUCT[2]~input_o\ $end
+$var wire 1 c \INSTRUCT[3]~input_o\ $end
+$var wire 1 d \INSTRUCT[4]~input_o\ $end
+$var wire 1 e \INSTRUCT[5]~input_o\ $end
+$var wire 1 f \INSTRUCT[6]~input_o\ $end
+$var wire 1 g \INSTRUCT[7]~input_o\ $end
+$var wire 1 h \INSTRUCT[8]~input_o\ $end
+$var wire 1 i \INSTRUCT[9]~input_o\ $end
+$var wire 1 j \INSTRUCT[10]~input_o\ $end
+$var wire 1 k \INSTRUCT[11]~input_o\ $end
+$var wire 1 l \INSTRUCT[12]~input_o\ $end
+$var wire 1 m \INSTRUCT[13]~input_o\ $end
+$var wire 1 n \INSTRUCT[14]~input_o\ $end
+$var wire 1 o \INSTRUCT[15]~input_o\ $end
+$var wire 1 p \ALUMUXSEL~output_o\ $end
+$var wire 1 q \PCSEL1~output_o\ $end
+$var wire 1 r \PCSEL2~output_o\ $end
+$var wire 1 s \RFMUXSEL~output_o\ $end
+$var wire 1 t \MEMW~output_o\ $end
+$var wire 1 u \REGWE~output_o\ $end
+$var wire 1 v \MEMR~output_o\ $end
+$var wire 1 w \ALU_SEL[0]~output_o\ $end
+$var wire 1 x \ALU_SEL[1]~output_o\ $end
+$var wire 1 y \ALU_SEL[2]~output_o\ $end
+$var wire 1 z \ZERO~input_o\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-01
-0R
-0S
-0T
-1U
-xV
-1W
-1X
-1Y
-1Z
-1[
-1\
-0}
-0~
-0!!
-02!
-03!
-04!
-05!
-06!
-07!
-08!
-09!
-0:!
-0;!
-0<!
-0=!
-0>!
-0?!
-0@!
-0A!
-0B!
-0C!
-0D!
-0E!
-0F!
-0G!
-0H!
-0I!
-0J!
-0K!
-0L!
-0M!
-0N!
-0O!
-0P!
-1Q!
-0R!
-0S!
-1T!
-1U!
-0V!
-1W!
-0X!
-0Y!
-0Z!
-0[!
-0\!
-0]!
-1^!
-1_!
-0`!
-0a!
-0b!
-1c!
-0d!
-0e!
-0f!
-0g!
-0h!
-0i!
-1j!
-0k!
-0l!
-0m!
-0n!
-0o!
-1p!
-1q!
-0!
-0"
-0#
 0$
-0%
-0&
-0'
-0(
-0)
-0*
-0+
-0,
-0-
-0.
-0/
-00
-02
-03
-04
 05
 06
 07
 08
 09
 0:
-0;
+1;
 0<
-0=
-0>
-0?
-0@
-0A
-0]
-0^
-0_
+1=
+x>
+1?
+1@
+1A
+1B
+1C
+1D
+1U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
 0`
 0a
 0b
@@ -322,7 +148,7 @@ xV
 0j
 0k
 0l
-0m
+1m
 0n
 0o
 0p
@@ -332,115 +158,54 @@ xV
 0t
 0u
 0v
-0w
-0x
-0y
-0z
-0{
-0|
-1"!
-1#!
-0$!
-0%!
-0&!
-0'!
-0(!
-0)!
-1*!
-0+!
-1,!
-1-!
-0.!
-0/!
-10!
-01!
-1B
-1C
-0D
+1w
+1x
+1y
+1z
+0%
+0&
+1'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
 0E
 0F
-0G
+1G
 0H
 0I
-1J
+0J
 0K
-1L
-1M
+0L
+0M
 0N
 0O
-1P
+0P
 0Q
+0R
+0S
+0T
+1]
+1^
+1_
+1!
+1"
+1#
 $end
-#120000
-1/
-1k
-1e!
-1f!
-0j!
-1l!
-1n!
-1o!
-1m!
-1g!
-0p!
-0U!
-0_!
-0,!
-0"!
-1R!
-1Y!
-1\!
-1X!
-1Z!
-0L
-0B
-0W!
-1/!
-1(!
-1%!
-1)!
-1'!
-0*!
-1O
-1I
-1H
-1G
-1E
-0J
-#300000
-0/
-0k
-0e!
-0f!
-1j!
-0l!
-0n!
-0o!
-0m!
-0g!
-1p!
-1U!
-1_!
-1,!
-1"!
-0R!
-0Y!
-0\!
-0X!
-0Z!
-1L
-1B
-1W!
-0/!
-0(!
-0%!
-0)!
-0'!
-1*!
-0O
-0I
-0H
+#340000
+1&
+0'
 0G
-0E
-1J
+1F
+1n
+0m
 #1000000

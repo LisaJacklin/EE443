@@ -1,6 +1,6 @@
 Assembler report for Lab8
-Sun Apr 23 11:09:57 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Mon Apr 24 10:29:19 2023
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/output_files/Lab8.sof
+  5. Assembler Device Options: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/output_files/Lab8.sof
   6. Assembler Messages
 
 
@@ -18,9 +18,9 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -30,17 +30,16 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Apr 23 11:09:57 2023 ;
+; Assembler Status      ; Successful - Mon Apr 24 10:29:19 2023 ;
 ; Revision Name         ; Lab8                                  ;
-; Top-level Entity Name ; INS_MEM                               ;
+; Top-level Entity Name ; CONTROL                               ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -53,23 +52,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------+
-; Assembler Generated Files                                                 ;
-+---------------------------------------------------------------------------+
-; File Name                                                                 ;
-+---------------------------------------------------------------------------+
-; C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/output_files/Lab8.sof ;
-+---------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Assembler Generated Files                                                       ;
++---------------------------------------------------------------------------------+
+; File Name                                                                       ;
++---------------------------------------------------------------------------------+
+; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/output_files/Lab8.sof ;
++---------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/lisal/Desktop/EE 443/EE443/Lab 8/LAb8_vhdl/output_files/Lab8.sof ;
-+----------------+------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                            ;
-+----------------+------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x005651BB                                                                         ;
-; Checksum       ; 0x005651BB                                                                         ;
-+----------------+------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/output_files/Lab8.sof ;
++----------------+------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                  ;
++----------------+------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0056301C                                                                               ;
+; Checksum       ; 0x0056301C                                                                               ;
++----------------+------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,16 +76,16 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Apr 23 11:09:50 2023
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Mon Apr 24 10:29:16 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Sun Apr 23 11:09:57 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4680 megabytes
+    Info: Processing ended: Mon Apr 24 10:29:19 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

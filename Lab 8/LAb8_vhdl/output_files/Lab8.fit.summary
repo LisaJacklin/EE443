@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Apr 23 11:09:48 2023
-Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Fitter Status : Successful - Mon Apr 24 10:29:14 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : Lab8
-Top-level Entity Name : INS_MEM
+Top-level Entity Name : CONTROL
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 14 / 114,480 ( < 1 % )
-    Total combinational functions : 14 / 114,480 ( < 1 % )
+Total logic elements : 0 / 114,480 ( 0 % )
+    Total combinational functions : 0 / 114,480 ( 0 % )
     Dedicated logic registers : 0 / 114,480 ( 0 % )
 Total registers : 0
-Total pins : 32 / 529 ( 6 % )
+Total pins : 27 / 529 ( 5 % )
 Total virtual pins : 0
 Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
