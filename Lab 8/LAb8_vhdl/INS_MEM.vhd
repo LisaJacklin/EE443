@@ -30,7 +30,7 @@ ARCHITECTURE INS_MEM_BEHAVIOR OF INS_MEM IS
         0 => "0000001010000010",  -- add R1,R2, R0 
         1 => "0001110100000100",  -- subtract
         2 => "1101011100000110",  --lw
-        3 => "1101101110001000",  --sw
+        3 => "1101101110001000",  --sw MAKE CONTROL CHECKS
 		  4 => "0100000000000000" --jmp to begining
        );
 

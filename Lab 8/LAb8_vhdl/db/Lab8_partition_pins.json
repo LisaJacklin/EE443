@@ -4,63 +4,195 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "C4",
+					"name" : "INS[15]",
 					"strict" : false
 				},
 				{
-					"name" : "OVERFLOW",
+					"name" : "INS[14]",
 					"strict" : false
 				},
 				{
-					"name" : "R[0]",
+					"name" : "INS[12]",
 					"strict" : false
 				},
 				{
-					"name" : "R[1]",
+					"name" : "INS[11]",
 					"strict" : false
 				},
 				{
-					"name" : "R[2]",
+					"name" : "INS[10]",
 					"strict" : false
 				},
 				{
-					"name" : "R[3]",
+					"name" : "INS[9]",
 					"strict" : false
 				},
 				{
-					"name" : "LHO[3]",
+					"name" : "INS[8]",
 					"strict" : false
 				},
 				{
-					"name" : "RHO[3]",
+					"name" : "INS[7]",
 					"strict" : false
 				},
 				{
-					"name" : "LHO[2]",
+					"name" : "INS[3]",
 					"strict" : false
 				},
 				{
-					"name" : "RHO[2]",
+					"name" : "INS[2]",
 					"strict" : false
 				},
 				{
-					"name" : "LHO[1]",
+					"name" : "INS[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RHO[1]",
+					"name" : "ALU_SEL[2]",
 					"strict" : false
 				},
 				{
-					"name" : "RHO[0]",
+					"name" : "ALU_SEL[1]",
 					"strict" : false
 				},
 				{
-					"name" : "C0",
+					"name" : "MEMOUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "LHO[0]",
+					"name" : "MEMOUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MEMOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RTDAT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
 					"strict" : false
 				}
 			]
