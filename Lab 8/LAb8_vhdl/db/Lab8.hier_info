@@ -1,0 +1,30 @@
+|ADD4
+LHO[0] => s1[0].IN0
+LHO[0] => nors4[0].IN0
+LHO[1] => s1[1].IN0
+LHO[1] => nors3[0].IN0
+LHO[2] => s1[2].IN0
+LHO[2] => nors2[0].IN0
+LHO[3] => s1[3].IN0
+LHO[3] => nors1[0].IN0
+RHO[0] => s1[0].IN1
+RHO[0] => nors4[0].IN1
+RHO[1] => s1[1].IN1
+RHO[1] => nors3[0].IN1
+RHO[2] => s1[2].IN1
+RHO[2] => nors2[0].IN1
+RHO[3] => s1[3].IN1
+RHO[3] => nors1[0].IN1
+C0 => R.IN1
+C0 => nors1[4].IN1
+C0 => nors2.IN1
+C0 => nors3[2].IN1
+C0 => nors4[1].IN1
+C4 <= c4Buff.DB_MAX_OUTPUT_PORT_TYPE
+OVERFLOW <= OVERFLOW.DB_MAX_OUTPUT_PORT_TYPE
+R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+

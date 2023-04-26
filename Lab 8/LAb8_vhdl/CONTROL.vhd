@@ -15,70 +15,55 @@ ENTITY CONTROL IS
 END CONTROL;
 
 ARCHITECTURE CONTROL_BE OF CONTROL IS
+	signal OPCODE : STD_LOGIC_VECTOR (3 DOWNTO 0);
+
 	BEGIN
 	
-	PROCESS(INSTRUCT) --THIS IS WHAT WILL DETERMINE THE CONTROL
+	OPCODE <= INSTRUCT(15 DOWNTO 12);
+	
+	PROCESS(OPCODE, ZERO) --THIS IS WHAT WILL DETERMINE THE CONTROL
 		BEGIN
 		--RECOMENDED THAT WE BUILD A SWITCH CASE STATEMENT WITHIN THE PROCESS 
 		--NOTE, THE FIRST 4 BITS ARE OUR CONTROL SIGNAL FROM INSTRUCTION AND THE ONES THAT MATTER
-			CASE INSTRUCT(15 DOWNTO 13) IS
+			CASE OPCODE IS
 				
-				WHEN "000" => --ADD
+				WHEN "0010" => --JMP
 					ALUMUXSEL <= '1';
-					PCSEL1 <= '1'; 
-					PCSEL2 <= '1';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '1';
-					MEMR <= '0';
-					ALU_SEL <= "000"; 
-				WHEN "001" =>--SUB 
-					ALUMUXSEL <= '1';
-					PCSEL1 <= '1'; 
-					PCSEL2 <= '1';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '1';
-					MEMR <= '0';					
-					ALU_SEL <= "001";
-				WHEN "010" => --AND
-					ALUMUXSEL <= '1';
-					PCSEL1 <= '1'; 
-					PCSEL2 <= '1';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '1';
-					MEMR <= '0';	
-					ALU_SEL <= "010";
-				WHEN "011" => --OR
-					ALUMUXSEL <= '1';
-					PCSEL1 <= '1'; 
-					PCSEL2 <= '1';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '1';
-					MEMR <= '0';	
-					ALU_SEL <= "011";
-				WHEN "100" => --SLT
-					ALUMUXSEL <= '1';
-					PCSEL1 <= '1'; 
-					PCSEL2 <= '1';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '1';
-					MEMR <= '0';
-					ALU_SEL <= "100";
-					
-				WHEN "101" => --LW
-					ALUMUXSEL <= '1';
-					PCSEL1 <= '0'; 
+					PCSEL1 <= '1'; --YOU ARE THE ONLY ZERO THAT IS NEEDED
 					PCSEL2 <= '0';
 					RFMUXSEL <= '0';
 					MEMW <= '0'; 
 					REGWE<= '0';
+					MEMR <= '0';
+					ALU_SEL <= "000"; 
+				WHEN "0000" => --ALL R TYPES
+					ALUMUXSEL <= '0'; --MATERS
+					PCSEL1 <= '1'; 
+					PCSEL2 <= '0';
+					RFMUXSEL <= '1';
+					MEMW <= '0'; 
+					REGWE<= '1';
 					MEMR <= '0';	
-					ALU_SEL <= "101";
-				WHEN "110" => --SW
+					ALU_SEL <= "000";		
+				WHEN "1011" => --LW
+					ALUMUXSEL <= '1';
+					PCSEL1 <= '0'; 
+					PCSEL2 <= '1';
+					RFMUXSEL <= '0';
+					MEMW <= '0'; 
+					REGWE<= '0';
+					MEMR <= '0';	
+					ALU_SEL <= "000";
+				WHEN "1111" => --SW
+					ALUMUXSEL <= '1';
+					PCSEL1 <= '1'; 
+					PCSEL2 <= '0';
+					RFMUXSEL <= '0';
+					MEMW <= '0'; 
+					REGWE<= '0';
+					MEMR <= '0';
+					ALU_SEL <= "000";
+				WHEN "0100" => --BEQ
 					ALUMUXSEL <= '1';
 					PCSEL1 <= '0'; 
 					PCSEL2 <= '0';
@@ -87,8 +72,8 @@ ARCHITECTURE CONTROL_BE OF CONTROL IS
 					REGWE<= '0';
 					MEMR <= '0';
 					ALU_SEL <= "110";
-				WHEN OTHERS =>
-					ALUMUXSEL <= '0';
+				when OTHERS =>
+				  ALUMUXSEL <= '0';
 					PCSEL1 <= '0'; 
 					PCSEL2 <= '0';
 					RFMUXSEL <= '0';
@@ -97,30 +82,7 @@ ARCHITECTURE CONTROL_BE OF CONTROL IS
 					MEMR <= '0';
 					ALU_SEL <= "000";
 			END CASE;
-			
-			--NOW, WE ALSO NEED A IF STATEMENT FOR ZERO WHICH IS USED FOR BRANCHES 
-			CASE ZERO IS --this works
-				-- could this be creating an issue with my control signals?
-				WHEN '1' =>
-					ALUMUXSEL <= '0';
-					PCSEL1 <= '0'; 
-					PCSEL2 <= '0';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '0';
-					MEMR <= '0';
-					ALU_SEL <= "111";
-				WHEN OTHERS =>
-				ALUMUXSEL <= '0';
-					PCSEL1 <= '0'; 
-					PCSEL2 <= '0';
-					RFMUXSEL <= '0';
-					MEMW <= '0'; 
-					REGWE<= '0';
-					MEMR <= '0';
-					ALU_SEL <= "000";
-			END CASE;
-		
+
 	END PROCESS;
 	
 	END CONTROL_BE;

@@ -3,7 +3,7 @@ $comment
 		vcd file Lab8.msim.vcd -direction
 $end
 $date
-	Mon Apr 24 10:47:00 2023
+	Tue Apr 25 18:00:34 2023
 $end
 $version
 	ModelSim Version 10.5b
@@ -12,177 +12,92 @@ $timescale
 	1ps
 $end
 
-$scope module control_vhd_vec_tst $end
-$var wire 1 ! ALU_SEL [2] $end
-$var wire 1 " ALU_SEL [1] $end
-$var wire 1 # ALU_SEL [0] $end
-$var wire 1 $ ALUMUXSEL $end
-$var wire 1 % INSTRUCT [15] $end
-$var wire 1 & INSTRUCT [14] $end
-$var wire 1 ' INSTRUCT [13] $end
-$var wire 1 ( INSTRUCT [12] $end
-$var wire 1 ) INSTRUCT [11] $end
-$var wire 1 * INSTRUCT [10] $end
-$var wire 1 + INSTRUCT [9] $end
-$var wire 1 , INSTRUCT [8] $end
-$var wire 1 - INSTRUCT [7] $end
-$var wire 1 . INSTRUCT [6] $end
-$var wire 1 / INSTRUCT [5] $end
-$var wire 1 0 INSTRUCT [4] $end
-$var wire 1 1 INSTRUCT [3] $end
-$var wire 1 2 INSTRUCT [2] $end
-$var wire 1 3 INSTRUCT [1] $end
-$var wire 1 4 INSTRUCT [0] $end
-$var wire 1 5 MEMR $end
-$var wire 1 6 MEMW $end
-$var wire 1 7 PCSEL1 $end
-$var wire 1 8 PCSEL2 $end
-$var wire 1 9 REGWE $end
-$var wire 1 : RFMUXSEL $end
-$var wire 1 ; ZERO $end
+$scope module add4_vhd_vec_tst $end
+$var wire 1 ! CIN $end
+$var wire 1 " COUT $end
+$var wire 1 # SUM [3] $end
+$var wire 1 $ SUM [2] $end
+$var wire 1 % SUM [1] $end
+$var wire 1 & SUM [0] $end
+$var wire 1 ' X [3] $end
+$var wire 1 ( X [2] $end
+$var wire 1 ) X [1] $end
+$var wire 1 * X [0] $end
+$var wire 1 + Y [3] $end
+$var wire 1 , Y [2] $end
+$var wire 1 - Y [1] $end
+$var wire 1 . Y [0] $end
 
 $scope module i1 $end
-$var wire 1 < gnd $end
-$var wire 1 = vcc $end
-$var wire 1 > unknown $end
-$var wire 1 ? devoe $end
-$var wire 1 @ devclrn $end
-$var wire 1 A devpor $end
-$var wire 1 B ww_devoe $end
-$var wire 1 C ww_devclrn $end
-$var wire 1 D ww_devpor $end
-$var wire 1 E ww_INSTRUCT [15] $end
-$var wire 1 F ww_INSTRUCT [14] $end
-$var wire 1 G ww_INSTRUCT [13] $end
-$var wire 1 H ww_INSTRUCT [12] $end
-$var wire 1 I ww_INSTRUCT [11] $end
-$var wire 1 J ww_INSTRUCT [10] $end
-$var wire 1 K ww_INSTRUCT [9] $end
-$var wire 1 L ww_INSTRUCT [8] $end
-$var wire 1 M ww_INSTRUCT [7] $end
-$var wire 1 N ww_INSTRUCT [6] $end
-$var wire 1 O ww_INSTRUCT [5] $end
-$var wire 1 P ww_INSTRUCT [4] $end
-$var wire 1 Q ww_INSTRUCT [3] $end
-$var wire 1 R ww_INSTRUCT [2] $end
-$var wire 1 S ww_INSTRUCT [1] $end
-$var wire 1 T ww_INSTRUCT [0] $end
-$var wire 1 U ww_ZERO $end
-$var wire 1 V ww_ALUMUXSEL $end
-$var wire 1 W ww_PCSEL1 $end
-$var wire 1 X ww_PCSEL2 $end
-$var wire 1 Y ww_RFMUXSEL $end
-$var wire 1 Z ww_MEMW $end
-$var wire 1 [ ww_REGWE $end
-$var wire 1 \ ww_MEMR $end
-$var wire 1 ] ww_ALU_SEL [2] $end
-$var wire 1 ^ ww_ALU_SEL [1] $end
-$var wire 1 _ ww_ALU_SEL [0] $end
-$var wire 1 ` \INSTRUCT[0]~input_o\ $end
-$var wire 1 a \INSTRUCT[1]~input_o\ $end
-$var wire 1 b \INSTRUCT[2]~input_o\ $end
-$var wire 1 c \INSTRUCT[3]~input_o\ $end
-$var wire 1 d \INSTRUCT[4]~input_o\ $end
-$var wire 1 e \INSTRUCT[5]~input_o\ $end
-$var wire 1 f \INSTRUCT[6]~input_o\ $end
-$var wire 1 g \INSTRUCT[7]~input_o\ $end
-$var wire 1 h \INSTRUCT[8]~input_o\ $end
-$var wire 1 i \INSTRUCT[9]~input_o\ $end
-$var wire 1 j \INSTRUCT[10]~input_o\ $end
-$var wire 1 k \INSTRUCT[11]~input_o\ $end
-$var wire 1 l \INSTRUCT[12]~input_o\ $end
-$var wire 1 m \INSTRUCT[13]~input_o\ $end
-$var wire 1 n \INSTRUCT[14]~input_o\ $end
-$var wire 1 o \INSTRUCT[15]~input_o\ $end
-$var wire 1 p \ALUMUXSEL~output_o\ $end
-$var wire 1 q \PCSEL1~output_o\ $end
-$var wire 1 r \PCSEL2~output_o\ $end
-$var wire 1 s \RFMUXSEL~output_o\ $end
-$var wire 1 t \MEMW~output_o\ $end
-$var wire 1 u \REGWE~output_o\ $end
-$var wire 1 v \MEMR~output_o\ $end
-$var wire 1 w \ALU_SEL[0]~output_o\ $end
-$var wire 1 x \ALU_SEL[1]~output_o\ $end
-$var wire 1 y \ALU_SEL[2]~output_o\ $end
-$var wire 1 z \ZERO~input_o\ $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var wire 1 2 devoe $end
+$var wire 1 3 devclrn $end
+$var wire 1 4 devpor $end
+$var wire 1 5 ww_devoe $end
+$var wire 1 6 ww_devclrn $end
+$var wire 1 7 ww_devpor $end
+$var wire 1 8 ww_X [3] $end
+$var wire 1 9 ww_X [2] $end
+$var wire 1 : ww_X [1] $end
+$var wire 1 ; ww_X [0] $end
+$var wire 1 < ww_Y [3] $end
+$var wire 1 = ww_Y [2] $end
+$var wire 1 > ww_Y [1] $end
+$var wire 1 ? ww_Y [0] $end
+$var wire 1 @ ww_CIN $end
+$var wire 1 A ww_SUM [3] $end
+$var wire 1 B ww_SUM [2] $end
+$var wire 1 C ww_SUM [1] $end
+$var wire 1 D ww_SUM [0] $end
+$var wire 1 E ww_COUT $end
+$var wire 1 F \SUM[0]~output_o\ $end
+$var wire 1 G \SUM[1]~output_o\ $end
+$var wire 1 H \SUM[2]~output_o\ $end
+$var wire 1 I \SUM[3]~output_o\ $end
+$var wire 1 J \COUT~output_o\ $end
+$var wire 1 K \X[0]~input_o\ $end
+$var wire 1 L \CIN~input_o\ $end
+$var wire 1 M \Y[0]~input_o\ $end
+$var wire 1 N \SUM~0_combout\ $end
+$var wire 1 O \X[1]~input_o\ $end
+$var wire 1 P \Y[1]~input_o\ $end
+$var wire 1 Q \S2~0_combout\ $end
+$var wire 1 R \SUM~1_combout\ $end
+$var wire 1 S \SUM~2_combout\ $end
+$var wire 1 T \X[2]~input_o\ $end
+$var wire 1 U \Y[2]~input_o\ $end
+$var wire 1 V \C3~0_combout\ $end
+$var wire 1 W \SUM~3_combout\ $end
+$var wire 1 X \X[3]~input_o\ $end
+$var wire 1 Y \Y[3]~input_o\ $end
+$var wire 1 Z \C3~1_combout\ $end
+$var wire 1 [ \COUT~0_combout\ $end
+$var wire 1 \ \ALT_INV_SUM~3_combout\ $end
+$var wire 1 ] \ALT_INV_SUM~0_combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0$
-05
-06
-07
-08
-09
-0:
-1;
-0<
-1=
-x>
-1?
-1@
-1A
-1B
-1C
-1D
-1U
-0V
-0W
-0X
-0Y
-0Z
-0[
-0\
-0`
-0a
-0b
-0c
-0d
-0e
-0f
-0g
-0h
-0i
-0j
-0k
-0l
-1m
-0n
-0o
-0p
-0q
-0r
-0s
-0t
-0u
-0v
-1w
-1x
-1y
-1z
-0%
-0&
-1'
-0(
-0)
-0*
-0+
-0,
-0-
-0.
+0!
+0"
 0/
-00
-01
-02
-03
-04
+10
+x1
+12
+13
+14
+15
+16
+17
+0@
 0E
-0F
+1F
 1G
-0H
-0I
+1H
+1I
 0J
 0K
 0L
@@ -190,22 +105,134 @@ x>
 0N
 0O
 0P
-0Q
+1Q
+1R
+1S
+0T
+0U
+0V
+0W
+0X
+0Y
+1Z
+0[
+1\
+1]
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+1A
+1B
+1C
+1D
+1#
+1$
+1%
+1&
+$end
+#20000
+1,
+1-
+1.
+1?
+1>
+1=
+1U
+1P
+1M
+1N
 0R
 0S
-0T
-1]
-1^
-1_
-1!
-1"
+0Q
+1W
+0Z
+0\
+0]
+1R
+0H
+0G
+0F
+0I
+0B
+0C
+1G
+0D
+0A
+0%
+0$
+1C
+0&
+0#
+1%
+#280000
+1(
+1)
+1:
+19
+1T
+1O
+0W
+1\
+1I
+1A
 1#
-$end
-#340000
-1&
-0'
+#580000
+0,
+0-
+0.
+0?
+0>
+0=
+0U
+0P
+0M
+0N
+0R
+1W
+0\
+1]
 0G
 1F
-1n
-0m
+0I
+0C
+1D
+0A
+0%
+1&
+0#
+#960000
+0(
+0)
+0:
+09
+0T
+0O
+1Q
+0W
+1Z
+1\
+1R
+1S
+1I
+1H
+1G
+1A
+1B
+1C
+1#
+1%
+1$
 #1000000

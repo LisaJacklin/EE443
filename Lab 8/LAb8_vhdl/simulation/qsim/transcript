@@ -1,7 +1,7 @@
 # do Lab8.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:46:59 on Apr 24,2023
+# Start time: 18:00:34 on Apr 25,2023
 # vcom -work work Lab8.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -12,35 +12,36 @@
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Compiling entity CONTROL
-# -- Compiling architecture structure of CONTROL
-# End time: 10:46:59 on Apr 24,2023, Elapsed time: 0:00:00
+# -- Compiling entity ADD4
+# -- Compiling architecture structure of ADD4
+# End time: 18:00:34 on Apr 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:46:59 on Apr 24,2023
-# vcom -work work Waveform5.vwf.vht 
+# Start time: 18:00:34 on Apr 25,2023
+# vcom -work work Waveform9.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity CONTROL_vhd_vec_tst
-# -- Compiling architecture CONTROL_arch of CONTROL_vhd_vec_tst
-# End time: 10:47:00 on Apr 24,2023, Elapsed time: 0:00:01
+# -- Compiling entity ADD4_vhd_vec_tst
+# -- Compiling architecture ADD4_arch of ADD4_vhd_vec_tst
+# End time: 18:00:34 on Apr 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.CONTROL_vhd_vec_tst 
-# Start time: 10:47:00 on Apr 24,2023
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ADD4_vhd_vec_tst 
+# Start time: 18:00:34 on Apr 25,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.control_vhd_vec_tst(control_arch)
+# Loading work.add4_vhd_vec_tst(add4_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.control(structure)
+# Loading work.add4(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # after#33
-# End time: 10:47:00 on Apr 24,2023, Elapsed time: 0:00:00
+# End time: 18:00:34 on Apr 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

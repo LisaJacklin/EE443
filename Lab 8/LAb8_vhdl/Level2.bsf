@@ -54,16 +54,23 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 200 32)
 		(output)
-		(text "INS[15..0]" (rect 0 0 60 19)(font "Intel Clear" (font_size 8)))
-		(text "INS[15..0]" (rect 119 27 179 46)(font "Intel Clear" (font_size 8)))
+		(text "pcout[15..0]" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "pcout[15..0]" (rect 108 27 179 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(port
 		(pt 200 48)
 		(output)
-		(text "IMM_EXT[15..0]" (rect 0 0 94 19)(font "Intel Clear" (font_size 8)))
-		(text "IMM_EXT[15..0]" (rect 85 43 179 62)(font "Intel Clear" (font_size 8)))
+		(text "INS[15..0]" (rect 0 0 60 19)(font "Intel Clear" (font_size 8)))
+		(text "INS[15..0]" (rect 119 43 179 62)(font "Intel Clear" (font_size 8)))
 		(line (pt 200 48)(pt 184 48)(line_width 3))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "IMM_EXT[15..0]" (rect 0 0 94 19)(font "Intel Clear" (font_size 8)))
+		(text "IMM_EXT[15..0]" (rect 85 59 179 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 64)(pt 184 64)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 184 112))

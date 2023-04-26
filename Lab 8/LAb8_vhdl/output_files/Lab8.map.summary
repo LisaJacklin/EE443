@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Apr 24 10:29:03 2023
+Analysis & Synthesis Status : Successful - Tue Apr 25 18:02:57 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : Lab8
-Top-level Entity Name : CONTROL
+Top-level Entity Name : ADD4
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 9
+    Total combinational functions : 9
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 27
+Total pins : 15
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

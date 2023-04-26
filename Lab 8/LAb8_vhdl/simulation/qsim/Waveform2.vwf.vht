@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/18/2023 17:20:33"
+-- Generated on "04/25/2023 14:18:07"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Level3
 -- 
@@ -78,19 +78,19 @@ BEGIN
 -- ALU_SEL[2]
 t_prcs_ALU_SEL_2: PROCESS
 BEGIN
-	ALU_SEL(2) <= '0';
+	ALU_SEL(2) <= '1';
 WAIT;
 END PROCESS t_prcs_ALU_SEL_2;
 -- ALU_SEL[1]
 t_prcs_ALU_SEL_1: PROCESS
 BEGIN
-	ALU_SEL(1) <= '0';
+	ALU_SEL(1) <= '1';
 WAIT;
 END PROCESS t_prcs_ALU_SEL_1;
 -- ALU_SEL[0]
 t_prcs_ALU_SEL_0: PROCESS
 BEGIN
-	ALU_SEL(0) <= '0';
+	ALU_SEL(0) <= '1';
 WAIT;
 END PROCESS t_prcs_ALU_SEL_0;
 
@@ -211,13 +211,13 @@ END PROCESS t_prcs_IMM_EXT_0;
 -- INS[15]
 t_prcs_INS_15: PROCESS
 BEGIN
-	INS(15) <= '0';
+	INS(15) <= '1';
 WAIT;
 END PROCESS t_prcs_INS_15;
 -- INS[14]
 t_prcs_INS_14: PROCESS
 BEGIN
-	INS(14) <= '0';
+	INS(14) <= '1';
 WAIT;
 END PROCESS t_prcs_INS_14;
 -- INS[13]
@@ -290,19 +290,11 @@ END PROCESS t_prcs_INS_3;
 t_prcs_INS_2: PROCESS
 BEGIN
 	INS(2) <= '0';
-	WAIT FOR 210000 ps;
-	INS(2) <= '1';
-	WAIT FOR 110000 ps;
-	INS(2) <= '0';
 WAIT;
 END PROCESS t_prcs_INS_2;
 -- INS[1]
 t_prcs_INS_1: PROCESS
 BEGIN
-	INS(1) <= '0';
-	WAIT FOR 80000 ps;
-	INS(1) <= '1';
-	WAIT FOR 130000 ps;
 	INS(1) <= '0';
 WAIT;
 END PROCESS t_prcs_INS_1;
@@ -315,97 +307,97 @@ END PROCESS t_prcs_INS_0;
 -- RDDAT[15]
 t_prcs_RDDAT_15: PROCESS
 BEGIN
-	RDDAT(15) <= '1';
+	RDDAT(15) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_15;
 -- RDDAT[14]
 t_prcs_RDDAT_14: PROCESS
 BEGIN
-	RDDAT(14) <= '1';
+	RDDAT(14) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_14;
 -- RDDAT[13]
 t_prcs_RDDAT_13: PROCESS
 BEGIN
-	RDDAT(13) <= '1';
+	RDDAT(13) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_13;
 -- RDDAT[12]
 t_prcs_RDDAT_12: PROCESS
 BEGIN
-	RDDAT(12) <= '1';
+	RDDAT(12) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_12;
 -- RDDAT[11]
 t_prcs_RDDAT_11: PROCESS
 BEGIN
-	RDDAT(11) <= '1';
+	RDDAT(11) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_11;
 -- RDDAT[10]
 t_prcs_RDDAT_10: PROCESS
 BEGIN
-	RDDAT(10) <= '1';
+	RDDAT(10) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_10;
 -- RDDAT[9]
 t_prcs_RDDAT_9: PROCESS
 BEGIN
-	RDDAT(9) <= '1';
+	RDDAT(9) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_9;
 -- RDDAT[8]
 t_prcs_RDDAT_8: PROCESS
 BEGIN
-	RDDAT(8) <= '1';
+	RDDAT(8) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_8;
 -- RDDAT[7]
 t_prcs_RDDAT_7: PROCESS
 BEGIN
-	RDDAT(7) <= '1';
+	RDDAT(7) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_7;
 -- RDDAT[6]
 t_prcs_RDDAT_6: PROCESS
 BEGIN
-	RDDAT(6) <= '1';
+	RDDAT(6) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_6;
 -- RDDAT[5]
 t_prcs_RDDAT_5: PROCESS
 BEGIN
-	RDDAT(5) <= '1';
+	RDDAT(5) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_5;
 -- RDDAT[4]
 t_prcs_RDDAT_4: PROCESS
 BEGIN
-	RDDAT(4) <= '1';
+	RDDAT(4) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_4;
 -- RDDAT[3]
 t_prcs_RDDAT_3: PROCESS
 BEGIN
-	RDDAT(3) <= '1';
+	RDDAT(3) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_3;
 -- RDDAT[2]
 t_prcs_RDDAT_2: PROCESS
 BEGIN
-	RDDAT(2) <= '1';
+	RDDAT(2) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_2;
 -- RDDAT[1]
 t_prcs_RDDAT_1: PROCESS
 BEGIN
-	RDDAT(1) <= '1';
+	RDDAT(1) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_1;
 -- RDDAT[0]
 t_prcs_RDDAT_0: PROCESS
 BEGIN
-	RDDAT(0) <= '1';
+	RDDAT(0) <= '0';
 WAIT;
 END PROCESS t_prcs_RDDAT_0;
 
@@ -419,7 +411,7 @@ END PROCESS t_prcs_REG_WE;
 -- RFMUX_SEL
 t_prcs_RFMUX_SEL: PROCESS
 BEGIN
-	RFMUX_SEL <= '1';
+	RFMUX_SEL <= '0';
 WAIT;
 END PROCESS t_prcs_RFMUX_SEL;
 END Level3_arch;
