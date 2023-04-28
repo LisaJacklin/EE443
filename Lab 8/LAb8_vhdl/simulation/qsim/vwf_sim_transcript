@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab8 -c Lab8 --vector_source="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform27.vwf" --testbench_file="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Waveform27.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab8 -c Lab8 --vector_source="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform30.vwf" --testbench_file="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Waveform30.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,37 +25,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Apr 27 16:57:33 2023
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab8 -c Lab8 --vector_source="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform27.vwf" --testbench_file="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Waveform27.vwf.vht"
-Warning (20013): Ignored 24 assignments for entity "topLev" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for ent
-ity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -section_id Top was ignored
+    Info: Processing started: Fri Apr 28 12:44:44 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Lab8 -c Lab8 --vector_source="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform30.vwf" --testbench_file="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Waveform30.vwf.vht"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
- "RTDAT[0]" in vector source file when writing test bench files
+UT[3]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -79,39 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Apr 27 16:57:34 2023
+    Info: Processing started: Fri Apr 28 12:44:45 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/" Lab8 -c Lab8
-Warning (20013): Ignored 24 assignments for entity "topLev" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON 
--section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -section_id Top was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -section_id Top was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Lab8.vho in folder "D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 26 warnings
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Thu Apr 27 16:57:34 2023
+    Info: Processing ended: Fri Apr 28 12:44:45 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -131,13 +79,15 @@ Reading C:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-# do Lab8.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# do Lab8.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:57:35 on Apr 27,2023
+# Start time: 12:44:47 on Apr 28,2023
 # vcom -work work Lab8.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -146,26 +96,27 @@ Reading C:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
+
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity Level2
-# -- Compiling architecture structure of Level2
-# End time: 16:57:35 on Apr 27,2023, Elapsed time: 0:00:00
+# -- Compiling entity topLev
+# -- Compiling architecture structure of topLev
+# End time: 12:44:47 on Apr 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:57:35 on Apr 27,2023
-# vcom -work work Waveform27.vwf.vht 
+# Start time: 12:44:47 on Apr 28,2023
+# vcom -work work Waveform30.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Level2_vhd_vec_tst
-# -- Compiling architecture Level2_arch of Level2_vhd_vec_tst
-# End time: 16:57:35 on Apr 27,2023, Elapsed time: 0:00:00
+# -- Compiling entity topLev_vhd_vec_tst
+# -- Compiling architecture topLev_arch of topLev_vhd_vec_tst
+# End time: 12:44:47 on Apr 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.topLev_vhd_vec_tst 
-# Start time: 16:57:35 on Apr 27,2023
+# Start time: 12:44:47 on Apr 28,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -185,24 +136,24 @@ Reading C:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 15739 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 17471 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#35
 
-# End time: 16:57:36 on Apr 27,2023, Elapsed time: 0:00:01
+# End time: 12:44:48 on Apr 28,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform27.vwf...
+Reading D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Waveform30.vwf...
 
 Reading D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Lab8.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Lab8_20230427165736.sim.vwf
+Writing the resulting VWF to D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/Lab8_20230428124448.sim.vwf
 
 Finished VCD to VWF conversion.
 

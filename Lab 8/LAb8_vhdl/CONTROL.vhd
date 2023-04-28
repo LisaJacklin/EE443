@@ -26,7 +26,7 @@ ARCHITECTURE CONTROL_BE OF CONTROL IS
 		--RECOMENDED THAT WE BUILD A SWITCH CASE STATEMENT WITHIN THE PROCESS 
 		--NOTE, THE FIRST 4 BITS ARE OUR CONTROL SIGNAL FROM INSTRUCTION AND THE ONES THAT MATTER
 			CASE OPCODE IS
-				
+				-- pcsel1 = pcsel1 pcsel2 = pcsel0
 				WHEN "0010" => --JMP
 					ALUMUXSEL <= '1';
 					PCSEL1 <= '1'; --YOU ARE THE ONLY ZERO THAT IS NEEDED
@@ -47,21 +47,21 @@ ARCHITECTURE CONTROL_BE OF CONTROL IS
 					ALU_SEL <= "000";		
 				WHEN "1011" => --LW
 					ALUMUXSEL <= '1';
-					PCSEL1 <= '0'; 
-					PCSEL2 <= '1';
+					PCSEL1 <= '1'; 
+					PCSEL2 <= '0';
 					RFMUXSEL <= '0';
 					MEMW <= '0'; 
 					REGWE<= '0';
 					MEMR <= '0';	
 					ALU_SEL <= "000";
 				WHEN "1111" => --SW
-					ALUMUXSEL <= '0';
+					ALUMUXSEL <= '1';
 					PCSEL1 <= '1'; 
 					PCSEL2 <= '0';
 					RFMUXSEL <= '0';
-					MEMW <= '0'; 
+					MEMW <= '1'; 
 					REGWE<= '0';
-					MEMR <= '1';
+					MEMR <= '0';
 					ALU_SEL <= "000";
 				WHEN "0100" => --BEQ
 					ALUMUXSEL <= '1';
