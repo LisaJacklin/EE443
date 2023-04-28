@@ -283,7 +283,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 544 256 784 432)
+	(rect 560 256 800 432)
 	(text "CONTROL" (rect 5 0 58 12)(font "Arial" ))
 	(text "inst" (rect 8 160 25 172)(font "Arial" ))
 	(port
@@ -490,52 +490,6 @@ refer to the applicable agreement for further details.
 	(pt 840 56)
 )
 (connector
-	(text "ZERO" (rect 480 288 507 305)(font "Intel Clear" ))
-	(pt 544 304)
-	(pt 472 304)
-)
-(connector
-	(text "INS[15..0]" (rect 432 272 476 289)(font "Intel Clear" ))
-	(pt 544 288)
-	(pt 424 288)
-	(bus)
-)
-(connector
-	(text "ALUMUXSEL" (rect 792 272 853 289)(font "Intel Clear" ))
-	(pt 784 288)
-	(pt 864 288)
-)
-(connector
-	(text "PCSEL1" (rect 792 288 829 305)(font "Intel Clear" ))
-	(pt 784 304)
-	(pt 864 304)
-)
-(connector
-	(text "PCSEL0" (rect 792 304 829 321)(font "Intel Clear" ))
-	(pt 784 320)
-	(pt 864 320)
-)
-(connector
-	(text "RFMUXSEL" (rect 792 320 846 337)(font "Intel Clear" ))
-	(pt 784 336)
-	(pt 864 336)
-)
-(connector
-	(text "MEMW" (rect 792 336 827 353)(font "Intel Clear" ))
-	(pt 784 352)
-	(pt 864 352)
-)
-(connector
-	(text "REGWE" (rect 792 352 828 369)(font "Intel Clear" ))
-	(pt 784 368)
-	(pt 864 368)
-)
-(connector
-	(text "MEMR" (rect 792 368 823 385)(font "Intel Clear" ))
-	(pt 784 384)
-	(pt 864 384)
-)
-(connector
 	(text "CLK" (rect 496 536 516 553)(font "Intel Clear" ))
 	(pt 568 552)
 	(pt 488 552)
@@ -592,8 +546,54 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ALU_SEL[2..0]" (rect 808 384 875 401)(font "Intel Clear" ))
-	(pt 784 400)
+	(text "ALUMUXSEL" (rect 808 272 869 289)(font "Intel Clear" ))
+	(pt 800 288)
+	(pt 880 288)
+)
+(connector
+	(text "PCSEL1" (rect 808 288 845 305)(font "Intel Clear" ))
+	(pt 800 304)
+	(pt 880 304)
+)
+(connector
+	(text "PCSEL0" (rect 808 304 845 321)(font "Intel Clear" ))
+	(pt 800 320)
+	(pt 880 320)
+)
+(connector
+	(text "RFMUXSEL" (rect 808 320 862 337)(font "Intel Clear" ))
+	(pt 800 336)
+	(pt 880 336)
+)
+(connector
+	(text "MEMW" (rect 808 336 843 353)(font "Intel Clear" ))
+	(pt 800 352)
+	(pt 880 352)
+)
+(connector
+	(text "REGWE" (rect 808 352 844 369)(font "Intel Clear" ))
+	(pt 800 368)
+	(pt 880 368)
+)
+(connector
+	(text "MEMR" (rect 808 368 839 385)(font "Intel Clear" ))
+	(pt 800 384)
+	(pt 880 384)
+)
+(connector
+	(text "ALU_SEL[2..0]" (rect 824 384 891 401)(font "Intel Clear" ))
 	(pt 880 400)
+	(pt 800 400)
 	(bus)
+)
+(connector
+	(text "INS[15..0]" (rect 448 272 492 289)(font "Intel Clear" ))
+	(pt 440 288)
+	(pt 560 288)
+	(bus)
+)
+(connector
+	(text "ZERO" (rect 496 288 523 305)(font "Intel Clear" ))
+	(pt 488 304)
+	(pt 560 304)
 )

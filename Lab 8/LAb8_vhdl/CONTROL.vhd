@@ -55,13 +55,13 @@ ARCHITECTURE CONTROL_BE OF CONTROL IS
 					MEMR <= '0';	
 					ALU_SEL <= "000";
 				WHEN "1111" => --SW
-					ALUMUXSEL <= '1';
+					ALUMUXSEL <= '0';
 					PCSEL1 <= '1'; 
 					PCSEL2 <= '0';
 					RFMUXSEL <= '0';
 					MEMW <= '0'; 
 					REGWE<= '0';
-					MEMR <= '0';
+					MEMR <= '1';
 					ALU_SEL <= "000";
 				WHEN "0100" => --BEQ
 					ALUMUXSEL <= '1';

@@ -292,28 +292,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 552 344 760 424)
-	(text "INS_MEM" (rect 5 0 53 12)(font "Arial" ))
-	(text "inst9" (rect 8 64 30 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "ADDR[15..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "ADDR[15..0]" (rect 21 27 84 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "DOUT[15..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "DOUT[15..0]" (rect 135 27 197 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 64))
-	)
-)
-(symbol
 	(rect 544 472 760 552)
 	(text "SGNEXT6x16" (rect 5 0 71 12)(font "Arial" ))
 	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
@@ -407,18 +385,40 @@ refer to the applicable agreement for further details.
 		(pt 208 32)
 		(output)
 		(text "ADDOUT[15..0]" (rect 0 0 77 12)(font "Arial" ))
-		(text "ADDOUT[15..0]" (rect 122 27 187 39)(font "Arial" ))
+		(text "ADDOUT[15..0]" (rect 122 27 199 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(port
 		(pt 208 48)
 		(output)
 		(text "CAOUT" (rect 0 0 37 12)(font "Arial" ))
-		(text "CAOUT" (rect 156 43 187 55)(font "Arial" ))
+		(text "CAOUT" (rect 156 43 193 55)(font "Arial" ))
 		(line (pt 208 48)(pt 192 48))
 	)
 	(drawing
 		(rectangle (rect 16 16 192 96))
+	)
+)
+(symbol
+	(rect 552 344 760 424)
+	(text "INS_MEM" (rect 5 0 53 12)(font "Arial" ))
+	(text "inst9" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ADDR[15..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "ADDR[15..0]" (rect 21 27 84 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "DOUT[15..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "DOUT[15..0]" (rect 135 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 64))
 	)
 )
 (connector

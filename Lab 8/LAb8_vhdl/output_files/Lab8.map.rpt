@@ -1,5 +1,5 @@
-Analysis & Synthesis report for Lab8
-Wed Apr 26 12:37:57 2023
+Analysis & Elaboration report for Lab8
+Thu Apr 27 16:56:58 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -7,37 +7,28 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A4"
- 13. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A3"
- 14. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A2"
- 15. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A1"
- 16. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1"
- 17. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2"
- 18. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12"
- 19. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11"
- 20. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10"
- 21. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9"
- 22. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1"
- 23. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|DCD3x8:DECO"
- 24. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU3"
- 25. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU2"
- 26. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU1"
- 27. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0|ADD4:SUBT"
- 28. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0|ADD4:AD"
- 29. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A4"
+  6. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A3"
+  7. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A2"
+  8. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A1"
+  9. Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1"
+ 10. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2"
+ 11. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G12"
+ 12. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G11"
+ 13. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10"
+ 14. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9"
+ 15. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1"
+ 16. Port Connectivity Checks: "Level3:inst4|REG8x16:inst1|DCD3x8:DECO"
+ 17. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU3"
+ 18. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU2"
+ 19. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU1"
+ 20. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0|ADD4:SUBT"
+ 21. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0|ADD4:AD"
+ 22. Port Connectivity Checks: "Level3:inst4|ALU16:inst3|ALU4:ALU0"
+ 23. Analysis & Elaboration Messages
 
 
 
@@ -61,27 +52,43 @@ refer to the applicable agreement for further details.
 
 
 +--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
+; Analysis & Elaboration Summary                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 26 12:37:57 2023           ;
+; Analysis & Elaboration Status      ; Successful - Thu Apr 27 16:56:58 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab8                                            ;
 ; Top-level Entity Name              ; topLev                                          ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 52                                              ;
-;     Total combinational functions  ; 52                                              ;
-;     Dedicated logic registers      ; 21                                              ;
-; Total registers                    ; 21                                              ;
-; Total pins                         ; 70                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -166,760 +173,40 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A4"                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
-; DATA_MEM.vhd                     ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd   ;         ;
-; INS_MEM.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd    ;         ;
-; SHLONE.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SHLONE.vhd     ;         ;
-; SGNEXT6X16.vhd                   ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/SGNEXT6X16.vhd ;         ;
-; REG8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8x16.vhd    ;         ;
-; REG8.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/REG8.vhd       ;         ;
-; PINV4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PINV4.vhd      ;         ;
-; PCJMP.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PCJMP.vhd      ;         ;
-; MUX8x16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX8x16.vhd    ;         ;
-; Mux4x4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd     ;         ;
-; MUX2X16.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X16.vhd    ;         ;
-; MUX2X3.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/MUX2X3.vhd     ;         ;
-; INCTWO.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INCTWO.vhd     ;         ;
-; DCD3x8.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DCD3x8.vhd     ;         ;
-; BWOR4.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWOR4.vhd      ;         ;
-; BWAND4.vhd                       ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/BWAND4.vhd     ;         ;
-; ALU16.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd      ;         ;
-; ALU4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU4.vhd       ;         ;
-; ADD16.vhd                        ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD16.vhd      ;         ;
-; ADD4.vhd                         ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ADD4.vhd       ;         ;
-; PC.vhd                           ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/PC.vhd         ;         ;
-; CONTROL.vhd                      ; yes             ; User VHDL File                     ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/CONTROL.vhd    ;         ;
-; topLev.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/topLev.bdf     ;         ;
-; Level2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Level2.bdf     ;         ;
-; Level3.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Level3.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A3"                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                 ;
-+---------------------------------------------+-------------------------------+
-; Resource                                    ; Usage                         ;
-+---------------------------------------------+-------------------------------+
-; Estimated Total logic elements              ; 52                            ;
-;                                             ;                               ;
-; Total combinational functions               ; 52                            ;
-; Logic element usage by number of LUT inputs ;                               ;
-;     -- 4 input functions                    ; 32                            ;
-;     -- 3 input functions                    ; 12                            ;
-;     -- <=2 input functions                  ; 8                             ;
-;                                             ;                               ;
-; Logic elements by mode                      ;                               ;
-;     -- normal mode                          ; 52                            ;
-;     -- arithmetic mode                      ; 0                             ;
-;                                             ;                               ;
-; Total registers                             ; 21                            ;
-;     -- Dedicated logic registers            ; 21                            ;
-;     -- I/O registers                        ; 0                             ;
-;                                             ;                               ;
-; I/O pins                                    ; 70                            ;
-;                                             ;                               ;
-; Embedded Multiplier 9-bit elements          ; 0                             ;
-;                                             ;                               ;
-; Maximum fan-out node                        ; Level2:inst3|PC:inst|PCOUT[4] ;
-; Maximum fan-out                             ; 29                            ;
-; Total fan-out                               ; 356                           ;
-; Average fan-out                             ; 1.67                          ;
-+---------------------------------------------+-------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A2"                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------+--------------+
-; |topLev                    ; 52 (0)              ; 21 (0)                    ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |topLev                                                    ; topLev      ; work         ;
-;    |CONTROL:inst|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|CONTROL:inst                                       ; CONTROL     ; work         ;
-;    |DATA_MEM:inst1|        ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|DATA_MEM:inst1                                     ; DATA_MEM    ; work         ;
-;    |Level2:inst3|          ; 33 (0)              ; 15 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3                                       ; Level2      ; work         ;
-;       |INCTWO:inst1|       ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INCTWO:inst1                          ; INCTWO      ; work         ;
-;          |ADD16:A1|        ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INCTWO:inst1|ADD16:A1                 ; ADD16       ; work         ;
-;             |ADD4:A2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A2         ; ADD4        ; work         ;
-;             |ADD4:A3|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A3         ; ADD4        ; work         ;
-;             |ADD4:A4|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A4         ; ADD4        ; work         ;
-;       |INS_MEM:inst9|      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INS_MEM:inst9                         ; INS_MEM     ; work         ;
-;       |MUX2X16:inst7|      ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|MUX2X16:inst7                         ; MUX2X16     ; work         ;
-;       |PC:inst|            ; 0 (0)               ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|PC:inst                               ; PC          ; work         ;
-;    |Level3:inst4|          ; 11 (0)              ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4                                       ; Level3      ; work         ;
-;       |REG8x16:inst1|      ; 11 (0)              ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1                         ; REG8x16     ; work         ;
-;          |MUX8x16:MUX1|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX1            ; MUX8x16     ; work         ;
-;             |MUX4x4:G10|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10 ; MUX4x4      ; work         ;
-;             |MUX4x4:G9|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9  ; MUX4x4      ; work         ;
-;          |MUX8x16:MUX2|    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX2            ; MUX8x16     ; work         ;
-;             |MUX4x4:G10|   ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10 ; MUX4x4      ; work         ;
-;             |MUX4x4:G9|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9  ; MUX4x4      ; work         ;
-;          |REG8:REGI2|      ; 3 (3)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level3:inst4|REG8x16:inst1|REG8:REGI2              ; REG8        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                    ;
-+----------------------------------------------+--------------------------------------------------------+
-; Register name                                ; Reason for Removal                                     ;
-+----------------------------------------------+--------------------------------------------------------+
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[7]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[7] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[7]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[7] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[7]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[7] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[7]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[7] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[7]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[7] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[7]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[7] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[6]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[6] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[6]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[6] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[6]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[6] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[6]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[6] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[6]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[6] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[6]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[6] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[5]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[5] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[5]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[5] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[5]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[5] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[5]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[5] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[5]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[5] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[5]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[5] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[4]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[4] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[4]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[4] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[4]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[4] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[4]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[4] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[4]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[4] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[4]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[4] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[3]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[3]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[3]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[3]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[3]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[3]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[2]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[2] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[2]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[2] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[2]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[2] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[2]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[2] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[2]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[2] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[2]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[2] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[1]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[1] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[1]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[1] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[1]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[1] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[1]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[1] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[1]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[1] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[1]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[1] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI3|Q[0]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI4|Q[0]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI5|Q[0]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI6|Q[0]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI7|Q[0]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI8|Q[0]   ; Merged with Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-; Level2:inst3|PC:inst|PCOUT[0]                ; Stuck at GND due to stuck port data_in                 ;
-; DATA_MEM:inst1|DMEM~0                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~1                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~2                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~3                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~4                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~5                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~6                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~7                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~8                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~9                        ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~10                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~11                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~12                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~13                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~14                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~15                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~16                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~17                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~18                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~19                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~20                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~21                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~22                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~23                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~24                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~25                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~26                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~27                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~28                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~29                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~30                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~31                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~32                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~33                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~34                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~35                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~36                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~37                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~38                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~39                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~40                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~41                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~42                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~43                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~44                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~45                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~46                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~47                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~48                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~49                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~50                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~51                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~52                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~53                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~54                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~55                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~56                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~57                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~58                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~59                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~60                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~61                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~62                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~63                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~64                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~65                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~66                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~67                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~68                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~69                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~70                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~71                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~72                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~73                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~74                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~75                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~76                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~77                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~78                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~79                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~80                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~81                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~82                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~83                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~84                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~85                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~86                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~87                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~88                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~89                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~90                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~91                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~92                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~93                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~94                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~95                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~96                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~97                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~98                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~99                       ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~100                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~101                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~102                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~103                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~104                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~105                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~106                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~107                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~108                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~109                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~110                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~111                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~112                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~113                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~114                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~115                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~116                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~117                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~118                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~119                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~120                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~121                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~122                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~123                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~124                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~125                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~126                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~127                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~128                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~129                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~130                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~131                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~132                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~133                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~134                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~135                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~136                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~137                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~138                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~139                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~140                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~141                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~142                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~143                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~144                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~145                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~146                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~147                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~148                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~149                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~150                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~151                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~152                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~153                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~154                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~155                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~156                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~157                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~158                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~159                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~160                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~161                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~162                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~163                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~164                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~165                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~166                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~167                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~168                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~169                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~170                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~171                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~172                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~173                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~174                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~175                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~176                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~177                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~178                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~179                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~180                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~181                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~182                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~183                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~184                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~185                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~186                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~187                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~188                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~189                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~190                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~191                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~192                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~193                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~194                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~195                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~196                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~197                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~198                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~199                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~200                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~201                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~202                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~203                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~204                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~205                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~206                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~207                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~208                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~209                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~210                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~211                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~212                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~213                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~214                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~215                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~216                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~217                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~218                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~219                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~220                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~221                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~222                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~223                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~224                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~225                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~226                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~227                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~228                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~229                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~230                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~231                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~232                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~233                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~234                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~235                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~236                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~237                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~238                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~239                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~240                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~241                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~242                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~243                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~244                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~245                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~246                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~247                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~248                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~249                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~250                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~251                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~252                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~253                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~254                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~255                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~256                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~257                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~258                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~259                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~260                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~261                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~262                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~263                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~264                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~265                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~266                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~267                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~268                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~269                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~270                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~271                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~272                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~273                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~274                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~275                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~276                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~277                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~278                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~279                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~280                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~281                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~282                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~283                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~284                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~285                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~286                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~287                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~288                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~289                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~290                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~291                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~292                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~293                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~294                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~295                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~296                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~297                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~298                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~299                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~300                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~301                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~302                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~303                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~304                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~305                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~306                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~307                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~308                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~309                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~310                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~311                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~312                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~313                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~314                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~315                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~316                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~317                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~318                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~319                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~320                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~321                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~322                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~323                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~324                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~325                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~326                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~327                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~328                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~329                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~330                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~331                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~332                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~333                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~334                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~335                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~336                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~337                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~338                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~339                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~340                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~341                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~342                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~343                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~344                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~345                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~346                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~347                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~348                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~349                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~350                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~351                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~352                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~353                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~354                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~355                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~356                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~357                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~358                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~359                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~360                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~361                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~362                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~363                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~364                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~365                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~366                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~367                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~368                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~369                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~370                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~371                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~372                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~373                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~374                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~375                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~376                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~377                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~378                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~379                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~380                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~381                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~382                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~383                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~384                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~385                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~386                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~387                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~388                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~389                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~390                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~391                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~392                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~393                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~394                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~395                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~396                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~397                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~398                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~399                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~400                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~401                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~402                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~403                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~404                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~405                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~406                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~407                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~408                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~409                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~410                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~411                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~412                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~413                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~414                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~415                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~416                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~417                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~418                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~419                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~420                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~421                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~422                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~423                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~424                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~425                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~426                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~427                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~428                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~429                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~430                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~431                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~432                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~433                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~434                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~435                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~436                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~437                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~438                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~439                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~440                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~441                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~442                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~443                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~444                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~445                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~446                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~447                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~448                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~449                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~450                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~451                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~452                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~453                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~454                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~455                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~456                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~457                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~458                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~459                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~460                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~461                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~462                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~463                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~464                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~465                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~466                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~467                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~468                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~469                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~470                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~471                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~472                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~473                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~474                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~475                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~476                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~477                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~478                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~479                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~480                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~481                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~482                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~483                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~484                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~485                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~486                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~487                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~488                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~489                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~490                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~491                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~492                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~493                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~494                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~495                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~496                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~497                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~498                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~499                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~500                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~501                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~502                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~503                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~504                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~505                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~506                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~507                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~508                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~509                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~510                      ; Stuck at GND due to stuck port clock                   ;
-; DATA_MEM:inst1|DMEM~511                      ; Stuck at GND due to stuck port clock                   ;
-; Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0,3] ; Stuck at GND due to stuck port data_in                 ;
-; Total Number of Removed Registers = 563      ;                                                        ;
-+----------------------------------------------+--------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                  ;
-+-----------------------+-------------------------+--------------------------------------------+
-; Register name         ; Reason for Removal      ; Registers Removed due to This Register     ;
-+-----------------------+-------------------------+--------------------------------------------+
-; DATA_MEM:inst1|DMEM~0 ; Stuck at GND            ; Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[0] ;
-;                       ; due to stuck port clock ;                                            ;
-; DATA_MEM:inst1|DMEM~3 ; Stuck at GND            ; Level3:inst4|REG8x16:inst1|REG8:REGI2|Q[3] ;
-;                       ; due to stuck port clock ;                                            ;
-+-----------------------+-------------------------+--------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 21    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 15    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; No         ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[0]  ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; No         ; |topLev|Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[3] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A4"                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A3"                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A2"                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A1"                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Level2:inst3|INCTWO:inst1|ADD16:A1|ADD4:A1"                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -1085,45 +372,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 70                          ;
-; cycloneiii_ff         ; 21                          ;
-;     CLR               ; 15                          ;
-;     ENA               ; 6                           ;
-; cycloneiii_lcell_comb ; 61                          ;
-;     normal            ; 61                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 32                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.42                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Wed Apr 26 12:37:47 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
+    Info: Processing started: Thu Apr 27 16:56:49 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file data_mem.vhd
@@ -1352,89 +608,10 @@ Warning (10492): VHDL Process Statement warning at DATA_MEM.vhd(96): signal "DME
 Warning (10492): VHDL Process Statement warning at DATA_MEM.vhd(96): signal "ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 96
 Warning (10492): VHDL Process Statement warning at DATA_MEM.vhd(98): signal "DMEM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 98
 Warning (10492): VHDL Process Statement warning at DATA_MEM.vhd(98): signal "ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 98
-Warning (14026): LATCH primitive "Level3:inst4|ALU16:inst3|F[4]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 43
-Warning (14026): LATCH primitive "Level3:inst4|ALU16:inst3|F[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 43
-Warning (14026): LATCH primitive "Level3:inst4|ALU16:inst3|F[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 43
-Warning (14026): LATCH primitive "Level3:inst4|ALU16:inst3|F[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 43
-Warning (14026): LATCH primitive "Level3:inst4|ALU16:inst3|F[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/ALU16.vhd Line: 43
-Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276004): RAM logic "Level2:inst3|INS_MEM:inst9|IMEM" is uninferred due to inappropriate RAM size File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/INS_MEM.vhd Line: 29
-    Info (276004): RAM logic "DATA_MEM:inst1|DMEM" is uninferred due to inappropriate RAM size File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/DATA_MEM.vhd Line: 45
-Warning (113028): 3 out of 8 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/db/Lab8.ram0_INS_MEM_a92e7a9e.hdl.mif Line: 1
-    Warning (113027): Addresses ranging from 5 to 7 are not initialized File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/db/Lab8.ram0_INS_MEM_a92e7a9e.hdl.mif Line: 1
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G9|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G10|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX2|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[1]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[2]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G1|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G5|Y[3]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G2|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (14026): LATCH primitive "Level3:inst4|REG8x16:inst1|MUX8x16:MUX1|MUX4x4:G6|Y[0]" is permanently enabled File: D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/Mux4x4.vhd Line: 20
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Z" is stuck at GND
-    Warning (13410): Pin "INS[13]" is stuck at GND
-    Warning (13410): Pin "INS[6]" is stuck at GND
-    Warning (13410): Pin "INS[5]" is stuck at GND
-    Warning (13410): Pin "INS[4]" is stuck at GND
-    Warning (13410): Pin "INS[0]" is stuck at GND
-    Warning (13410): Pin "ALU_SEL[0]" is stuck at GND
-    Warning (13410): Pin "MEMOUT[13]" is stuck at GND
-    Warning (13410): Pin "MEMOUT[11]" is stuck at GND
-    Warning (13410): Pin "MEMOUT[3]" is stuck at GND
-    Warning (13410): Pin "MEMOUT[0]" is stuck at GND
-    Warning (13410): Pin "RTDAT[15]" is stuck at GND
-    Warning (13410): Pin "RTDAT[14]" is stuck at GND
-    Warning (13410): Pin "RTDAT[13]" is stuck at GND
-    Warning (13410): Pin "RTDAT[12]" is stuck at GND
-    Warning (13410): Pin "RTDAT[11]" is stuck at GND
-    Warning (13410): Pin "RTDAT[10]" is stuck at GND
-    Warning (13410): Pin "RTDAT[9]" is stuck at GND
-    Warning (13410): Pin "RTDAT[8]" is stuck at GND
-    Warning (13410): Pin "RTDAT[3]" is stuck at GND
-    Warning (13410): Pin "RTDAT[0]" is stuck at GND
-    Warning (13410): Pin "PCOUT[0]" is stuck at GND
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 68 output pins
-    Info (21061): Implemented 55 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 138 warnings
-    Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Wed Apr 26 12:37:57 2023
-    Info: Elapsed time: 00:00:10
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 69 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Thu Apr 27 16:56:58 2023
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:20
 
 
