@@ -60,11 +60,43 @@
 					"strict" : false
 				},
 				{
+					"name" : "PCSEL1",
+					"strict" : false
+				},
+				{
+					"name" : "REGWE",
+					"strict" : false
+				},
+				{
+					"name" : "ALUMUXSEL",
+					"strict" : false
+				},
+				{
 					"name" : "ALU_SEL[2]",
 					"strict" : false
 				},
 				{
 					"name" : "ALU_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IMM_EXT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IMM_EXT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IMM_EXT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IMM_EXT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IMM_EXT[1]",
 					"strict" : false
 				},
 				{
@@ -116,6 +148,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "MEMW",
+					"strict" : false
+				},
+				{
 					"name" : "RTDAT[7]",
 					"strict" : false
 				},
@@ -137,6 +173,10 @@
 				},
 				{
 					"name" : "RTDAT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCMUXSEL",
 					"strict" : false
 				},
 				{

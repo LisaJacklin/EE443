@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Lab8
-Fri Apr 28 12:44:45 2023
+Sun Apr 30 11:42:59 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Apr 28 12:44:45 2023 ;
+; EDA Netlist Writer Status ; Successful - Sun Apr 30 11:42:59 2023 ;
 ; Revision Name             ; Lab8                                  ;
 ; Top-level Entity Name     ; topLev                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Apr 28 12:44:45 2023
+    Info: Processing started: Sun Apr 30 11:42:58 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim/" Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Lab8.vho in folder "D:/Users/lmjacklin/Documents/GitHub/EE443/Lab 8/LAb8_vhdl/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Fri Apr 28 12:44:45 2023
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sun Apr 30 11:42:59 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

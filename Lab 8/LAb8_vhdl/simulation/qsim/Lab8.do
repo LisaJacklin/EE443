@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vcom -work work Lab8.vho
-vcom -work work Waveform30.vwf.vht
+vcom -work work Waveform31.vwf.vht
 vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.topLev_vhd_vec_tst
 vcd file -direction Lab8.msim.vcd
 vcd add -internal topLev_vhd_vec_tst/*

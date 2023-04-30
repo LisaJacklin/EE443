@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab8
-Fri Apr 28 12:43:36 2023
+Sun Apr 30 11:39:45 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -63,16 +63,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 28 12:43:36 2023           ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 30 11:39:45 2023           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                      ; Lab8                                            ;
 ; Top-level Entity Name              ; topLev                                          ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 65                                              ;
-;     Total combinational functions  ; 65                                              ;
+; Total logic elements               ; 66                                              ;
+;     Total combinational functions  ; 66                                              ;
 ;     Dedicated logic registers      ; 21                                              ;
 ; Total registers                    ; 21                                              ;
-; Total pins                         ; 86                                              ;
+; Total pins                         ; 109                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -221,30 +221,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------+
 ; Resource                                    ; Usage                         ;
 +---------------------------------------------+-------------------------------+
-; Estimated Total logic elements              ; 65                            ;
+; Estimated Total logic elements              ; 66                            ;
 ;                                             ;                               ;
-; Total combinational functions               ; 65                            ;
+; Total combinational functions               ; 66                            ;
 ; Logic element usage by number of LUT inputs ;                               ;
 ;     -- 4 input functions                    ; 46                            ;
-;     -- 3 input functions                    ; 5                             ;
+;     -- 3 input functions                    ; 6                             ;
 ;     -- <=2 input functions                  ; 14                            ;
 ;                                             ;                               ;
 ; Logic elements by mode                      ;                               ;
-;     -- normal mode                          ; 65                            ;
+;     -- normal mode                          ; 66                            ;
 ;     -- arithmetic mode                      ; 0                             ;
 ;                                             ;                               ;
 ; Total registers                             ; 21                            ;
 ;     -- Dedicated logic registers            ; 21                            ;
 ;     -- I/O registers                        ; 0                             ;
 ;                                             ;                               ;
-; I/O pins                                    ; 86                            ;
+; I/O pins                                    ; 109                           ;
 ;                                             ;                               ;
 ; Embedded Multiplier 9-bit elements          ; 0                             ;
 ;                                             ;                               ;
 ; Maximum fan-out node                        ; Level2:inst3|PC:inst|PCOUT[5] ;
-; Maximum fan-out                             ; 26                            ;
-; Total fan-out                               ; 429                           ;
-; Average fan-out                             ; 1.66                          ;
+; Maximum fan-out                             ; 27                            ;
+; Total fan-out                               ; 465                           ;
+; Average fan-out                             ; 1.52                          ;
 +---------------------------------------------+-------------------------------+
 
 
@@ -253,8 +253,8 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------+-------------+--------------+
-; |topLev                    ; 65 (0)              ; 21 (0)                    ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |topLev                                                    ; topLev      ; work         ;
-;    |CONTROL:inst|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|CONTROL:inst                                       ; CONTROL     ; work         ;
+; |topLev                    ; 66 (0)              ; 21 (0)                    ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |topLev                                                    ; topLev      ; work         ;
+;    |CONTROL:inst|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|CONTROL:inst                                       ; CONTROL     ; work         ;
 ;    |DATA_MEM:inst1|        ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|DATA_MEM:inst1                                     ; DATA_MEM    ; work         ;
 ;    |Level2:inst3|          ; 40 (0)              ; 15 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3                                       ; Level2      ; work         ;
 ;       |INCTWO:inst1|       ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |topLev|Level2:inst3|INCTWO:inst1                          ; INCTWO      ; work         ;
@@ -1088,16 +1088,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 86                          ;
+; boundary_port         ; 109                         ;
 ; cycloneiii_ff         ; 21                          ;
 ;     CLR               ; 15                          ;
 ;     ENA               ; 6                           ;
-; cycloneiii_lcell_comb ; 71                          ;
-;     normal            ; 71                          ;
+; cycloneiii_lcell_comb ; 74                          ;
+;     normal            ; 74                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 8                           ;
+;         1 data inputs ; 10                          ;
 ;         2 data inputs ; 11                          ;
-;         3 data inputs ; 5                           ;
+;         3 data inputs ; 6                           ;
 ;         4 data inputs ; 46                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
@@ -1120,7 +1120,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Fri Apr 28 12:43:25 2023
+    Info: Processing started: Sun Apr 30 11:39:26 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab8 -c Lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1412,11 +1412,24 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Z" is stuck at GND
     Warning (13410): Pin "INS[6]" is stuck at GND
     Warning (13410): Pin "INS[0]" is stuck at GND
+    Warning (13410): Pin "PCSEL0" is stuck at GND
     Warning (13410): Pin "ALU_SEL[0]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[15]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[14]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[13]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[12]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[11]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[10]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[9]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[8]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[7]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[6]" is stuck at GND
+    Warning (13410): Pin "IMM_EXT[0]" is stuck at GND
     Warning (13410): Pin "MEMOUT[13]" is stuck at GND
     Warning (13410): Pin "MEMOUT[11]" is stuck at GND
     Warning (13410): Pin "MEMOUT[3]" is stuck at GND
     Warning (13410): Pin "MEMOUT[0]" is stuck at GND
+    Warning (13410): Pin "MEMR" is stuck at GND
     Warning (13410): Pin "RTDAT[15]" is stuck at GND
     Warning (13410): Pin "RTDAT[14]" is stuck at GND
     Warning (13410): Pin "RTDAT[13]" is stuck at GND
@@ -1440,14 +1453,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 178 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 84 output pins
-    Info (21061): Implemented 68 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 153 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Fri Apr 28 12:43:36 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:21
+    Info (21059): Implemented 107 output pins
+    Info (21061): Implemented 69 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 166 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Sun Apr 30 11:39:45 2023
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:24
 
 
